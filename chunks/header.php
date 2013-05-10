@@ -32,30 +32,75 @@
 
 <div id="headcontainer">
 	<header>
-		<a href="http://midoribrowser.org/" title="Midori, a lightweight, fast, and free web browser.">
-			<h1>Midori</h1>
-			<div class="tag">A lightweight, fast, and free web browser.</div>
-		</a>
+
+
+
+		<div class="title">
+			<a href="http://midoribrowser.org/" title="Midori, a lightweight, fast, and free web browser.">
+				<h1>Midori</h1>
+				<div class="tag">a lightweight, fast, and free web browser</div>
+			</a>
+		</div>
+
+
+
+		<div class="col span_1_of_5 donate">
+
+			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+
+				<input type="hidden" name="cmd" value="_xclick">
+				<input type="hidden" name="lc" value="US">
+				<input type="hidden" name="currency_code" value="USD">
+				<input type="hidden" name="button_subtype" value="services">
+				<input type="hidden" name="no_shipping" value="1">
+				<input type="hidden" name="rm" value="1">
+
+				<input type="hidden" name="no_note" value="0">
+				<input type="hidden" name="cn" value="Add a note.">
+
+				<input type="hidden" name="business" value="christian@twotoasts.de">
+				<input type="hidden" name="item_name" value="Midori Browser Donation">
+				<input type="hidden" name="return" value="http://midoribrowser.org/thanks">
+				<input type="hidden" name="cancel_return" value="http://midoribrowser.org/ohwell">
+
+				<input type="hidden" name="bn" value="PP-BuyNowBF:btn_paynowCC_LG.gif:NonHosted">
+				<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+
+				<input class="amount" name="amount" type="text"  maxlength="5" value="5.00">
+
+				<input class="submit" name="submit" type="submit"  value="Donate">
+
+			</form>
+
+			<p><a href="http://midoribrowser.org/donate">Donate in another Currency</a></p>
+
+		</div>
+
+
+		<?php
+		$unsafe_requested = str_replace("'", "", $_SERVER['REQUEST_URI']);
+		$location = str_replace('"', "", $unsafe_requested);
+		?>
 		<div class="section group nav">
-			<div class="col span_1_of_6">
-				<a href="http://midoribrowser.org/features/" title="Features of Midori">Features</a>
+			<div class="col span_1_of_5">
+				<a href="http://midoribrowser.org/features/" title="Features of Midori"<?php if ( $location == "/features/" ) { echo 'class="current"'; } ?>>Features</a>
 			</div>
-			<div class="col span_1_of_6">
-				<a href="http://midoribrowser.org/reviews/" title="Reviews of Midori">Reviews</a>
+			<div class="col span_1_of_5">
+				<a href="http://midoribrowser.org/reviews/" title="Reviews of Midori"<?php if ( $location == "/reviews/" ) { echo 'class="current"'; } ?>>Reviews</a>
 			</div>
-			<div class="col span_1_of_6">
-				<a href="http://midoribrowser.org/news/" title="News about Midori">News</a>
+			<div class="col span_1_of_5">
+				<a href="http://midoribrowser.org/contribute/" title="Contribute to Midori"<?php if ( $location == "/contribute/" ) { echo 'class="current"'; } ?>>Contribute</a>
 			</div>
-			<div class="col span_1_of_6">
-				<a href="http://midoribrowser.org/contribute/" title="Contribute to Midori">Contribute</a>
+			<div class="col span_1_of_5">
+				<a href="http://midoribrowser.org/faqs/" title="Questions Frequently Asked about DeVeDe."<?php if ( $location == "/faqs/" ) { echo 'class="current"'; } ?>>FAQs</a>
 			</div>
-			<div class="col span_1_of_6">
-				<a href="http://midoribrowser.org/faqs/" title="Questions Frequently Asked about DeVeDe.">FAQs</a>
-			</div>
-			<div class="col span_1_of_6">
-				<a href="http://midoribrowser.org/download/" title="Download Midori" class="prefered">Download</a>
+			<div class="col span_1_of_5">
+				<a href="http://midoribrowser.org/download/" title="Download Midori" class="<?php if ( $location == "/download/" ) { echo 'current '; } ?>down">Download</a>
 			</div>
 		</div>
+
+
+
 	</header>
 </div>
 

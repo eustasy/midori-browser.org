@@ -9,19 +9,19 @@
 <div class="section group review">
 	<div class="col span_1_of_3">
 		<div class="bubble standard">
-			<h3>&quot;&hellip;clever design&hellip;&quot;</h3>
+			<h3>&quot; &hellip; clever design &hellip; &quot;</h3>
 			<p><a href="http://maketecheasier.com/midori-the-little-browser-that-just-might-surprise-you/2010/10/07">Midori</a>, <a href="http://maketecheasier.com/">Make Tech Easier</a></p>
 		</div>
 	</div>
 	<div class="col span_1_of_3">
 		<div class="bubble standard">
-			<h3>&quot;&hellip;fast&hellip;&quot;</h3>
+			<h3>&quot; &hellip; fast &hellip; &quot;</h3>
 			<p><a href="http://download.cnet.com/Midori/3000-2356_4-75206763.html">Midori</a>, <a href="http://download.cnet.com/">CNET</a></p>
 		</div>
 	</div>
 	<div class="col span_1_of_3">
 		<div class="bubble standard">
-			<h3>&quot;&hellip;snappier&hellip;&quot;</h3>
+			<h3>&quot; &hellip; snappier &hellip; &quot;</h3>
 			<p><a href="http://www.techdrivein.com/2011/01/midori-vs-epiphany-review.html">Midori Vs. Epiphany</a>, <a href="http://www.techdrivein.com/">Tech Drive-In</a></p>
 		</div>
 	</div>
@@ -51,14 +51,14 @@
 <div class="section group">
 	<div class="bubble standard review">
 		<div class="col span_1_of_3">
-				<h3>&quot;Midori is lightning fast&quot;</h3>
+				<h3>&quot; Midori is lightning fast &quot;</h3>
 		</div>
 		<div class="col span_1_of_3">
-				<h3>&quot;Midori’s secret weapon is that it’s based on WebKit.&quot;</h3>
+				<h3>&quot; Midori’s secret weapon is that it’s based on WebKit. &quot;</h3>
 				<p><a href="http://www.softpedia.com/reviews/linux/Midori-Review-143903.shtml">Midori</a>, <a href="http://www.softpedia.com/get/Internet/Browsers/Midori.shtml">Softpedia</a></p>
 		</div>
 		<div class="col span_1_of_3">
-				<h3>&quot;&hellip;Midori is great&hellip;&quot;</h3>
+				<h3>&quot; &hellip; Midori is great &hellip; &quot;</h3>
 		</div>
 		<div class="clear"></div>
 	</div>

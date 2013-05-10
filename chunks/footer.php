@@ -24,7 +24,7 @@
 			</ul>
 		</div>
 		<div class="col span_1_of_8">
-			<h4><a href="http://www.eustasy.org/legal/" title="legal">legal</a></h4>
+			<h4>legal</h4>
 			<ul>
 				<li> &nbsp;·&nbsp; <a href="http://www.eustasy.org/legal/website-disclaimer/" title="Website Disclaimer">disclaimer</a></li>
 				<li> &nbsp;·&nbsp; <a href="http://www.eustasy.org/legal/copyright-notice/" title="Copyright Notice">copyright</a></li>

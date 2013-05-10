@@ -12,37 +12,10 @@
 
 <?php
 
-require '../chunks/detect.php';
+require '../chunks/detect-two.php';
 
-$ua = UA::parse();
+if ($ua) { if ($windows) { // Windows ?>
 
-?>
-<!-- UA Parsed -->
-
-<?php if (
-$ua->os == "Windows ME"  || // Windows ME
-$ua->os == "Win16" || // Windows 3.11
-$ua->os == "Windows NT 4.0" || // Windows NT 4.0
-$ua->os == "WinNT4.0" || 
-$ua->os == "WinNT" || 
-$ua->os == "Windows NT" || 
-$ua->os == "Windows_95" || // Windows 95
-$ua->os == "Windows 95" || 
-$ua->os == "Win95" ||
-$ua->os == "Windows 98" || // Windows 98
-$ua->os == "Win98" ||
-$ua->os == "Windows NT 5.0" || // Windows 2000
-$ua->os == "Windows 2000" ||
-$ua->os == "Windows NT 5.1" || // Windows XP
-$ua->os == "Windows XP" || 
-$ua->os == "Windows NT 5.2" || // Windows Server 2003
-$ua->os == "Windows NT 6.0" || // Windows Vista
-$ua->os == "Windows Vista" ||
-$ua->os == "Windows NT 6.1" || // Windows 7
-$ua->os == "Windows 7" || 
-$ua->os == "Windows NT 6.2" || // Windows 8
-$ua->os == "Windows 8"
-) { ?>
 <!-- Windows -->
 <h2>Download for Windows</h2>
 <h3 style="color:#999999;">Select your Version</h3>
@@ -68,11 +41,8 @@ $ua->os == "Windows 8"
 
 
 
-<?php } elseif (
-	$ua->os == "Linux" || 
-	$ua->os == "Ubuntu" || 
-	$ua->os == "Linux Mint"
-) { ?>
+<?php } elseif ($linux) { // Linux ?>
+
 <!-- Linux -->
 <h2>Download for Linux</h2>
 <h3 style="color:#999999;">Select your Distribution</h3>
@@ -150,29 +120,13 @@ $ua->os == "Windows 8"
 
 
 
-<?php } elseif (
-	$ua->os == "Mac OS X" || 
-	$ua->os == "iOS" || 
-	$ua->os == "Android" || 
-	$ua->os == "SymbianOS" || 
-	$ua->os == "BlackBerry" || 
-	$ua->os == "Chrome OS"
-) { ?>
+<?php } elseif ($osx) { // OS X ?>
+
 <div class="section group">
 	<div class="col span_2_of_4">
 		<div class="bubble warning">
 			<h2>Warning!</h2>
-			<p>You appear to be using 
-
-<?php if ($ua->os == "Mac OS X") { ?>Mac OS X
-<?php } elseif ($ua->os == "iOS") { ?>iOS
-<?php } elseif ($ua->os == "Android") { ?>Android
-<?php } elseif ($ua->os == "SymbianOS") { ?>SymbianOS
-<?php } elseif ($ua->os == "BlackBerry") { ?>BlackBerry
-<?php } elseif ($ua->os == "Chrome OS") { ?>Chrome OS
-<?php } ?>
-
-			 , and this application is not compatible with that system.</p>
+			<p>You appear to be using Mac OS X, and this application is not compatible with that system.</p>
 			<p class="right">Continue at your peril.</p>
 		</div>
 	</div>
@@ -180,7 +134,8 @@ $ua->os == "Windows 8"
 
 
 
-<? } else { echo '<!-- Browser: ' . $ua->browser . ' Major: ' . $ua->major . ' OS: ' . $ua->os . ' -->'; ?>
+<? } else { ?>
+
 <!-- Unable to Detect Operating System -->
 <div class="section group">
 	<div class="col span_2_of_4">
@@ -190,7 +145,9 @@ $ua->os == "Windows 8"
 			<p class="right">Continue at your peril.</p>
 		</div>
 	</div>
-<?php require 'fallback.php'; } ?>
+<?php require 'fallback.php';
+
+} } ?>
 
 
 
