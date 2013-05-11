@@ -1,13 +1,13 @@
 	<div class="col span_1_of_2">
 		<a href="http://midoribrowser.org/download/elementary/" title="Download Midori for elementary.">
-			<div class="bubble system elementary prefered">
+			<div class="bubble system elementary">
 				<h2>elementary</h2>
 			</div>
 		</a>
 	</div>
 	<div class="col span_1_of_2">
 		<a href="http://midoribrowser.org/download/ubuntu/" title="Download Midori for Ubuntu.">
-			<div class="bubble system ubuntu prefered">
+			<div class="bubble system ubuntu">
 				<h2>Ubuntu</h2>
 			</div>
 		</a>

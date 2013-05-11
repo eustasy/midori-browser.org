@@ -17,7 +17,7 @@
 	</div>
 	<div class="col span_1_of_3">
 		<a href="https://launchpad.net/midori">
-			<div class="bubble standard prefered">
+			<div class="bubble standard">
 				<h3><img src="http://midoribrowser.org/images/sites-launchpad.png" class="sixtyfour floatleft">Launchpad</h3>
 				<p>Launchpad is the central point for the code development of Midori, and also hosts the PPA for Ubuntu users. You can browse the code, see blueprints, and get in touch with the developers.</p>
 			</div>

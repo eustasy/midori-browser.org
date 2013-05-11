@@ -11,14 +11,14 @@
 </div>
 <div class="section group">
 	<div class="col span_1_of_2">
-		<div class="bubble standard prefered">
+		<div class="bubble standard">
 			<h4>What is Midori?</h4>
 			<p class="important">Midori is a lightweight webkit web browser designed by Nancy Runge, and is developed and maintained by Christian Dywan, both of <a href="http://twotoasts.de/index.php/midori//">TwoToasts.de</a></p>
 			<p>It was originally made for <a href="http://www.xfce.org/">Xcfe</a> as part of there Goodies projects, and as such makes the most out of available system resources. It has also been ported to <a href="http://elementaryos.org/">elementary os</a> as midori-granite to better align with their beatiful system.</p>
 		</div>
 	</div>
 	<div class="col span_1_of_2">
-		<div class="bubble standard prefered">
+		<div class="bubble standard">
 			<h4>What license is Midori under?</h4>
 			<p>Midori is licensed under the <a href="http://www.gnu.org/licenses/lgpl-2.1.html">GNU Lesser General Public License, version 2.1</a>, which allows for free re-distribution of both original and modified versions of Midori, even commercially.</p>
 		</div>

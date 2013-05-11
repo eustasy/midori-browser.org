@@ -18,7 +18,7 @@ foreach ($xml->download as $download) {
 		$size = $download->size/1048576;
 		echo '
 		<a href="' . $download->location . '" title="Download Midori for Windows.">
-			<div class="bubble system windows prefered">
+			<div class="bubble system windows">
 				<h2>Windows</h2>';
 		echo '
 				<h6 class="right">' . $package . ' &nbsp;&middot;&nbsp; ' . $download->version . ' &nbsp;&middot;&nbsp; ' . round($size, 1) . ' MB</h6>';
@@ -32,7 +32,7 @@ foreach ($xml->download as $download) {
 	</div>
 	<div class="col span_1_of_2">
 		<a href="http://midoribrowser.org/download/portable/" title="Download Portable Midori.">
-			<div class="bubble system portable prefered">
+			<div class="bubble system portable">
 				<h2>Portable</h2>
 <?php
 
@@ -92,14 +92,14 @@ echo ' MB</h6>';
 <div class="section group" id="second">
 	<div class="col span_1_of_2">
 		<a href="http://midoribrowser.org/download/elementary/" title="Download Midori for elementary os.">
-			<div class="bubble system elementary prefered">
+			<div class="bubble system elementary">
 				<h2>elementary</h2>
 			</div>
 		</a>
 	</div>
 	<div class="col span_1_of_2">
 		<a href="http://midoribrowser.org/download/ubuntu/" title="Download Midori for Ubuntu.">
-			<div class="bubble system ubuntu prefered">
+			<div class="bubble system ubuntu">
 				<h2>Ubuntu</h2>
 			</div>
 		</a>

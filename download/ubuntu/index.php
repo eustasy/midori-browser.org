@@ -6,7 +6,7 @@
 
 <div class="section group">
 	<div class="col span_3_of_5">
-		<div class="bubble standard prefered">
+		<div class="bubble standard">
 			<h2>Install Midori in Ubuntu</h2>
 			<div class="section group">
 				<p class="important"><img src="http://midoribrowser.org/images/sites-launchpad.png" class="sixtyfour floatleft"> By adding the repository <a href="https://launchpad.net/~midori/+archive/ppa">ppa:midori/ppa</a>, you will be kept up to date with the latest and greatest versions of Midori.</p>

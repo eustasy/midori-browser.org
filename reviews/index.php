@@ -28,7 +28,7 @@
 </div>
 
 <div class="section group">
-	<div class="bubble standard prefered">
+	<div class="bubble standard">
 		<div class="col span_1_of_5">
 			<h3>User Reviews:</h3>
 		</div>

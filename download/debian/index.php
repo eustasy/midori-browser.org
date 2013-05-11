@@ -6,7 +6,7 @@
 
 <div class="section group">
 	<div class="col span_3_of_4">
-		<div class="bubble standard prefered">
+		<div class="bubble standard">
 			<h2>Download Midori for Debian</h2>
 			<div class="section group">
 <?php

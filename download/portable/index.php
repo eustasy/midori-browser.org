@@ -6,7 +6,7 @@
 
 <div class="section group">
 	<div class="col span_3_of_5">
-		<div class="bubble standard prefered">
+		<div class="bubble standard">
 			<h2>Download Midori Portable<h2>
 			<h3>for Windows</h3>
 			<div class="section group">

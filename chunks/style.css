@@ -350,7 +350,7 @@ code {
 	}
 .source, .choose {
 	-webkit-border-radius: 3px;
-	background: #111111;
+	background: rgba(22,70,117,1);
 	border-radius: 3px;
 	color: #eeeeee;
 	text-align: center;
@@ -358,7 +358,7 @@ code {
 	}
 .standard {
 	-webkit-border-radius: 3px;
-	background: #111111;
+	background: rgba(22,70,117,1);
 	border-radius: 3px;
 	color: #eeeeee;
 	text-align: center;
@@ -370,27 +370,28 @@ code {
 	color: #eeeeee;
 	text-align: center;
 	vertical-align: middle;
+	background-color: rgba(22,70,117,1);
+	background-position: 10px center;
+	background-repeat: no-repeat;
 	}
-.ubuntu { background: #111111 url(../images/system-ubuntu.png) 10px center no-repeat; }
-.elementary { background: #111111 url(../images/system-elementary.png) 10px center no-repeat; }
-.fedora { background: #111111 url(../images/system-fedora.png) 10px center no-repeat; }
-.debian { background: #111111 url(../images/system-debian.png) 10px center no-repeat; }
-.mint { background: #111111 url(../images/system-mint.png) 10px center no-repeat; }
-.mageia { background: #111111 url(../images/system-mageia.png) 10px center no-repeat; }
-.arch { background: #111111 url(../images/system-arch.png) 10px center no-repeat; }
-.snow { background: #111111 url(../images/system-snow.png) 10px center no-repeat; }
-.opensuse { background: #111111 url(../images/system-opensuse.png) 10px center no-repeat; }
-.pclinuxos { background: #111111 url(../images/system-pclinuxos.png) 10px center no-repeat; }
-.gentoo { background: #111111 url(../images/system-gentoo.png) 10px center no-repeat; }
-.slackware { background: #111111 url(../images/system-slackware.png) 10px center no-repeat; }
-.windows { background: #111111 url(../images/system-windows.png) 10px center no-repeat; }
-.portable { background: #111111 url(../images/system-portable.png) 10px center no-repeat; }
-.previous-windows { background: #111111 url(../images/system-windows-previous.png) 40px center no-repeat; }
+.ubuntu { background-image: url(../images/system-ubuntu.png); }
+.elementary { background-image: url(../images/system-elementary.png); }
+.fedora { background-image: url(../images/system-fedora.png); }
+.debian { background-image: url(../images/system-debian.png); }
+.mint { background-image: url(../images/system-mint.png); }
+.mageia { background-image: url(../images/system-mageia.png); }
+.arch { background-image: url(../images/system-arch.png); }
+.snow { background-image: url(../images/system-snow.png); }
+.opensuse { background-image: url(../images/system-opensuse.png); }
+.pclinuxos { background-image: url(../images/system-pclinuxos.png); }
+.gentoo { background-image: url(../images/system-gentoo.png); }
+.slackware { background-image: url(../images/system-slackware.png); }
+.windows { background-image: url(../images/system-windows.png); }
+.portable { background-image: url(../images/system-portable.png); }
+.previous-windows { background: rgba(22,70,117,1) url(../images/system-windows-previous.png) 40px center no-repeat; }
 
-.prefered { background-color: #111111 !important; }
-
-.download { background: #111111 url(../images/big/action-download.png) 10px center no-repeat; }
-.help { background: #111111 url(../images/big/feature-help.png) 10px center no-repeat; }
+.download { background-image: url(../images/big/action-download.png); }
+.help { background-image: url(../images/big/feature-help.png); }
 
 .review p {
 	color: #bdf48f;
