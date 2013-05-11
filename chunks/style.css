@@ -82,7 +82,7 @@ h2,h3,h4,h5,h6 {
 	}
 h2 {
 	color: #333333;
-	font: 300 2em/1.2 Raleway, Sans;
+	font: 400 2em/1.2 Raleway, Sans;
 	margin: 0 0 .5em;
 	}
 h3 {
@@ -344,7 +344,7 @@ code {
 	}
 .information {
 	-webkit-border-radius: 3px;
-	background: #7cc3e0;
+	background: rgb(76, 165, 201);
 	border-radius: 3px;
 	color: #FEFEFE;
 	}
@@ -396,6 +396,7 @@ code {
 	color: #bdf48f;
 	text-align: center;
 	}
+.important { font-size: 1em; }
 
 .nobottom { margin-bottom: 0 !important; }
 

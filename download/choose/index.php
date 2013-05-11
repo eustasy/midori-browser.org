@@ -8,18 +8,85 @@
 <h2>Download Midori</h2>
 <div class="section group" id="downloads">
 	<div class="col span_1_of_2">
-		<a href="http://midoribrowser.org/downloads/midori_0.4.9_windows.exe" title="Download Midori for Windows.">
+<?php
+
+include '../process.php';
+
+foreach ($xml->download as $download) {
+	if ($download->extension == '.exe') {
+		$package = ltrim($download->extension, '.');
+		$size = $download->size/1048576;
+		echo '
+		<a href="' . $download->location . '" title="Download Midori for Windows.">
 			<div class="bubble system windows prefered">
-				<h2>Windows</h2>
-				<h6 class="right">exe &nbsp;&middot;&nbsp; 0.4.9 &nbsp;&middot;&nbsp; 33M</h6>
+				<h2>Windows</h2>';
+		echo '
+				<h6 class="right">' . $package . ' &nbsp;&middot;&nbsp; ' . $download->version . ' &nbsp;&middot;&nbsp; ' . round($size, 1) . ' MB</h6>';
+		echo '
 			</div>
-		</a>
+		</a>';
+	}
+}
+
+?>
 	</div>
 	<div class="col span_1_of_2">
 		<a href="http://midoribrowser.org/download/portable/" title="Download Portable Midori.">
 			<div class="bubble system portable prefered">
 				<h2>Portable</h2>
-				<h6 class="right">Zip or 7z &nbsp;&middot;&nbsp; 0.4.9 &nbsp;&middot;&nbsp; 52 or 32M</h6>
+<?php
+
+include '../process.php';
+
+echo '<h6 class="right">';
+
+foreach ($xml->download as $download) {
+	if ($download->extension == '.7z') {
+		$package = ltrim($download->extension, '.');
+		echo $package;
+	}
+}
+
+echo ' or ';
+
+foreach ($xml->download as $download) {
+	if ($download->extension == '.zip') {
+		$package = ltrim($download->extension, '.');
+		echo $package;
+	}
+}
+
+echo ' &nbsp;&middot;&nbsp; ';
+
+foreach ($xml->download as $download) {
+
+	if ($download->extension == '.7z') {
+		echo $download->version;
+	}
+
+}
+
+echo ' &nbsp;&middot;&nbsp; ';
+
+foreach ($xml->download as $download) {
+	if ($download->extension == '.7z') {
+		$size = $download->size/1048576;
+		echo round($size, 1);
+	}
+}
+
+echo ' or ';
+
+foreach ($xml->download as $download) {
+	if ($download->extension == '.zip') {
+		$size = $download->size/1048576;
+		echo round($size, 1);
+	}
+}
+
+echo ' MB</h6>';
+
+?>
 			</div>
 		</a>
 	</div>

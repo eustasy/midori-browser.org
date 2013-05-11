@@ -9,27 +9,31 @@
 		<div class="bubble standard prefered">
 			<h2>Download Midori for Suse</h2>
 			<div class="section group">
-				<div class="col span_2_of_5">
-					<h3><a href="http://midoribrowser.org/downloads/midori_0.4.9-1.1_i586.rpm"><img src="http://midoribrowser.org/images/action-download.png" class="thirtytwo littleleft"> 32bit</a></h3>
-					<h6>rpm &nbsp;&middot;&nbsp; 0.4.9-1.1 &nbsp;&middot;&nbsp; 471K</h6>
-				</div>
-				<div class="col span_1_of_5">
-					<h4>or</h4>
-				</div>
-				<div class="col span_2_of_5">
-					<h3><a href="http://midoribrowser.org/downloads/midori_0.4.7-1.2_x86_64.rpm"><img src="http://midoribrowser.org/images/action-download.png" class="thirtytwo littleleft"> 64bit</a></h3>
-					<h6>rpm &nbsp;&middot;&nbsp; 0.4.9-1.1 &nbsp;&middot;&nbsp; 489K</h6>
-				</div>
+<?php
+
+include '../process.php';
+
+foreach ($xml->download as $download) {
+	if ($download->extension == '.rpm') {
+		echo '<div class="col span_1_of_3">';
+		echo '<h3><a href="' . $download->location . '">' . $download->architecture . '</a></h3>';
+		$size = $download->size/1048576;
+		$package = ltrim($download->extension, '.');
+		echo '<h6>' . $package . ' &nbsp;&middot;&nbsp; ' . $download->version . ' &nbsp;&middot;&nbsp; ' . round($size, 1) . ' MB</h6>';
+		echo '</div>';
+	}
+}
+
+?>
 			</div>
-			<h6>If you're unsure which you have, Suse recommends 64bit, so try that.</h6>
 		</div>
 	</div>
 	<div class="col span_1_of_4">
 		<div class="bubble warning">
 			<h3>Install Direct</h3>
-			<p>You can also install direct with this command.</p>
+			<p class="important">You can also install directly from the repositories with this command.</p>
+			<p>Note that the Suse repositories may be out of date.</p>
 			<input type="text" id="dynamic" value="sudo yum install midori" />
-			<p>Note that the Suse repos may be out of date.</p>
 		</div>
 	</div>
 </div>
@@ -42,7 +46,7 @@
 	</div>
 	<div class="col span_1_of_2">
 		<div class="bubble standard">
-			<h3><img src="http://midoribrowser.org/images/feature-help.png" class="sixtyfour floatleft"> Help</h3>
+			<h3 class="withimg64"><img src="http://midoribrowser.org/images/feature-help.png" class="sixtyfour floatleft">Help</h3>
 			<p>If you need to find out how to do something, you can check our <a href="http://midoribrowser.org/faqs/">Frequently Asked Questions</a>.</p>
 		</div>
 	</div>

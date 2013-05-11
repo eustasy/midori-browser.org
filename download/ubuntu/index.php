@@ -5,34 +5,43 @@
 <?php require '../../chunks/header.php'; ?>
 
 <div class="section group">
-	<div class="col span_3_of_4">
+	<div class="col span_3_of_5">
 		<div class="bubble standard prefered">
 			<h2>Install Midori in Ubuntu</h2>
 			<div class="section group">
-				<div class="col span_1_of_2">
-					<p><img src="http://midoribrowser.org/images/sites-launchpad.png" class="sixtyfour floatleft"> By adding the repository <a href="https://launchpad.net/~midori/+archive/ppa">ppa:midori/ppa</a>, you will be kept up to date with the latest and greatest versions of Midori.</p>
-				</div>
-				<div class="col span_1_of_2">
-					<p>Adding the repository is easy, you just</p>
-					<p>INSTRUCTIONS AND SCREENSHOTS</p>
-				</div>
+				<p class="important"><img src="http://midoribrowser.org/images/sites-launchpad.png" class="sixtyfour floatleft"> By adding the repository <a href="https://launchpad.net/~midori/+archive/ppa">ppa:midori/ppa</a>, you will be kept up to date with the latest and greatest versions of Midori.</p>
+				<p>Adding the repository is easy, you just</p>
+				<p>INSTRUCTIONS AND SCREENSHOTS</p>
 			</div>
-			<p class="nobottom">You can also do this with the follwing command:</p>
-			<input type="text" id="dynamic" value="sudo apt-add-repository ppa:midori/ppa && sudo apt-get update >/dev/null && sudo apt-get install midori" />
+			<p class="nobottom">You can also do this with the follwing command.</p>
+			<input type="text" id="dynamic" value="sudo apt-add-repository ppa:midori/ppa && sudo apt-get update -qq && sudo apt-get install midori" />
 		</div>
 	</div>
-	<div class="col span_1_of_4">
+	<div class="col span_2_of_5">
 		<div class="bubble standard">
 			<h3>Download .Debs</h3>
-			<p>If you want, you can just download files to install directly into Ubuntu.</p>
-			<h5 class="center"><a href="http://midoribrowser.org/downloads/midori_0.4.9-1_i386.deb">32 bit</a> and <a href="http://midoribrowser.org/downloads/midori_0.4.9-1_amd64.deb">64 bit</a></h5>
-			<h6>deb &nbsp;&middot;&nbsp; 0.4.9-1 &nbsp;&middot;&nbsp; 1.4M</h6>
-		</div>
-		<div class="bubble"></div>
-		<div class="bubble warning">
-			<h4>Install Direct</h4>
-			<p>You can also <a href="https://apps.ubuntu.com/cat/applications/midori/">install Midori</a> in Ubuntu without installing any external packages or adding extra sources, but the application will be almost always out-of-date.</p>
-		</div>
+			<p class="important">If you want, you can just download files to install directly into Ubuntu.</p>
+			<p>This is less secure than adding the Repository, as very few new versions are shipped in the official Ubuntu repositories that you already use. Instead, you will have to manually download and install new updates from this site as they become available.</p>
+			<div class="section group">
+
+<?php
+
+include '../process.php';
+
+foreach ($xml->download as $download) {
+	if ($download->extension == '.deb') {
+		echo '<div class="col span_1_of_2">';
+		echo '<h5><a href="' . $download->location . '">' . $download->architecture . '</a></h5>';
+		$size = $download->size/1048576;
+		$package = ltrim($download->extension, '.');
+		echo '<h6>' . $package . ' &nbsp;&middot;&nbsp; ' . $download->version . ' &nbsp;&middot;&nbsp; ' . round($size, 1) . ' MB</h6>';
+		echo '</div>';
+	}
+}
+
+?>
+			</div>
+		</div>	
 	</div>
 </div>
 
@@ -44,7 +53,7 @@
 	</div>
 	<div class="col span_1_of_2">
 		<div class="bubble standard">
-			<h3><img src="http://midoribrowser.org/images/feature-help.png" class="sixtyfour floatleft"> Help</h3>
+			<h3 class="withimg64"><img src="http://midoribrowser.org/images/feature-help.png" class="sixtyfour floatleft">Help</h3>
 			<p>If you need to find out how to do something, you can check our <a href="http://midoribrowser.org/faqs/">Frequently Asked Questions</a>.</p>
 		</div>
 	</div>
