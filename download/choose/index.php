@@ -36,8 +36,6 @@ foreach ($xml->download as $download) {
 				<h2>Portable</h2>
 <?php
 
-include '../process.php';
-
 echo '<h6 class="right">';
 
 foreach ($xml->download as $download) {

@@ -23,7 +23,7 @@ if ($ua) { if ($windows) { // Windows ?>
 	<div class="col span_1_of_2">
 <?php
 
-include '../process.php';
+include 'process.php';
 
 foreach ($xml->download as $download) {
 	if ($download->extension == '.exe') {
@@ -48,8 +48,6 @@ foreach ($xml->download as $download) {
 			<div class="bubble system portable prefered">
 				<h2>Portable</h2>
 <?php
-
-include '../process.php';
 
 echo '<h6 class="right">';
 
