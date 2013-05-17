@@ -13,7 +13,7 @@ body {
 
 #headcontainer {
 	margin: 0;
-	background: rgba(12,48,83,1);
+	background: rgb(12,48,83);
 	background: -moz-linear-gradient(left, rgba(12,48,83,1) 0%, rgba(22,70,117,1) 25%, rgba(12,48,83,1) 100%);
 	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(12,48,83,1)), color-stop(25%, rgba(22,70,117,1)), color-stop(100%, rgba(12,48,83,1)));
 	background: -webkit-linear-gradient(left, rgba(12,48,83,1) 0%, rgba(22,70,117,1) 25%, rgba(12,48,83,1) 100%);
@@ -42,7 +42,7 @@ header {
 
 #footercontainer {
 	border: none;
-	background: rgba(12,48,83,1);
+	background: rgb(12,48,83);
 	background: -moz-linear-gradient(left, rgba(12,48,83,1) 0%, rgba(22,70,117,1) 25%, rgba(12,48,83,1) 100%);
 	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(12,48,83,1)), color-stop(25%, rgba(22,70,117,1)), color-stop(100%, rgba(12,48,83,1)));
 	background: -webkit-linear-gradient(left, rgba(12,48,83,1) 0%, rgba(22,70,117,1) 25%, rgba(12,48,83,1) 100%);
@@ -66,15 +66,6 @@ h1 {
 	text-align: left;
 	text-decoration: none !important;
 	}
-
-@media only screen and (max-width: 799px) {
-	h1 { padding: 0; }
-	.tag { margin: -18px 0 0 0; }
-	}
-@media only screen and (max-width: 599px) {
-	h1 { background-image: none; }
-	}
-
 
 h2,h3,h4,h5,h6 {
 	margin: 0;
@@ -350,7 +341,7 @@ code {
 	}
 .source, .choose {
 	-webkit-border-radius: 3px;
-	background: rgba(22,70,117,1);
+	background: rgb(22,70,117);
 	border-radius: 3px;
 	color: #eeeeee;
 	text-align: center;
@@ -358,7 +349,7 @@ code {
 	}
 .standard {
 	-webkit-border-radius: 3px;
-	background: rgba(22,70,117,1);
+	background: rgb(22,70,117);
 	border-radius: 3px;
 	color: #eeeeee;
 	text-align: center;
@@ -370,7 +361,7 @@ code {
 	color: #eeeeee;
 	text-align: center;
 	vertical-align: middle;
-	background-color: rgba(22,70,117,1);
+	background-color: rgb(22,70,117);
 	background-position: 10px center;
 	background-repeat: no-repeat;
 	}
@@ -498,6 +489,17 @@ footer .floatright { margin: 0 0 0 1%; }
 	margin: 0;
 	padding: 0;
 	}
+
+/* Responsive */
+@media only screen and (max-width: 799px) {
+	h1 { padding: 0; background-image: none; }
+	.tag { margin: -18px 0 0 0; }
+	}
+@media only screen and (max-width: 599px) {
+	.nav .col.span_1_of_5 { width: 100% !important; }
+	}
+
+
 
 html {
 	-ms-text-size-adjust: 100%;
