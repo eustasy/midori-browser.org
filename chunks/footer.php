@@ -14,14 +14,11 @@
 			<p class="center none">An <a href="http://www.eustasy.org/classes/openshout/">OpenShout</a> site.</p>
 		</div>
 		<div class="col span_1_of_8">
-			<h4>made with</h4>
-			<ul>
-				<li> &nbsp;·&nbsp; <a href="http://www.eustasy.org/servers/primary/#digital-ocean" title="Linux VPS Hosting">Digital Ocean</a></li>
-				<li> &nbsp;·&nbsp; <a href="http://www.eustasy.org/servers/primary/#ubuntu" title="Desktop and Server Operating System">Ubuntu</a></li>
-				<li> &nbsp;·&nbsp; <a href="http://www.eustasy.org/servers/primary/#apache" title="Modern HTTP Server">Apache</a></li>
-				<li> &nbsp;·&nbsp; <a href="http://www.eustasy.org/servers/primary/#mysql" title="The world's most popular open source database">MySQL</a></li>
-				<li> &nbsp;·&nbsp; <a href="http://www.eustasy.org/servers/primary/#php" title="Widely-used general-purpose scripting language">PHP</a></li>
-			</ul>
+			<h4></h4>
+			<a href="https://www.digitalocean.com/?refcode=eca8f5e3972c" title="Linux VPS Hosting"><img src="http://midoribrowser.org/images/footer/digitalocean-badge.png" title="Linux VPS Hosting" alt="Hosted by Digital Ocean - Linux VPS Hosting"></a>
+			<div class="clear"><br></div>
+			<p>with help from</p>
+			<a href="https://www.cloudflare.com/" title="The web performance &amp; security company"><img src="http://midoribrowser.org/images/footer/cloudflare-badge.png" title="The web performance &amp; security company" alt="Cloudflare - The web performance &amp; security company"></a>
 		</div>
 		<div class="col span_1_of_8">
 			<h4>legal</h4>

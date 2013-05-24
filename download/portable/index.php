@@ -12,7 +12,7 @@
 			<div class="section group">
 <?php
 
-include '../process.php';
+include '../../chunks/process.php';
 
 foreach ($xml->download as $download) {
 	if ($download->extension == '.7z') {

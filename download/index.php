@@ -23,7 +23,7 @@ if ($ua) { if ($windows) { // Windows ?>
 	<div class="col span_1_of_2">
 <?php
 
-include 'process.php';
+include '../chunks/process.php';
 
 foreach ($xml->download as $download) {
 	if ($download->extension == '.exe') {
@@ -195,7 +195,7 @@ echo ' MB</h6>';
 			<p class="right">Continue at your peril.</p>
 		</div>
 	</div>
-<?php require 'fallback.php' ?>
+<?php require '../chunks/fallback.php' ?>
 
 
 
@@ -210,7 +210,7 @@ echo ' MB</h6>';
 			<p class="right">Continue at your peril.</p>
 		</div>
 	</div>
-<?php require 'fallback.php';
+<?php require '../chunks/fallback.php';
 
 } } ?>
 

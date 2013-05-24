@@ -1,8 +1,8 @@
-<?php require '../chunks/doctype.php'; ?>
+<?php include '../chunks/doctype.php'; ?>
 
 	<title>About &nbsp;&middot;&nbsp; Midori &nbsp;&middot;&nbsp; A lightweight, fast, and free web browser.</title>
 
-	<?php require '../chunks/header.php'; ?>
+	<?php include '../chunks/header.php'; ?>
 
 
 
@@ -33,4 +33,4 @@
 
 
 
-<?php require '../chunks/footer.php'; ?>
+<?php include '../chunks/footer.php'; ?>

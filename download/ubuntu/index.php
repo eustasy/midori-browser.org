@@ -26,7 +26,7 @@
 
 <?php
 
-include '../process.php';
+include '../../chunks/process.php';
 
 foreach ($xml->download as $download) {
 	if ($download->extension == '.deb') {

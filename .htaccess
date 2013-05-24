@@ -1,3 +1,5 @@
+ErrorDocument 404 /errors/404.php
+
 php_value output_buffering On
 
 # BEGIN GZIP

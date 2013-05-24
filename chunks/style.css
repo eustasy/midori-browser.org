@@ -1,5 +1,11 @@
 body {
-	background: #EFEFEF;
+	background: rgb(12,48,83);
+	background: -moz-linear-gradient(left, rgba(12,48,83,1) 0%, rgba(22,70,117,1) 25%, rgba(12,48,83,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(12,48,83,1)), color-stop(25%, rgba(22,70,117,1)), color-stop(100%, rgba(12,48,83,1)));
+	background: -webkit-linear-gradient(left, rgba(12,48,83,1) 0%, rgba(22,70,117,1) 25%, rgba(12,48,83,1) 100%);
+	background: -o-linear-gradient(left, rgba(12,48,83,1) 0%, rgba(22,70,117,1) 25%, rgba(12,48,83,1) 100%);
+	background: -ms-linear-gradient(left, rgba(12,48,83,1) 0%, rgba(22,70,117,1) 25%, rgba(12,48,83,1) 100%);
+	background: linear-gradient(to right, rgba(12,48,83,1) 0%, rgba(22,70,117,1) 25%, rgba(12,48,83,1) 100%);
 	bottom: 0;
 	color: #333333;
 	font: 400 1em/1.4 'Droid Sans', Sans;
@@ -13,60 +19,42 @@ body {
 
 #headcontainer {
 	margin: 0;
-	background: rgb(12,48,83);
-	background: -moz-linear-gradient(left, rgba(12,48,83,1) 0%, rgba(22,70,117,1) 25%, rgba(12,48,83,1) 100%);
-	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(12,48,83,1)), color-stop(25%, rgba(22,70,117,1)), color-stop(100%, rgba(12,48,83,1)));
-	background: -webkit-linear-gradient(left, rgba(12,48,83,1) 0%, rgba(22,70,117,1) 25%, rgba(12,48,83,1) 100%);
-	background: -o-linear-gradient(left, rgba(12,48,83,1) 0%, rgba(22,70,117,1) 25%, rgba(12,48,83,1) 100%);
-	background: -ms-linear-gradient(left, rgba(12,48,83,1) 0%, rgba(22,70,117,1) 25%, rgba(12,48,83,1) 100%);
-	background: linear-gradient(to right, rgba(12,48,83,1) 0%, rgba(22,70,117,1) 25%, rgba(12,48,83,1) 100%);
 	}
 
 header {
 	color: #000;
-	padding: 1% 0 0;
+	padding: 0;
 	text-align: center;
-	}
-
-.title {
-	display: inline-block;
-	float: left;
+	margin: 1% auto !important;
 	}
 
 .maincontentcontainer, #maincontentcontainer {
-	-webkit-box-shadow:  0px 4px 15px 0px rgba(0, 0, 0, 0.7);
-	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.7);
+	background: #eeeeee;
 	padding: 3% 0 5%;
 	}
 #maincontent, .maincontent { padding: 0; }
 
 #footercontainer {
 	border: none;
-	background: rgb(12,48,83);
-	background: -moz-linear-gradient(left, rgba(12,48,83,1) 0%, rgba(22,70,117,1) 25%, rgba(12,48,83,1) 100%);
-	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(12,48,83,1)), color-stop(25%, rgba(22,70,117,1)), color-stop(100%, rgba(12,48,83,1)));
-	background: -webkit-linear-gradient(left, rgba(12,48,83,1) 0%, rgba(22,70,117,1) 25%, rgba(12,48,83,1) 100%);
-	background: -o-linear-gradient(left, rgba(12,48,83,1) 0%, rgba(22,70,117,1) 25%, rgba(12,48,83,1) 100%);
-	background: -ms-linear-gradient(left, rgba(12,48,83,1) 0%, rgba(22,70,117,1) 25%, rgba(12,48,83,1) 100%);
-	background: linear-gradient(to right, rgba(12,48,83,1) 0%, rgba(22,70,117,1) 25%, rgba(12,48,83,1) 100%);
+	background: rgba(0,0,0,0.1);
 	}
 
-h1 {
-	background: url('http://midoribrowser.org/images/midori.png') left center no-repeat transparent;
+.h1 {
 	color: #FEFEFE;
-	font: 200 107px/128px Raleway, Sans;
+	font-weight: 200;
+	font-family: Raleway, Sans;
+	line-height: 1em;
 	margin: 0;
-	padding: 0 0 0 128px;
+	padding: 0; 
 	text-align: left;
 	text-decoration: none !important;
 	}
 .tag {
 	color: #b1df3f;
-	margin: -18px 0 0 133px;
+	margin: -1% 0 0 -1%;
 	text-align: left;
 	text-decoration: none !important;
 	}
-
 h2,h3,h4,h5,h6 {
 	margin: 0;
 	text-align: center;
@@ -113,7 +101,7 @@ a:hover,a:active {
 	-moz-transition: all 500ms ease-in-out;
 	-o-transition: all 500ms ease-in-out;
 	-webkit-transition: all 500ms ease-in-out;
-	color: #69ba2d;
+	color: #b1df3f;
 	outline: 0;
 	transition: all 500ms ease-in-out;
 	}
@@ -136,7 +124,7 @@ a:focus { outline: none; }
 
 .donate .amount {
 	display: block;
-	width: 90%;
+	width: 100%;
 	margin: 0 auto;
 	border: 0;
 	outline: none;
@@ -168,15 +156,20 @@ a:focus { outline: none; }
 	-o-transition: all .25s;
 	transition: all .25s;
 	}
-header .donate .amount { background: #cccccc url(dollar.png) 16px center no-repeat; background-color: rgba(255,255,255,0.5); }
+header .donate .amount,
+.home .donate .amount { background: #cccccc url(http://midoribrowser.org/images/dollar.png) 16px center no-repeat; background-color: rgba(255,255,255,0.5); }
 header .donate:hover .amount,
 header .donate:focus .amount,
 header .donate .amount:hover,
-header .donate .amount:focus { background: #dddddd url(dollarhover.png) 16px center no-repeat; background-color: rgba(255,255,255,0.7); }
+header .donate .amount:focus,	
+.home .donate:hover .amount,
+.home .donate:focus .amount,
+.home .donate .amount:hover,
+.home .donate .amount:focus { background: #dddddd url(http://midoribrowser.org/images/dollar-hover.png) 16px center no-repeat; background-color: rgba(255,255,255,0.7)galg; }
 
 .donate .submit {
 	display: block;
-	width: 90%;
+	width: 100%;
 	margin: 0 auto;
 	border: 0;
 	outline: none;
@@ -203,12 +196,14 @@ header .donate .amount:focus { background: #dddddd url(dollarhover.png) 16px cen
 	color: #222222;
 	cursor: pointer;
 	}
-header .donate .submit { color: #efefef; }
-header .donate:hover .submit { color: #eeeeee; }
+header .donate .submit,
+.home .donate .submit { color: #efefef; }
+header .donate:hover .submit,
+.home .donate:hover .submit { color: #eeeeee; }
 
 .donate p {
 	display: block;
-	width: 90%;
+	width: 100%;
 	margin: .3em auto;
 	border: 0;
 	outline: none;
@@ -237,31 +232,174 @@ header .donate:hover .submit { color: #eeeeee; }
 
 
 
-/* Navigation */
-.nav { margin: 2% 0 0 !important; overflow: hidden; }
-.nav .col { margin-bottom: 0; }
-.nav .col.span_1_of_5 { width: 18.72% !important; }
-.nav a {
-	-webkit-border-radius: 3px 3px 0 0;
-	background: #cccccc;
-	background: rgba(255,255,255,0.5);
-	border-radius: 3px 3px 0 0;
-	color: #333333;
-	display: inline-block;
-	padding: 5% 5% 3%;
+/* Home */
+.home #maincontentcontainer { padding: 0; }
+section {
 	width: 80%;
+	background: #dddddd;
+	padding: 1% 10%;
+	}
+section.clear { background: transparent; }
+@media only screen and (min-width: 1440px) { section { width: 70%; padding: 1% 15%; } }
+@media only screen and (max-width: 1024px) { section { width: 93.75%; padding: 1% 3.125%; } }
+
+.screenshot img, img.screenshot {
+	max-width: 96%;
+	float: right;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	margin: 2%;
+	}
+.nobottom {
+	padding-bottom: 0;
+	margin-bottom: 0;
+	}
+
+
+.full {
+	display: table;
+	width: 102%;
+	margin: 0 -1%;
+	}
+.full .left {
+	width: 684px;
+	height: 150px;
+	background: transparent url('http://midoribrowser.org/images/full/left.png') 0 0 no-repeat;
+	display: table-cell;
+	}
+.full .center {
+	width: auto;
+	height: 150px;
+	background: transparent url('http://midoribrowser.org/images/full/center.png') 0 0 repeat-x;
+	display: block;
+	}
+.full .right {
+	width: 69px;
+	height: 150px;
+	background: transparent url('http://midoribrowser.org/images/full/right.png') 0 0 no-repeat;
+	display: table-cell;
+	}
+
+
+
+.buttons {
+	font-size: 1.2em;
+	margin: 15% 0 .3em 0;
+	}
+.button {
+	background: rgb(177,223,63);
+	background: rgba(177,223,63,0.7);
+	color: #fafafa;
+	padding: 3% 5%;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	display: inline-block;
+	font: 400 1em Raleway;
+	text-align: center;
+	margin: 0;
+	}
+.button:hover {
+	color: #eeeeee;
+	background: rgba(177,223,63,0.5);
+	}
+.features {
+	background: transparent;
+	color: #fafafa;
+	border: 1px solid #cccccc;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	display: inline-block;
+	font: 400 1em Raleway;
+	text-align: center;
+	padding: 3% 5%;
+	margin: 0 5% 0 0;
+	}
+.features:hover {
+	background: rgba(0,0,0,0.1);
+	color: #ffffff;
+	}
+
+.news .post { clear: both; }
+.news h4 { margin: 2em 0 .5em; }
+.news p a:last-child { float: right; }
+
+.home h2 { margin: 15% 0 3%; }
+.home .donate {
+	margin: 0 auto;
+	float: none;
+	max-width: 200px;
+	}
+
+
+
+/* Wiki Imports */
+.dokuwiki h1 {
+	font: 400 1.5em/1.3 Raleway, Sans;
+	margin: 2em 0 .5em;
+	}
+.dokuwiki h2 { font: 400 1.2em/1.2 Raleway, Sans; }
+#dw__toc {
+	float: right;
+	margin: 0 0 0 3%;
+	background: #ddd;
+	padding: 1% 2% 1% 1%;
+	}
+#dw__toc li { list-style: none; }
+.dokuwiki code,
+.dokuwiki pre.code,
+.dokuwiki code,
+.dokuwiki .code {
+	margin: 1% 0;
+	padding: 1%;
+	background: rgba(0,0,0,0.1);
+	font: 400 .8em/2 'Droid Sans Mono';
+	display: inline-block;
+	}
+
+ 
+
+/* Navigation */
+
+.navwrap {
+	width: 100%;
+	color: #fafafa;
+	text-align: center;
+	background: rgba(0,0,0,0.1);
+	}
+
+nav {
+	width: 80%;
+	margin: 0 auto !important;
+	}
+@media only screen and (min-width: 1440px) { nav { width: 70%; } }
+@media only screen and (max-width: 1024px) { nav { width: 93.75%; } }
+
+nav .col {
+	margin-bottom: 0;
+	margin-top: 0;
+	}
+
+nav a {
+	background: rgba(0,0,0,0);
+	color: #fafafa;
+	display: inline-block;
+	padding: 1.4% 0;
 	font-size: 1em;
 	}
-.nav a.down {
-	background: rgba(255,255,255,0.7);
+
+nav a:hover,
+nav a.current,
+nav:hover a:hover.current {
+	background: rgba(0,0,0,0.1);
+	color: #fafafa;
 	}
-.nav:hover a.current {
-	background: rgba(255,255,255,0.5);
-	}
-.nav a:hover,.nav a.current,.nav:hover a:hover.current, .nav a:hover.down {
-	background: #EFEFEF;
-	color: #222222;
-	}
+
+nav:hover a.current { background: rgba(0,0,0,0); }
+
+nav a.down { background: rgba(177,223,63,0.5); }
+nav a:hover.down { background: rgba(177,223,63,0.7); }
+
+
 
 .left { text-align: left !important; }
 .center { text-align: center !important; }
@@ -482,6 +620,8 @@ footer a:hover img {
 footer .floatleft { margin: 0 1% 0 0; }
 footer .floatright { margin: 0 0 0 1%; }
 
+.license img { float: left; }
+
 .section { margin: 3% 0; }
 .clearfix { zoom: 1; }
 .clear,.breaker { clear: both; }
@@ -496,7 +636,7 @@ footer .floatright { margin: 0 0 0 1%; }
 	.tag { margin: -18px 0 0 0; }
 	}
 @media only screen and (max-width: 599px) {
-	.nav .col.span_1_of_5 { width: 100% !important; }
+	nav .col.span_1_of_5 { width: 100% !important; }
 	}
 
 

@@ -19,7 +19,7 @@
 
 <div class="section group">
 	<div class="col span_1_of_2">
-		<div class="bubble elementary">
+		<div class="bubble system elementary">
 			<h2>elementary</h2>
 		</div>
 	</div><div class="col span_1_of_2">

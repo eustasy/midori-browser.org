@@ -11,6 +11,10 @@
 	<link rel="stylesheet" media="all" href="http://www.eustasy.org/css/col.min.css">
 	<link rel="stylesheet" media="all" href="http://midoribrowser.org/chunks/style.css">
 
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+	<script src="http://midoribrowser.org/chunks/jquery.bigtext.js"></script>
+
 	<script type="text/javascript">
 	var _gaq = _gaq || [];
 	_gaq.push(['_setAccount', 'UA-28932148-9']);
@@ -30,22 +34,23 @@
 
 <div id="wrapper">
 
+
+
 <div id="headcontainer">
-	<header>
-
-
-
-		<div class="title">
-			<a href="http://midoribrowser.org/" title="Midori, a lightweight, fast, and free web browser.">
-				<h1>Midori</h1>
-				<div class="tag">a lightweight, fast, and free web browser</div>
-			</a>
+	<header class="section group">
+		<div class="col span_1_of_6">
+			<img src="http://midoribrowser.org/images/midori.png" alt="">
 		</div>
-
-
-
-		<div class="col span_1_of_5 donate">
-
+		<div class="col span_1_of_3">
+			<a href="http://midoribrowser.org/" title="Midori, a lightweight, fast, and free web browser.">
+				<div id="bigtext" class="bigtext">
+					<div class="h1 bigtext-line0">Midori</div>
+					<div class="tag bigtext-line1">a lightweight, fast, and free web browser</div>
+				</div>
+			</a>
+			<script>$("#bigtext").bigtext();</script>
+		</div>
+		<div class="col span_1_of_6 donate">
 			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 
 				<input type="hidden" name="cmd" value="_xclick">
@@ -72,37 +77,30 @@
 
 			</form>
 
-			<p><a href="http://midoribrowser.org/donate">Donate in another Currency</a></p>
+			<p><a href="http://midoribrowser.org/donate/">Other Currencies</a></p>
 
 		</div>
-
-
-		<?php
-		$unsafe_requested = str_replace("'", "", $_SERVER['REQUEST_URI']);
-		$location = str_replace('"', "", $unsafe_requested);
-		?>
-		<div class="section group nav">
-			<div class="col span_1_of_5">
-				<a href="http://midoribrowser.org/features/" title="Features of Midori"<?php if ( $location == "/features/" ) { echo 'class="current"'; } ?>>Features</a>
-			</div>
-			<div class="col span_1_of_5">
-				<a href="http://midoribrowser.org/reviews/" title="Reviews of Midori"<?php if ( $location == "/reviews/" ) { echo 'class="current"'; } ?>>Reviews</a>
-			</div>
-			<div class="col span_1_of_5">
-				<a href="http://midoribrowser.org/contribute/" title="Contribute to Midori"<?php if ( $location == "/contribute/" ) { echo 'class="current"'; } ?>>Contribute</a>
-			</div>
-			<div class="col span_1_of_5">
-				<a href="http://midoribrowser.org/faqs/" title="Questions Frequently Asked about DeVeDe."<?php if ( $location == "/faqs/" ) { echo 'class="current"'; } ?>>FAQs</a>
-			</div>
-			<div class="col span_1_of_5">
-				<a href="http://midoribrowser.org/download/" title="Download Midori" class="<?php if ( $location == "/download/" ) { echo 'current '; } ?>down">Download</a>
-			</div>
-		</div>
-
-
 
 	</header>
 </div>
+
+
+
+<?php
+	$unsafe_requested = str_replace("'", "", $_SERVER['REQUEST_URI']);
+	$location = str_replace('"', "", $unsafe_requested);
+?>
+<div class="navwrap">
+	<nav class="section group">
+		<a href="http://midoribrowser.org/features/" title="Features of Midori" class="col span_1_of_6<?php if ( $location == "/features/" ) { echo ' current'; } ?>">Features</a>
+		<a href="http://wiki.xfce.org/start?do=search&amp;id=midori" title="Wiki Articles for Midori" class="col span_1_of_6">Wiki</a>
+		<a href="http://midoribrowser.org/faqs/" title="Questions Frequently Asked about DeVeDe." class="col span_1_of_6<?php if ( $location == "/faqs/" ) { echo ' current'; } ?>">FAQs</a>
+		<a href="http://midoribrowser.org/news/" title="News about Midori"  class="col span_1_of_6<?php if ( $location == "/news/" ) { echo ' current'; } ?>">News</a>
+		<a href="http://midoribrowser.org/contribute/" title="Contribute to Midori"  class="col span_1_of_6<?php if ( $location == "/contribute/" ) { echo ' current'; } ?>">Contribute</a>
+		<a href="http://midoribrowser.org/download/" title="Download Midori"  class="col span_1_of_6<?php if ( $location == "/download/" ) { echo ' current'; } ?> down">Download</a>
+	</nav>
+</div>
+
 
 <div id="maincontentcontainer">
 	<div class="maincontent">
