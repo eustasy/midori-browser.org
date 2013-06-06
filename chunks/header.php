@@ -92,8 +92,8 @@
 ?>
 <div class="navwrap">
 	<nav class="section group">
+		<a href="http://midoribrowser.org/about/" title="About Midori" class="col span_1_of_6<?php if ( $location == "/about/" ) { echo ' current'; } ?>">About</a>
 		<a href="http://midoribrowser.org/features/" title="Features of Midori" class="col span_1_of_6<?php if ( $location == "/features/" ) { echo ' current'; } ?>">Features</a>
-		<a href="http://wiki.xfce.org/start?do=search&amp;id=midori" title="Wiki Articles for Midori" class="col span_1_of_6">Wiki</a>
 		<a href="http://midoribrowser.org/faqs/" title="Questions Frequently Asked about DeVeDe." class="col span_1_of_6<?php if ( $location == "/faqs/" ) { echo ' current'; } ?>">FAQs</a>
 		<a href="http://midoribrowser.org/news/" title="News about Midori"  class="col span_1_of_6<?php if ( $location == "/news/" ) { echo ' current'; } ?>">News</a>
 		<a href="http://midoribrowser.org/contribute/" title="Contribute to Midori"  class="col span_1_of_6<?php if ( $location == "/contribute/" ) { echo ' current'; } ?>">Contribute</a>

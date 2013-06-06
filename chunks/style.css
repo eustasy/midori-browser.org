@@ -87,6 +87,7 @@ p,ol,ul,dl,address {
 	font-size: 0.9em;
 	margin-bottom: 1em;
 	text-align: justify;
+	list-style: none;
 }
 
 a {
@@ -321,8 +322,8 @@ section.clear { background: transparent; }
 }
 
 .news .post { clear: both; }
-.news h4 { margin: 2em 0 .5em; }
-.news p a:last-child { float: right; }
+.bubble .news h4 { margin: 2em 0 .5em; }
+.bubble .news .post:first-child h4 { margin: 1em 0 .5em; }
 
 .home h2 { margin: 15% 0 3%; }
 .home .donate {

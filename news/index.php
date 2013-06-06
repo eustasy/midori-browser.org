@@ -6,11 +6,11 @@
 
 
 
+<h2>News</h2>
 <div class="section group">
 	<div class="col span_1_of_5"></div>
 	<div class="col span_3_of_5">
 		<div class="bubble standard">
-			<h2>News</h2>
 			<?php include '../chunks/news.php'; ?>
 		</div>
 	</div>
