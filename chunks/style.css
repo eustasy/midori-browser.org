@@ -340,13 +340,19 @@ section.clear { background: transparent; }
 	margin: 2em 0 .5em;
 }
 .dokuwiki h2 { font: 400 1.2em/1.2 Raleway, Sans; }
+
 #dw__toc {
 	float: right;
 	margin: 0 0 0 3%;
+	width: 32.2%;
+	padding: 1% 0 0;
 	background: #ddd;
-	padding: 1% 2% 1% 1%;
 }
-#dw__toc li { list-style: none; }
+#dw__toc ul {
+    margin: 0 10px;
+    padding: 3% 5% 2%;
+}
+
 .dokuwiki code,
 .dokuwiki pre.code,
 .dokuwiki code,
