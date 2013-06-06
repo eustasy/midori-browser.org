@@ -547,12 +547,15 @@ code {
 .span_1_of_1 { width: 100%; }
 
 ul,ol {
-	margin: 0 0 1.5em;
-	padding: 0 0 0 24px;
+	margin: 0 0 .5em;
+	padding: 3% 10%;
 }
 li {
 	margin: 10px 0;
 	padding: 0;
+}
+li:before {
+    content: "· ";
 }
 li ul,li ol {
 	font-size: 1em;
@@ -608,6 +611,9 @@ footer li {
 	list-style: none;
 	margin: 0;
 	padding: 1% 0;
+}
+footer li:before {
+    content: "";
 }
 
 footer a img {
