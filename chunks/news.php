@@ -1,6 +1,6 @@
 <?php
 
-$url = 'http://twotoasts.de/index.php/feed/';
+$url = 'http://www.twotoasts.de/index.php/category/2-midori/feed/';
 
 $xml = simplexml_load_file($url);
 
@@ -16,7 +16,7 @@ if ($xml) {
 		echo '<p>' . $item->description . '</p>';
 		echo '</div>';
 
-		if ( $location == "/" ) {
+		if ( $location == "" ) {
 			$news = $news+1;
 			if ($news == 3) break;
 		} else {
