@@ -6,24 +6,25 @@ $xml = simplexml_load_file($url);
 
 echo '<div class="news">';
 
-$news = 0;
+$i = 0;
 
 if ($xml) {
-	foreach ($xml->channel->item as $item) {
-
-		echo '<div class="post">';
-		echo '<h4><a href="' . $item->link . '">' . $item->title . '</a></h4>';
-		echo '<p>' . $item->description . '</p>';
-		echo '</div>';
-
-		if ( $location == "" ) {
-			$news = $news+1;
-			if ($news == 3) break;
-		} else {
-			$news = $news+1;
-			if ($news == 7) break;
+	if ( $location === '/' ) {
+		foreach ($xml->channel->item as $item) {
+			if (++$i > 3) break;
+			echo '<div class="post">';
+			echo '<h4><a href="' . $item->link . '">' . $item->title . '</a></h4>';
+			echo '<p>' . $item->description . '</p>';
+			echo '</div>';
 		}
-
+	} else {
+		foreach ($xml->channel->item as $item) {
+			if (++$i > 5) break;
+			echo '<div class="post">';
+			echo '<h4><a href="' . $item->link . '">' . $item->title . '</a></h4>';
+			echo '<p>' . $item->description . '</p>';
+			echo '</div>';
+		}
 	}
 } else {
 	echo '<div class="post">';
