@@ -1,8 +1,8 @@
-<?php include '../chunks/doctype.php'; ?>
+<?php include 'chunks/doctype.php'; ?>
 
 	<title>Page not found &nbsp;&middot;&nbsp; Midori &nbsp;&middot;&nbsp; A lightweight, fast, and free web browser.</title>
 
-	<?php include '../chunks/header.php'; ?>
+	<?php include 'chunks/header.php'; ?>
 
 <h2><span style="color:#999">404 Error:</span> Page not found.</h2>
 <h3>Sorry about that, here's a picture of a kitten!</h3>
@@ -12,4 +12,4 @@
 <h4>Which way do you go? That depends a good deal on where you want to get to.</h4>
 <h5>You should probably try clicking one of the links up the top though. Above the kitten.</h5>
 
-<?php include '../chunks/footer.php'; ?>
+<?php include 'chunks/footer.php'; ?>
