@@ -474,7 +474,7 @@ code {
 	text-align: center;
 }
 .bubble p { margin: 2% 3% 3%; }
-.bubble.system h2,.bubble.system h3,.bubble.system h4 { margin: 3% 0 3% 100px; }
+.bubble.system h2,.bubble.system h3,.bubble.system h4 { margin: 3% 0 3% 32px; }
 .bubble.system p { margin: 2% 100px; }
 .bubble a { color: #bdf48f; }
 .bubble a:hover,.bubble a:active { color: #9eda60; }
