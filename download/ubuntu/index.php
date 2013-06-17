@@ -9,7 +9,7 @@
 		<div class="bubble standard">
 			<h2>Install Midori in Ubuntu</h2>
 			<div class="section group">
-				<p class="important"><img src="http://midoribrowser.org/images/sites-launchpad.png" class="sixtyfour floatleft"> By adding the repository <a href="https://launchpad.net/~midori/+archive/ppa">ppa:midori/ppa</a>, you will be kept up to date with the latest and greatest versions of Midori.</p>
+				<p class="important"><img src="<?php echo $home; ?>/images/sites-launchpad.png" class="sixtyfour floatleft"> By adding the repository <a href="https://launchpad.net/~midori/+archive/ppa">ppa:midori/ppa</a>, you will be kept up to date with the latest and greatest versions of Midori.</p>
 				<p>Adding the repository is easy, you just</p>
 				<p>INSTRUCTIONS AND SCREENSHOTS</p>
 			</div>
@@ -41,7 +41,7 @@ foreach ($xml->download as $download) {
 
 ?>
 			</div>
-		</div>	
+		</div>
 	</div>
 </div>
 
@@ -53,8 +53,8 @@ foreach ($xml->download as $download) {
 	</div>
 	<div class="col span_1_of_2">
 		<div class="bubble standard">
-			<h3 class="withimg64"><img src="http://midoribrowser.org/images/feature-help.png" class="sixtyfour floatleft">Help</h3>
-			<p>If you need to find out how to do something, you can check our <a href="http://midoribrowser.org/faqs/">Frequently Asked Questions</a>.</p>
+			<h3 class="withimg64"><img src="<?php echo $home; ?>/images/feature-help.png" class="sixtyfour floatleft">Help</h3>
+			<p>If you need to find out how to do something, you can check our <a href="<?php echo $home; ?>/faqs/">Frequently Asked Questions</a>.</p>
 		</div>
 	</div>
 </div>

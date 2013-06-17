@@ -9,7 +9,7 @@
 <div class="section group">
 	<div class="col span_1_of_1">
 		<div class="bubble information">
-			<h2 class="withimg64"><img src="http://midoribrowser.org/images/action-love.png" class="sixtyfour floatleft"> We'd love it if you would consider donating.</h2>
+			<h2 class="withimg64"><img src="<?php echo $home; ?>/images/action-love.png" class="sixtyfour floatleft"> We'd love it if you would consider donating.</h2>
 			<h5>Midori is an open-source, non-profit project, but the developers still get hungry.</h5>
 		</div>
 	</div>
@@ -36,8 +36,8 @@
 
 			<input type="hidden" name="business" value="christian@twotoasts.de">
 			<input type="hidden" name="item_name" value="Midori Browser Donation">
-			<input type="hidden" name="return" value="http://midoribrowser.org/thanks">
-			<input type="hidden" name="cancel_return" value="http://midoribrowser.org/ohwell">
+			<input type="hidden" name="return" value="<?php echo $home; ?>/thanks">
+			<input type="hidden" name="cancel_return" value="<?php echo $home; ?>/ohwell">
 
 			<input type="hidden" name="bn" value="PP-BuyNowBF:btn_paynowCC_LG.gif:NonHosted">
 			<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
@@ -67,8 +67,8 @@
 
 			<input type="hidden" name="business" value="christian@twotoasts.de">
 			<input type="hidden" name="item_name" value="Midori Browser Donation">
-			<input type="hidden" name="return" value="http://midoribrowser.org/thanks">
-			<input type="hidden" name="cancel_return" value="http://midoribrowser.org/ohwell">
+			<input type="hidden" name="return" value="<?php echo $home; ?>/thanks">
+			<input type="hidden" name="cancel_return" value="<?php echo $home; ?>/ohwell">
 
 			<input type="hidden" name="bn" value="PP-BuyNowBF:btn_paynowCC_LG.gif:NonHosted">
 			<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
@@ -98,8 +98,8 @@
 
 			<input type="hidden" name="business" value="christian@twotoasts.de">
 			<input type="hidden" name="item_name" value="Midori Browser Donation">
-			<input type="hidden" name="return" value="http://midoribrowser.org/thanks">
-			<input type="hidden" name="cancel_return" value="http://midoribrowser.org/ohwell">
+			<input type="hidden" name="return" value="<?php echo $home; ?>/thanks">
+			<input type="hidden" name="cancel_return" value="<?php echo $home; ?>/ohwell">
 
 			<input type="hidden" name="bn" value="PP-BuyNowBF:btn_paynowCC_LG.gif:NonHosted">
 			<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
@@ -131,8 +131,8 @@
 
 			<input type="hidden" name="business" value="christian@twotoasts.de">
 			<input type="hidden" name="item_name" value="Midori Browser Donation">
-			<input type="hidden" name="return" value="http://midoribrowser.org/thanks">
-			<input type="hidden" name="cancel_return" value="http://midoribrowser.org/ohwell">
+			<input type="hidden" name="return" value="<?php echo $home; ?>/thanks">
+			<input type="hidden" name="cancel_return" value="<?php echo $home; ?>/ohwell">
 
 			<input type="hidden" name="bn" value="PP-BuyNowBF:btn_paynowCC_LG.gif:NonHosted">
 			<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
@@ -162,8 +162,8 @@
 
 			<input type="hidden" name="business" value="christian@twotoasts.de">
 			<input type="hidden" name="item_name" value="Midori Browser Donation">
-			<input type="hidden" name="return" value="http://midoribrowser.org/thanks">
-			<input type="hidden" name="cancel_return" value="http://midoribrowser.org/ohwell">
+			<input type="hidden" name="return" value="<?php echo $home; ?>/thanks">
+			<input type="hidden" name="cancel_return" value="<?php echo $home; ?>/ohwell">
 
 			<input type="hidden" name="bn" value="PP-BuyNowBF:btn_paynowCC_LG.gif:NonHosted">
 			<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
@@ -194,8 +194,8 @@
 
 			<input type="hidden" name="business" value="christian@twotoasts.de">
 			<input type="hidden" name="item_name" value="Midori Browser Donation">
-			<input type="hidden" name="return" value="http://midoribrowser.org/thanks">
-			<input type="hidden" name="cancel_return" value="http://midoribrowser.org/ohwell">
+			<input type="hidden" name="return" value="<?php echo $home; ?>/thanks">
+			<input type="hidden" name="cancel_return" value="<?php echo $home; ?>/ohwell">
 
 			<input type="hidden" name="bn" value="PP-BuyNowBF:btn_paynowCC_LG.gif:NonHosted">
 			<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
@@ -221,14 +221,14 @@
 
 <div class="section group">
 	<div class="col span_1_of_2">
-		<a href="http://midoribrowser.org/download/">
+		<a href="<?php echo $home; ?>/download/">
 			<div class="bubble system download">
 				<h3>download</h3>
 			</div>
 		</a>
 	</div>
 	<div class="col span_1_of_2">
-		<a href="http://midoribrowser.org/faqs/">
+		<a href="<?php echo $home; ?>/faqs/">
 			<div class="bubble system help">
 				<h3>help</h3>
 			</div>

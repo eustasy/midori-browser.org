@@ -12,7 +12,7 @@
 	<div class="col span_1_of_2">
 		<div class="bubble standard">
 			<h3>The Browser</h3>
-			<p><a href="http://midoribrowser.org/">Midori</a> is a lightweight, fast, and free web browser. It aligns well with the Xfce philosophy of making the most out of available resources. It is also the default browser of the beautiful <a href="http://elementaryos.org/">elementary os</a>.</p>
+			<p><a href="<?php echo $home; ?>/">Midori</a> is a lightweight, fast, and free web browser. It aligns well with the Xfce philosophy of making the most out of available resources. It is also the default browser of the beautiful <a href="http://elementaryos.org/">elementary os</a>.</p>
 			<div class="section group">
 				<div class="col span_1_of_2">
 					<ul>

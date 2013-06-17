@@ -1,19 +1,52 @@
+	<?php
+
+		$host = htmlspecialchars($_SERVER['HTTP_HOST'], ENT_QUOTES);
+		if ( $host === '192.168.1.6' ) {
+			$home = 'http://192.168.1.6/midoribrowser.org';
+		} else {
+			$home = 'http://' . $host;
+		}
+
+		$location = str_replace("'", "", $_SERVER['REQUEST_URI']);
+		$location = str_replace('"', "", $location);
+
+	?>
+
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta http-equiv="cleartype" content="on">
 	<meta name="HandheldFriendly" content="True">
 	<meta name="MobileOptimized" content="320">
 	<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 
-	<link rel="icon" href="http://midoribrowser.org/favicon.ico">
-	<link rel="shortcut icon" href="http://midoribrowser.org/favicon.ico">
+	<link rel="icon" href="<?php echo $home; ?>/favicon.ico">
+	<link rel="shortcut icon" href="<?php echo $home; ?>/favicon.ico">
 
-	<link rel="stylesheet" media="all" href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Sans+Mono|Raleway:400,200,300">
+	<link rel="stylesheet" media="all" href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Sans+Mono|Raleway:200,300,400">
 	<link rel="stylesheet" media="all" href="http://www.eustasy.org/css/col.min.css">
-	<link rel="stylesheet" media="all" href="http://midoribrowser.org/chunks/style.css">
+	<link rel="stylesheet" media="all" href="<?php echo $home; ?>/chunks/style.css">
 
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 
-	<script src="http://midoribrowser.org/chunks/jquery.bigtext.js"></script>
+	<script src="<?php echo $home; ?>/chunks/jquery.bigtext.js"></script>
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.pack.js"></script>
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.css" media="screen">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-media.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+		$('.fancybox-media').fancybox({
+			openEffect  : 'none',
+			closeEffect : 'none',
+			'padding'	: 0,
+			width		: 1072,
+			height		: 603,
+			helpers : {
+				media : {}
+			}
+		});
+	});
+	</script>
 
 	<script type="text/javascript">
 	var _gaq = _gaq || [];
@@ -39,10 +72,10 @@
 <div id="headcontainer">
 	<header class="section group">
 		<div class="col span_1_of_6">
-			<img src="http://midoribrowser.org/images/midori.png" alt="">
+			<img src="<?php echo $home; ?>/images/midori.png" alt="">
 		</div>
 		<div class="col span_1_of_3">
-			<a href="http://midoribrowser.org/" title="Midori, a lightweight, fast, and free web browser.">
+			<a href="<?php echo $home; ?>/" title="Midori, a lightweight, fast, and free web browser.">
 				<div id="bigtext" class="bigtext">
 					<div class="h1 bigtext-line0">Midori</div>
 					<div class="tag bigtext-line1">a lightweight, fast, and free web browser</div>
@@ -65,8 +98,8 @@
 
 				<input type="hidden" name="business" value="christian@twotoasts.de">
 				<input type="hidden" name="item_name" value="Midori Browser Donation">
-				<input type="hidden" name="return" value="http://midoribrowser.org/thanks">
-				<input type="hidden" name="cancel_return" value="http://midoribrowser.org/ohwell">
+				<input type="hidden" name="return" value="<?php echo $home; ?>/thanks">
+				<input type="hidden" name="cancel_return" value="<?php echo $home; ?>/ohwell">
 
 				<input type="hidden" name="bn" value="PP-BuyNowBF:btn_paynowCC_LG.gif:NonHosted">
 				<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
@@ -77,7 +110,7 @@
 
 			</form>
 
-			<p><a href="http://midoribrowser.org/donate/">Other Currencies</a></p>
+			<p><a href="<?php echo $home; ?>/donate/">Other Currencies</a></p>
 
 		</div>
 
@@ -92,15 +125,15 @@
 ?>
 <div class="navwrap">
 	<nav class="section group">
-		<a href="http://midoribrowser.org/about/" title="About Midori" class="col span_1_of_6<?php if ( $location == "/about/" ) { echo ' current'; } ?>">About</a>
-		<a href="http://midoribrowser.org/features/" title="Features of Midori" class="col span_1_of_6<?php if ( $location == "/features/" ) { echo ' current'; } ?>">Features</a>
-		<a href="http://midoribrowser.org/faqs/" title="Questions Frequently Asked about DeVeDe." class="col span_1_of_6<?php if ( $location == "/faqs/" ) { echo ' current'; } ?>">FAQs</a>
-		<a href="http://midoribrowser.org/news/" title="News about Midori"  class="col span_1_of_6<?php if ( $location == "/news/" ) { echo ' current'; } ?>">News</a>
-		<a href="http://midoribrowser.org/contribute/" title="Contribute to Midori"  class="col span_1_of_6<?php if ( $location == "/contribute/" ) { echo ' current'; } ?>">Contribute</a>
-		<a href="http://midoribrowser.org/download/" title="Download Midori"  class="col span_1_of_6<?php if ( $location == "/download/" ) { echo ' current'; } ?> down">Download</a>
+		<a href="<?php echo $home; ?>/about/" title="About Midori" class="col span_1_of_6<?php if ( $location == "/about/" ) { echo ' current'; } ?>">About</a>
+		<a href="<?php echo $home; ?>/features/" title="Features of Midori" class="col span_1_of_6<?php if ( $location == "/features/" ) { echo ' current'; } ?>">Features</a>
+		<a href="<?php echo $home; ?>/faqs/" title="Questions Frequently Asked about DeVeDe." class="col span_1_of_6<?php if ( $location == "/faqs/" ) { echo ' current'; } ?>">FAQs</a>
+		<a href="<?php echo $home; ?>/news/" title="News about Midori"  class="col span_1_of_6<?php if ( $location == "/news/" ) { echo ' current'; } ?>">News</a>
+		<a href="<?php echo $home; ?>/contribute/" title="Contribute to Midori"  class="col span_1_of_6<?php if ( $location == "/contribute/" ) { echo ' current'; } ?>">Contribute</a>
+		<a href="<?php echo $home; ?>/download/" title="Download Midori"  class="col span_1_of_6<?php if ( $location == "/download/" ) { echo ' current'; } ?> down">Download</a>
 	</nav>
 </div>
 
 
 <div id="maincontentcontainer">
-	<div class="maincontent">
+	<div id="maincontent">

@@ -33,7 +33,7 @@
 			<div class="col span_1_of_12"></div>
 			<div class="col span_1_of_6">
 				<h4>about</h4>
-				<p><a href="http://midoribrowser.org/">Midori</a> is a lightweight, fast, and free web browser. It is also the default browser of the beautiful <a href="http://elementaryos.org/">elementary os</a>. <span class="floatright"><a href="http://midoribrowser.org/about/">read more</a></span></p>
+				<p><a href="<?php echo $home; ?>/">Midori</a> is a lightweight, fast, and free web browser. It is also the default browser of the beautiful <a href="http://elementaryos.org/">elementary os</a>. <span class="floatright"><a href="<?php echo $home; ?>/about/">read more</a></span></p>
 			</div>
 
 		</div>
