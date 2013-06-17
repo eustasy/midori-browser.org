@@ -1,15 +1,15 @@
 	<?php
-
 		$host = htmlspecialchars($_SERVER['HTTP_HOST'], ENT_QUOTES);
 		if ( $host === '192.168.1.6' ) {
 			$home = 'http://192.168.1.6/midoribrowser.org';
+			$location = str_replace("'", '', $_SERVER['REQUEST_URI']);
+			$location = str_replace('"', '', $location);
+			$location = str_replace('/midoribrowser.org', '', $location);
 		} else {
 			$home = 'http://' . $host;
+			$location = str_replace("'", '', $_SERVER['REQUEST_URI']);
+			$location = str_replace('"', '', $location);
 		}
-
-		$location = str_replace("'", "", $_SERVER['REQUEST_URI']);
-		$location = str_replace('"', "", $location);
-
 	?>
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -118,19 +118,14 @@
 </div>
 
 
-
-<?php
-	$unsafe_requested = str_replace("'", "", $_SERVER['REQUEST_URI']);
-	$location = str_replace('"', "", $unsafe_requested);
-?>
 <div class="navwrap">
 	<nav class="section group">
-		<a href="<?php echo $home; ?>/about/" title="About Midori" class="col span_1_of_6<?php if ( $location == "/about/" ) { echo ' current'; } ?>">About</a>
-		<a href="<?php echo $home; ?>/features/" title="Features of Midori" class="col span_1_of_6<?php if ( $location == "/features/" ) { echo ' current'; } ?>">Features</a>
-		<a href="<?php echo $home; ?>/faqs/" title="Questions Frequently Asked about DeVeDe." class="col span_1_of_6<?php if ( $location == "/faqs/" ) { echo ' current'; } ?>">FAQs</a>
-		<a href="<?php echo $home; ?>/news/" title="News about Midori"  class="col span_1_of_6<?php if ( $location == "/news/" ) { echo ' current'; } ?>">News</a>
-		<a href="<?php echo $home; ?>/contribute/" title="Contribute to Midori"  class="col span_1_of_6<?php if ( $location == "/contribute/" ) { echo ' current'; } ?>">Contribute</a>
-		<a href="<?php echo $home; ?>/download/" title="Download Midori"  class="col span_1_of_6<?php if ( $location == "/download/" ) { echo ' current'; } ?> down">Download</a>
+		<a href="<?php echo $home; ?>/about/" title="About Midori" class="col span_1_of_6<?php if ( $location == '/about/' ) { echo ' current'; } ?>">About</a>
+		<a href="<?php echo $home; ?>/features/" title="Features of Midori" class="col span_1_of_6<?php if ( $location == '/features/' ) { echo ' current'; } ?>">Features</a>
+		<a href="<?php echo $home; ?>/faqs/" title="Questions Frequently Asked about DeVeDe." class="col span_1_of_6<?php if ( $location == '/faqs/' ) { echo ' current'; } ?>">FAQs</a>
+		<a href="<?php echo $home; ?>/news/" title="News about Midori"  class="col span_1_of_6<?php if ( $location == '/news/' ) { echo ' current'; } ?>">News</a>
+		<a href="<?php echo $home; ?>/contribute/" title="Contribute to Midori"  class="col span_1_of_6<?php if ( $location == '/contribute/' ) { echo ' current'; } ?>">Contribute</a>
+		<a href="<?php echo $home; ?>/download/" title="Download Midori"  class="col span_1_of_6<?php if ( $location == '/download/' ) { echo ' current'; } ?> down">Download</a>
 	</nav>
 </div>
 
