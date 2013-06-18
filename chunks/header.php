@@ -22,12 +22,11 @@
 	<link rel="shortcut icon" href="<?php echo $home; ?>/favicon.ico">
 
 	<link rel="stylesheet" media="all" href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Sans+Mono|Raleway:200,300,400">
-	<link rel="stylesheet" media="all" href="http://www.eustasy.org/css/col.min.css">
 	<link rel="stylesheet" media="all" href="<?php echo $home; ?>/chunks/style.css">
 
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 
-	<script src="<?php echo $home; ?>/chunks/jquery.bigtext.js"></script>
+	<script src="<?php echo $home; ?>/chunks/jquery.squishy.min.js"></script>
 
 	<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.pack.js"></script>
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.css" media="screen">
@@ -75,13 +74,9 @@
 			<img src="<?php echo $home; ?>/images/midori.png" alt="">
 		</div>
 		<div class="col span_1_of_3">
-			<a href="<?php echo $home; ?>/" title="Midori, a lightweight, fast, and free web browser.">
-				<div id="bigtext" class="bigtext">
-					<div class="h1 bigtext-line0">Midori</div>
-					<div class="tag bigtext-line1">a lightweight, fast, and free web browser</div>
-				</div>
-			</a>
-			<script>$("#bigtext").bigtext();</script>
+			<a href="<?php echo $home; ?>/" title="Midori, a lightweight, fast, and free web browser."><h1 class="squishy">Midori</h1></a>
+			<a href="<?php echo $home; ?>/" title="Midori, a lightweight, fast, and free web browser."><p class="tag squishy">a lightweight, fast, and free web browser</p></a>
+			<script type="text/javascript">$(".squishy").squishy();</script><script>$("#bigtext").bigtext();</script>
 		</div>
 		<div class="col span_1_of_6 donate">
 			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
