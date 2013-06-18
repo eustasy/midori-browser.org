@@ -293,12 +293,7 @@ a:hover, a:active, a:focus {
 .span_11_of_12 { width: 91.46%; }
 .span_12_of_12 { width: 100%; }
 
-@media only screen and (min-width:1440px) { header, #maincontent, .maincontent, section, footer { width: 70%; } }
-@media only screen and (max-width:1024px) and (min-width:800px) { header, #maincontent, .maincontent, section, footer { width: 93.75%; } }
-
 @media only screen and (max-width:799px) {
-
-	header, #maincontent, .maincontent, section, footer { width: 93.75%; }
 
 	.col { margin: 1% 0 1% 0 }
 
@@ -897,3 +892,11 @@ input:-moz-placeholder {
 	font-size: .9em;
 	line-height: 1.4;
 }
+
+
+
+/* Responsive Widths */
+
+@media only screen and (min-width:1440px) { header, #maincontent, .maincontent, section, footer { width: 70%; } }
+@media only screen and (max-width:1024px) and (min-width:800px) { header, #maincontent, .maincontent, section, footer { width: 93.75%; } }
+@media only screen and (max-width:799px) { header, #maincontent, .maincontent, section, footer { width: 93.75%; } }
