@@ -58,7 +58,7 @@
 		<div class="section group">
 			<div class="col span_1_of_6"></div>
 			<div class="col span_1_of_2">
-				<img src="<?php echo $home; ?>/images/screenshots/privacy-compressed.png" alt="">
+				<img src="<?php echo $home; ?>/images/screenshots/privacy.png" alt="">
 			</div>
 			<div class="col span_1_of_3">
 				<h2>All About Privacy</h2>
@@ -75,7 +75,7 @@
 				<p>You can install Midori on Windows, a variety of Linux distributions, or run a portable version for use across several computers.</p>
 			</div>
 			<div class="col span_2_of_3">
-				<img src="<?php echo $home; ?>/images/machines/Faimly-Compressed.png" alt="">
+				<img src="<?php echo $home; ?>/images/machines/Faimly.png" alt="">
 			</div>
 		</div>
 	</section>
@@ -135,7 +135,8 @@
 						<input type="hidden" name="return" value="<?php echo $home; ?>/thanks">
 						<input type="hidden" name="cancel_return" value="<?php echo $home; ?>/ohwell">
 						<input type="hidden" name="bn" value="PP-BuyNowBF:btn_paynowCC_LG.gif:NonHosted">
-						<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+						<img alt="PayPal Payment Tracking" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" style="width:1px;height:1;border:none;">
+
 						<input class="amount" name="amount" type="text"  maxlength="5" value="5.00">
 						<input class="submit" name="submit" type="submit"  value="Donate">
 					</form>

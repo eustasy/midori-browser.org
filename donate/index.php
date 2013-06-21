@@ -40,7 +40,7 @@
 			<input type="hidden" name="cancel_return" value="<?php echo $home; ?>/ohwell">
 
 			<input type="hidden" name="bn" value="PP-BuyNowBF:btn_paynowCC_LG.gif:NonHosted">
-			<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+			<img alt="PayPal Payment Tracking" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" style="width:1px;height:1;border:none;">
 
 			<input class="amount" name="amount" type="text"  maxlength="5" value="5.00">
 
@@ -71,7 +71,7 @@
 			<input type="hidden" name="cancel_return" value="<?php echo $home; ?>/ohwell">
 
 			<input type="hidden" name="bn" value="PP-BuyNowBF:btn_paynowCC_LG.gif:NonHosted">
-			<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+			<img alt="PayPal Payment Tracking" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" style="width:1px;height:1;border:none;">
 
 			<input class="amount" name="amount" type="text"  maxlength="5" value="5.00">
 
@@ -102,7 +102,7 @@
 			<input type="hidden" name="cancel_return" value="<?php echo $home; ?>/ohwell">
 
 			<input type="hidden" name="bn" value="PP-BuyNowBF:btn_paynowCC_LG.gif:NonHosted">
-			<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+			<img alt="PayPal Payment Tracking" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" style="width:1px;height:1;border:none;">
 
 			<input class="amount" name="amount" type="text"  maxlength="5" value="5.00">
 
@@ -135,7 +135,7 @@
 			<input type="hidden" name="cancel_return" value="<?php echo $home; ?>/ohwell">
 
 			<input type="hidden" name="bn" value="PP-BuyNowBF:btn_paynowCC_LG.gif:NonHosted">
-			<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+			<img alt="PayPal Payment Tracking" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" style="width:1px;height:1;border:none;">
 
 			<input class="amount" name="amount" type="text"  maxlength="5" value="5.00">
 
@@ -166,7 +166,7 @@
 			<input type="hidden" name="cancel_return" value="<?php echo $home; ?>/ohwell">
 
 			<input type="hidden" name="bn" value="PP-BuyNowBF:btn_paynowCC_LG.gif:NonHosted">
-			<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+			<img alt="PayPal Payment Tracking" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" style="width:1px;height:1;border:none;">
 
 			<input class="amount" name="amount" type="text"  maxlength="5" value="5.00">
 
@@ -198,7 +198,7 @@
 			<input type="hidden" name="cancel_return" value="<?php echo $home; ?>/ohwell">
 
 			<input type="hidden" name="bn" value="PP-BuyNowBF:btn_paynowCC_LG.gif:NonHosted">
-			<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+			<img alt="PayPal Payment Tracking" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" style="width:1px;height:1;border:none;">
 
 			<input class="amount" name="amount" type="text"  maxlength="5" value="5.00">
 
