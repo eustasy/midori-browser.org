@@ -1,6 +1,6 @@
 <?php
 
-$url = 'http://198.199.69.148/generatedownloads.php';
+$url = $home . '/chunks/downloads.php';
 
 $xml = simplexml_load_file($url);
 

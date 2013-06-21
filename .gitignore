@@ -1,1 +1,9 @@
-/downloads/
+/downloads/*
+*_.tar.bz2
+*_.zip
+*_.exe
+*_.7z
+*_.rpm
+*_.tar.xz.sig
+*_.tar.xz
+*_.deb
