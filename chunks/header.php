@@ -15,7 +15,7 @@
 	<!--[if IE]><meta http-equiv="cleartype" content="on"><![endif]-->
 	<meta name="HandheldFriendly" content="True">
 	<meta name="MobileOptimized" content="320">
-	<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 
 	<link rel="icon" href="<?php echo $home; ?>/favicon.ico">
 	<link rel="shortcut icon" href="<?php echo $home; ?>/favicon.ico">
