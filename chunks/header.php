@@ -59,7 +59,7 @@
 
 </head>
 
-<body>
+<body<?php if ( $location == '/' ) { echo ' class="home"'; } ?>>
 
 <div id="skiptomain"><a href="#maincontent">skip to main content</a></div>
 
