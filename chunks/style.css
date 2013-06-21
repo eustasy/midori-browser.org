@@ -513,6 +513,8 @@ form.donate {
 	width: 90%;
 }
 
+.donate label { display: none; visibility: hidden; }
+
 .donate a {
 	-moz-transition: all .25s;
 	-ms-transition: all .25s;
