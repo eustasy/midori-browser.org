@@ -29,6 +29,7 @@ if ( $auth === 'glaflzbhlaczddmuxurmlujmdqtgvoqzzbpljshtfrohsqzfbtmazkgnkmudqaiq
 <html>
 <head>
 <meta charset="UTF-8">
+<title>GitPull</title>
 <link rel="icon" type="image/x-icon" href="http://www.eustasy.co.uk/favicon.ico">
 <link rel="shortcut icon" type="image/x-icon" href="http://www.eustasy.co.uk/favicon.ico">
 <link rel="apple shortcut icon" href="http://www.eustasy.co.uk/wp-content/themes/eustasy-three/200.png">
