@@ -73,7 +73,7 @@
 		<div class="col span_1_of_3">
 			<a href="<?php echo $home; ?>/" title="Midori, a lightweight, fast, and free web browser."><h1 class="squishy">Midori</h1></a>
 			<a href="<?php echo $home; ?>/" title="Midori, a lightweight, fast, and free web browser."><p class="tag squishy">a lightweight, fast, and free web browser</p></a>
-			<script type="text/javascript">$(".squishy").squishy();</script><script>$("#bigtext").bigtext();</script>
+			<script>$(".squishy").squishy();</script>
 		</div>
 		<div class="col span_1_of_6 donate">
 			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
