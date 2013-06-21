@@ -1,3 +1,4 @@
+ErrorDocument 403 /403.php
 ErrorDocument 404 /404.php
 
 php_value output_buffering On
