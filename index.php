@@ -136,8 +136,8 @@
 						<input type="hidden" name="bn" value="PP-BuyNowBF:btn_paynowCC_LG.gif:NonHosted">
 						<img alt="PayPal Payment Tracking" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" style="width:1px;height:1;border:none;">
 						<label for="amountbottom">Donation Amount</label>
-						<input class="amountbottom" id="amount" name="amount" type="text" maxlength="5" value="5.00">
-						<input class="submit" name="submit" type="submit"  value="Donate">
+						<input class="amount" name="amount" type="text" id="amountbottom" maxlength="5" value="5.00">
+						<input class="submit" name="submit" type="submit" value="Donate">
 					</form>
 					<p><a href="<?php echo $home; ?>/donate">Donate in another Currency</a></p>
 				</div>
