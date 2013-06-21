@@ -64,8 +64,6 @@
 
 <div id="skiptomain"><a href="#maincontent">skip to main content</a></div>
 
-<div id="wrapper">
-
 
 
 <div id="headcontainer">
