@@ -6,7 +6,7 @@
 $auth = htmlentities($_GET['auth'], ENT_QUOTES, "UTF-8"); // Encode auth before using it.
 
 // We can also check for payload to help stop attacks.
-// && isset($_POST['payload'])
+// isset($_POST['payload'])
 
 if ( $auth === 'glaflzbhlaczddmuxurmlujmdqtgvoqzzbpljshtfrohsqzfbtmazkgnkmudqaiq' ) { // If the auth is correct and Git posted a payload.
 
@@ -20,7 +20,7 @@ if ( $auth === 'glaflzbhlaczddmuxurmlujmdqtgvoqzzbpljshtfrohsqzfbtmazkgnkmudqaiq
 	$output = nl2br( shell_exec('git reset --hard HEAD && git pull') ); // Capture the output.
 
 } else { // Or not.
-	$output = 'Ha, nope.'; // Sassy.
+	$output = 'No.'; // Sassy.
 }
 
 // That is all.
@@ -51,7 +51,7 @@ transition:alll 500ms ease-in-out;-o-transition:alll 500ms ease-in-out;-ms-trans
 </style>
 </head>
 <body>
-<h1><a href="http://www.eustasy.co.uk/definition/"><img src="http://www.eustasy.co.uk/wp-content/themes/eustasy-three/200.png">eustasy</a></h1>
+<h1><a href="http://www.eustasy.co.uk/definition/"><img src="http://www.eustasy.co.uk/wp-content/themes/eustasy-three/200.png" alt="eustasy logo"> eustasy</a></h1>
 <div id="small-container">
 <pre><?php echo $output; // Kind of. ?></pre>
 </div>
