@@ -68,7 +68,7 @@
 <div id="headcontainer">
 	<header class="section group">
 		<div class="col span_1_of_6">
-			<img src="<?php echo $home; ?>/images/midori.png" alt="">
+			<img src="<?php echo $home; ?>/images/midori.png" alt="Midori Logo">
 		</div>
 		<div class="col span_1_of_3">
 			<a href="<?php echo $home; ?>/" title="Midori, a lightweight, fast, and free web browser."><h1 class="squishy">Midori</h1></a>
