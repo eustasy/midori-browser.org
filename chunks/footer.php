@@ -38,17 +38,6 @@
 
 		</div>
 
-		<div class="section group">
-			<div class="col span_7_of_12"></div>
-			<div class="col span_1_of_6">
-				<a href="https://www.digitalocean.com/?refcode=eca8f5e3972c" title="Linux VPS Hosting"><img src="http://www.eustasy.org/images/digitalocean-badge.png" title="Linux VPS Hosting" alt="Hosted by Digital Ocean - Linux VPS Hosting"></a>
-			</div>
-			<div class="col span_1_of_12"></div>
-			<div class="col span_1_of_6">
-				<a href="https://www.cloudflare.com/" title="The web performance &amp; security company"><img src="http://www.eustasy.org/images/cloudflare-badge.png" title="The web performance &amp; security company" alt="Cloudflare - The web performance &amp; security company"></a>
-			</div>
-		</div>
-
 	</footer>
 </div>
 
