@@ -51,7 +51,7 @@ transition:alll 500ms ease-in-out;-o-transition:alll 500ms ease-in-out;-ms-trans
 </style>
 </head>
 <body>
-<h1><a href="http://www.eustasy.co.uk/definition/"><img src="http://www.eustasy.co.uk/wp-content/themes/eustasy-three/200.png" alt="eustasy logo"> eustasy</a></h1>
+<h1><a href="http://www.eustasy.co.uk/"><img src="http://www.eustasy.co.uk/wp-content/themes/eustasy-three/200.png" alt="eustasy logo"> eustasy</a></h1>
 <div id="small-container">
 <pre><?php echo $output; // Kind of. ?></pre>
 </div>
