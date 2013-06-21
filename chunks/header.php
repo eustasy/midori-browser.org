@@ -12,8 +12,7 @@
 		}
 	?>
 
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta http-equiv="cleartype" content="on">
+	<!--[if IE]><meta http-equiv="cleartype" content="on"><![endif]-->
 	<meta name="HandheldFriendly" content="True">
 	<meta name="MobileOptimized" content="320">
 	<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
@@ -95,7 +94,7 @@
 				<input type="hidden" name="cancel_return" value="<?php echo $home; ?>/ohwell">
 
 				<input type="hidden" name="bn" value="PP-BuyNowBF:btn_paynowCC_LG.gif:NonHosted">
-				<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+				<img alt="PayPal Payment Tracking" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" style="width:1px;height:1;border:none;">
 
 				<input class="amount" name="amount" type="text"  maxlength="5" value="5.00">
 
