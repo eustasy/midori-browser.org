@@ -1,8 +1,8 @@
 <?php
 $auth = htmlentities($_GET['auth'], ENT_QUOTES, "UTF-8");
 // http://midoribrowser.org/gitpull.php?auth=glaflzbhlaczddmuxurmlujmdqtgvoqzzbpljshtfrohsqzfbtmazkgnkmudqaiq
-if ( $auth === 'glaflzbhlaczddmuxurmlujmdqtgvoqzzbpljshtfrohsqzfbtmazkgnkmudqaiq ' ) {
-	$output = nl2br( shell_exec('apt-cache search php') );
+if ( $auth === 'glaflzbhlaczddmuxurmlujmdqtgvoqzzbpljshtfrohsqzfbtmazkgnkmudqaiq' ) {
+	$output = nl2br( shell_exec('apt-cache search git pull') ) . '<br><br><br><p>GitHub Update Complete</p>';
 } else {
 	$output = 'Ha, nope.';
 }
@@ -30,7 +30,6 @@ transition:alll 500ms ease-in-out;-o-transition:alll 500ms ease-in-out;-ms-trans
 a:hover{color:#19B6EE;
 transition:alll 500ms ease-in-out;-o-transition:alll 500ms ease-in-out;-ms-transition:alll 500ms ease-in-out;-moz-transition:alll 500ms ease-in-out;-webkit-transition:alll 500ms ease-in-out;}
 </style>
-<link rel="author" href="https://plus.google.com/112975271925400097344"/>
 </head>
 <body>
 <h1><a href="http://www.eustasy.co.uk/definition/"><img src="http://www.eustasy.co.uk/wp-content/themes/eustasy-three/200.png">eustasy</a></h1>
