@@ -79,7 +79,7 @@
 		<div class="col span_1_of_6 donate">
 			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 
-				<div id="donationlocation"></div>
+				<div class="donationlocation"></div>
 
 				<input type="hidden" name="cmd" value="_xclick">
 				<input type="hidden" name="button_subtype" value="services">
