@@ -28,19 +28,18 @@
 	<script src="<?php echo $home; ?>/chunks/jquery.squishy.min.js"></script>
 
 	<script src="http://j.maxmind.com/js/country.js"></script>
+	<script src="<?php echo $home; ?>/chunks/currency.js"></script>
 
 	<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.pack.js"></script>
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.css" media="screen">
 	<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-media.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function() {
-		$(".fancybox").fancybox();
+		$(".fancybox").fancybox({
+			'padding'	: 0
+		});
 		$('.fancybox-media').fancybox({
-			openEffect  : 'none',
-			closeEffect : 'none',
 			'padding'	: 0,
-			width		: 1072,
-			height		: 603,
 			helpers : {
 				media : {}
 			}
@@ -81,7 +80,6 @@
 			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 
 				<div id="donationlocation"></div>
-				<script src="<?php echo $home; ?>/chunks/currency.js"></script>
 
 				<input type="hidden" name="cmd" value="_xclick">
 				<input type="hidden" name="button_subtype" value="services">
