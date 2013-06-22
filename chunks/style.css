@@ -546,6 +546,8 @@ form.donate {
 	-webkit-transition: all .25s;
 	background-color: #cccccc;
 	background-color: rgba(255,255,255,0.5);
+	background-position: left center;
+	background-repeat: no-repeat;
 	border: 0;
 	border-radius: 3px 3px 0 0;
 	color: #333333;
@@ -567,18 +569,42 @@ form.donate {
 	background-color: rgba(255,255,255,0.7);
 	color: #222222;
 }
-header .donate .amount {
-	background: #cccccc url(../images/dollar.png) 16px center no-repeat;
-	background-color: rgba(255,255,255,0.5);
-}
-header .donate:hover .amount,
-header .donate:focus .amount,
-header .donate .amount:hover,
-header .donate .amount:focus {
-	background: #dddddd url(../images/dollar-hover.png) 16px center no-repeat;
-	background-color: rgba(255,255,255,0.7);
-}
 
+.usd .amount { background-image: url(../images/currencies/usd.png); }
+.donate:hover .usd .amount,
+.donate:focus .usd .amount,
+.usd .amount:hover,
+.usd .amount:focus { background-image: url(../images/currencies/usd-hover.png); }
+
+.eur .amount { background-image: url(../images/currencies/eur.png); }
+.donate:hover .eur .amount,
+.donate:focus .eur .amount,
+.eur .amount:hover,
+.eur .amount:focus { background-image: url(../images/currencies/eur-hover.png); }
+
+.gbp .amount { background-image: url(../images/currencies/gbp.png); }
+.donate:hover .gbp .amount,
+.donate:focus .gbp .amount,
+.gbp .amount:hover,
+.gbp .amount:focus { background-image: url(../images/currencies/gbp-hover.png); }
+
+.aud .amount { background-image: url(../images/currencies/aud.png); }
+.donate:hover .aud .amount,
+.donate:focus .aud .amount,
+.aud .amount:hover,
+.aud .amount:focus { background-image: url(../images/currencies/aud-hover.png); }
+
+.cad .amount { background-image: url(../images/currencies/cad.png); }
+.donate:hover .cad .amount,
+.donate:focus .cad .amount,
+.cad .amount:hover,
+.cad .amount:focus { background-image: url(../images/currencies/cad-hover.png); }
+
+.sek .amount { background-image: url(../images/currencies/sek.png); }
+.donate:hover .sek .amount,
+.donate:focus .sek .amount,
+.sek .amount:hover,
+.sek .amount:focus { background-image: url(../images/currencies/sek-hover.png); }
 
 .donate .submit {
 	-moz-transition: all .25s;
