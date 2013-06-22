@@ -1,3 +1,5 @@
+window.onload = function(){
+
 var country = geoip_country_code();
 
 if (country === "EU" || country === "AD" || country === "AT" || country === "BE" || country === "CY" || country === "EE" || country === "FI" || country === "FR" || country === "DE" || country === "GR" || country === "IE" || country === "IT" || country === "XK" || country === "LU" || country === "MT" || country === "MC" || country === "ME" || country === "NL" || country === "PT" || country === "SM" || country === "SK" || country === "SI" || country === "ES" || country === "VA") {
@@ -12,4 +14,7 @@ if (country === "EU" || country === "AD" || country === "AT" || country === "BE"
     document.getElementById("donationlocation").innerHTML = "<input type=\"hidden\"name=\"lc\"value=\"SE\"><input type=\"hidden\"name=\"currency_code\"value=\"SEK\">"; // CAD
 } else {
     document.getElementById("donationlocation").innerHTML = "<input type=\"hidden\"name=\"lc\"value=\"US\"><input type=\"hidden\"name=\"currency_code\"value=\"USD\">"; // USD
+}
+
+
 }
