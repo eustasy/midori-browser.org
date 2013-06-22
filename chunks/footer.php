@@ -38,6 +38,14 @@
 
 		</div>
 
+		<div class="section group">
+			<div class="col span_5_of_12"></div>
+			<div class="col span_1_of_3">
+				<p>This website uses <a href="http://www.maxmind.com/en/javascript">GeoIP2 JavaScript from MaxMind</a>.</p>
+			</div>
+			<div class="col span_3_of_12"></div>
+		</div>
+
 	</footer>
 </div>
 
