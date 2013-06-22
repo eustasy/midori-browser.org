@@ -47,4 +47,4 @@ if (country === 'EU' || country === 'AD' || country === 'AT' || country === 'BE'
 
 			Note that Zimbabwe (ZW) is omitted from having a specified currency as it trades in USD, GBP and EUR, as well as several others, including it's own Zimbabwean dollar.
 
-/*
+*/
