@@ -546,7 +546,7 @@ form.donate {
 	-webkit-transition: all .25s;
 	background-color: #cccccc;
 	background-color: rgba(255,255,255,0.5);
-	background-position: left center;
+	background-position: 5% center;
 	background-repeat: no-repeat;
 	border: 0;
 	border-radius: 3px 3px 0 0;
@@ -556,10 +556,10 @@ form.donate {
 	height: 32px;
 	margin: 0 auto;
 	outline: none;
-	padding: 0;
+	padding: 0 5%;
 	text-align: center;
 	transition: all .25s;
-	width: 100%;
+	width: 90%;
 }
 .donate:hover .amount,
 .donate:focus .amount,
