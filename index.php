@@ -22,7 +22,7 @@
 				<p><small>Certain sites, including YouTube and Spotify, will require <a href="http://get.adobe.com/flashplayer/">Adobe Flash Player</a>.</small></p>
 			</div>
 			<div class="col span_2_of_3">
-				<a class="fancybox" href="<?php echo $home; ?>/images/screenshots/rdio_uncompressed.png"><img src="<?php echo $home; ?>/images/screenshots/rdio.png" alt="Screenshot of Midori playing Queen from Rdio"></a>
+				<a class="fancybox" rel="gallery" href="<?php echo $home; ?>/images/screenshots/rdio_uncompressed.png"><img src="<?php echo $home; ?>/images/screenshots/rdio.png" alt="Screenshot of Midori playing Queen from Rdio"></a>
 			</div>
 		</div>
 	</section>
@@ -30,7 +30,7 @@
 	<section>
 		<div class="section group">
 			<div class="col span_1_of_2">
-				<a class="fancybox" href="<?php echo $home; ?>/images/logos/bundle_uncompressed.png"><img src="<?php echo $home; ?>/images/logos/bundle.png" alt="Technologies Logos"></a>
+				<a class="fancybox" rel="gallery" href="<?php echo $home; ?>/images/logos/bundle_uncompressed.png"><img src="<?php echo $home; ?>/images/logos/bundle.png" alt="Technologies Logos"></a>
 			</div>
 			<div class="col span_1_of_6"></div>
 			<div class="col span_1_of_3">
@@ -49,7 +49,7 @@
 			</div>
 			<div class="col span_1_of_6"></div>
 			<div class="col span_1_of_2">
-				<a class="fancybox" href="<?php echo $home; ?>/images/machines/MacBookPro-Corner_uncompressed.png"><img src="<?php echo $home; ?>/images/machines/MacBookPro-Corner_uncompressed.png" alt="The corner of a machine running Midori."></a>
+				<a class="fancybox" rel="gallery" href="<?php echo $home; ?>/images/machines/MacBookPro-Corner_uncompressed.png"><img src="<?php echo $home; ?>/images/machines/MacBookPro-Corner_uncompressed.png" alt="The corner of a machine running Midori."></a>
 			</div>
 		</div>
 	</section>
@@ -57,7 +57,7 @@
 	<section>
 		<div class="section group">
 			<div class="col span_2_of_3">
-				<a class="fancybox" href="<?php echo $home; ?>/images/screenshots/privacy_uncompressed.png"><img src="<?php echo $home; ?>/images/screenshots/privacy.png" alt="Privacy Controls in Midori"></a>
+				<a class="fancybox" rel="gallery" href="<?php echo $home; ?>/images/screenshots/privacy_uncompressed.png"><img src="<?php echo $home; ?>/images/screenshots/privacy.png" alt="Privacy Controls in Midori"></a>
 			</div>
 			<div class="col span_1_of_3">
 				<h2>All About Privacy</h2>
@@ -74,7 +74,7 @@
 				<p>You can install Midori on Windows, a variety of Linux distributions, or run a portable version for use across several computers.</p>
 			</div>
 			<div class="col span_2_of_3">
-				<a class="fancybox" href="<?php echo $home; ?>/images/machines/Faimly_uncompressed.png"><img src="<?php echo $home; ?>/images/machines/Faimly.png" alt="Several computers running Midori."></a>
+				<a class="fancybox" rel="gallery" href="<?php echo $home; ?>/images/machines/Faimly_uncompressed.png"><img src="<?php echo $home; ?>/images/machines/Faimly.png" alt="Several computers running Midori."></a>
 			</div>
 		</div>
 	</section>
