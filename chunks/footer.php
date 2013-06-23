@@ -39,11 +39,11 @@
 		</div>
 
 		<div class="section group">
-			<div class="col span_1_of_6">
-				<h4><a href="https://github.com/eustasy/midoribrowser.org/issues?milestone=&page=1&state=open"><span style="font-family:entypo;font-size:36px;">&#9873; &#128165;</span> Site Issues</a></h4>
-			</div>
-			<div class="col span_1_of_12"></div>
 			<div class="col span_1_of_6"></div>
+			<div class="col span_1_of_12"></div>
+			<div class="col span_1_of_6">
+				<h4><a href="https://github.com/eustasy/midoribrowser.org/issues?milestone=&page=1&state=open"><img src="<?php echo $home; ?>/images/big/flag.png"> Site Issues</a></h4>
+			</div>
 			<div class="col span_1_of_3">
 				<p>This website uses <a href="http://www.maxmind.com/en/javascript">GeoIP2 JavaScript from MaxMind</a>.</p>
 			</div>
