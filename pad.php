@@ -1,11 +1,4 @@
-<?php
-
-	error_reporting(E_ALL);
-	ini_set('display_errors', 'on');
-
-	echo '<?xml version="1.0" encoding="UTF-8"?>';
-
-?>
+<?php echo '<?xml version="1.0" encoding="UTF-8"?>'; ?>
 <XML_DIZ_INFO>
 
 	<MASTER_PAD_VERSION_INFO>
