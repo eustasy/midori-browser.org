@@ -42,7 +42,7 @@
 			<div class="col span_1_of_6"></div>
 			<div class="col span_1_of_12"></div>
 			<div class="col span_1_of_6">
-				<p><a href="https://github.com/eustasy/midoribrowser.org/issues?milestone=&page=1&state=open"><img src="<?php echo $home; ?>/images/big/flag.png"> Site Issues</a></p>
+				<p><a href="https://github.com/eustasy/midoribrowser.org/issues?milestone=&page=1&state=open"><img alt="Flag" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAQCAYAAADJViUEAAABn0lEQVQoz7WRv0sCYRjHnzt0kI4iXIxABxMCizhoyLFMmpqcBIcQRNpqcvVvqKEb25wiFyHEgvLAI1/xIFEPnBR6B1/v6Aj88Z73NkUWFUr0wAPPM3y+fJ/nC/CH4qYXRVG2BUE48Xg865qmXQ6HQykcDlu/KuRyuRVVVS8IIcwwDGYYBtN1nVWr1dN0Os39CBYKhQOMsf0OTTchZKKqauKrQCaT4Vut1jqXz+eDoigqLpdL+E6cMQa1Wu2eMXbj8/nsyWSy6Xa7d5vN5h2XzWYXA4HAg9/v35r1UQghTRCEPT4Wi5nj8fhxVpAxZpqmeRQKhZ55AACn01mglH5EwHGvCKFir9drTIO2bY8wxoloNKoAAPAAALquP1FKXxhjUK/XzxuNxmokEomUSqWtdrt9PBqNjEql0sEYHwaDwatPViRJWkAIVYrFIpIkaeGr1WQyycXj8Z8jK5fLZ/1+X5dleW3W+/n3weFw3FJKl71e78bcMCGkblmW0e129+eGO53OM8ZYGwwGO7IsC3PBqVRqYFnWtSiKL7ZtL8F/1xvoReawuKO8IAAAAABJRU5ErkJggg==">&nbsp;&nbsp; Site Issues</a></p>
 			</div>
 			<div class="col span_1_of_3">
 				<p>This website uses <a href="http://www.maxmind.com/en/javascript">GeoIP2 JavaScript from MaxMind</a>.</p>
