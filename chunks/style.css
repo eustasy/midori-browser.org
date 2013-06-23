@@ -701,11 +701,15 @@ section.jaded { background: rgba(0,0,0,0.1); }
 	max-width: 96%;
 }
 
-.fancybox-opened .fancybox-skin {
-    background: transparent;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
+
+
+/* Fancybox Overrides */
+
+.fancybox-skin {
+    background: transparent !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
 }
 
 
