@@ -1,5 +1,7 @@
 <?php
 
+include 'host.php';
+
 // This is the directory we'll be scanning,
 // and the only thing you might need to edit in this file.
 // It should have a trailing slash, but not one at the beginning
@@ -19,14 +21,14 @@ echo '<?xml version="1.0" ?>
 // For every file we found, list it as a download
 foreach($file as $file) {
 
-	// The location is the filename and directory after the domain.
-	$location = $home  . $directory . $file;
-
 	// We need to seperate those filenames apart
 	$parts = explode("_", $file);
 	// This is why they all need to be named correctly
 	// As 			'midori_version_architecture_.extension
 	// Example 		'midori_0.5.0-2_x86-64_.pkg.tar.xz'
+
+	// The location is the filename and directory after the domain.
+	$location = $home  . $directory . str_replace('../downloads/', '', $file);
 
 	// Now we can add a download to the list.
 	echo '	<download>

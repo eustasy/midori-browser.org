@@ -1,16 +1,4 @@
-	<?php
-		$host = htmlspecialchars($_SERVER['HTTP_HOST'], ENT_QUOTES);
-		if ( $host === '192.168.1.6' ) {
-			$home = 'http://192.168.1.6/midoribrowser.org';
-			$location = str_replace("'", '', $_SERVER['REQUEST_URI']);
-			$location = str_replace('"', '', $location);
-			$location = str_replace('/midoribrowser.org', '', $location);
-		} else {
-			$home = 'http://' . $host;
-			$location = str_replace("'", '', $_SERVER['REQUEST_URI']);
-			$location = str_replace('"', '', $location);
-		}
-	?>
+	<?php include 'host.php'; ?>
 
 	<!--[if IE]><meta http-equiv="cleartype" content="on"><![endif]-->
 	<meta name="HandheldFriendly" content="True">

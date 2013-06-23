@@ -3,7 +3,7 @@
 // This is the GitPull file. The correct URL to active it is:
 // http://midoribrowser.org/gitpull.php?auth=glaflzbhlaczddmuxurmlujmdqtgvoqzzbpljshtfrohsqzfbtmazkgnkmudqaiq
 
-$auth = htmlentities($_GET['auth'], ENT_QUOTES, "UTF-8"); // Encode auth before using it.
+$auth = htmlentities($_GET['auth'], ENT_QUOTES | ENT_HTML5, "UTF-8"); // Encode auth before using it.
 
 // We can also check for payload to help stop attacks.
 // isset($_POST['payload'])

@@ -1,4 +1,11 @@
-<?php echo '<?xml version="1.0" encoding="UTF-8"?>'; ?>
+<?php
+
+	error_reporting(E_ALL);
+	ini_set('display_errors', 'on');
+
+	echo '<?xml version="1.0" encoding="UTF-8"?>';
+
+?>
 <XML_DIZ_INFO>
 
 	<MASTER_PAD_VERSION_INFO>
@@ -9,7 +16,8 @@
 
 	<Company_Info>
 		<Company_Name>Twotoasts</Company_Name>
-		<Address_1>36 Pariser Straße</Address_1>		<Address_2></Address_2>
+		<Address_1>36 Pariser Straße</Address_1>
+		<Address_2></Address_2>
 		<City_Town>Falls Church</City_Town>
 		<State_Province>Bonn</State_Province>
 		<Zip_Postal_Code>53117</Zip_Postal_Code>
@@ -49,8 +57,11 @@ include 'chunks/process.php';
 foreach ($xml->download as $download) {
 	if ($download->extension == '.exe') {
 
+
 		echo '		<Program_Version>' . $download->version . '</Program_Version>
 ';
+
+		echo $download->location;
 
 		// Get the thing
 		$curl = curl_init($download->location);
@@ -73,14 +84,14 @@ foreach ($xml->download as $download) {
 		$timestamp = curl_getinfo($curl, CURLINFO_FILETIME);
 		if ($timestamp != -1) {
 			echo '		<Program_Release_Month>' . date("m", $timestamp) . '</Program_Release_Month>
-';
+	';
 			echo '		<Program_Release_Day>' . date("d", $timestamp) . '</Program_Release_Day>
-';
+	';
 			echo '		<Program_Release_Year>' . date("Y", $timestamp) . '</Program_Release_Year>
-';
+	';
 		}
 
-?>		<Program_Cost_Dollars>0</Program_Cost_Dollars>
+		echo '		<Program_Cost_Dollars>0</Program_Cost_Dollars>
 		<Program_Cost_Other_Code>USD</Program_Cost_Other_Code>
 		<Program_Cost_Other>0</Program_Cost_Other>
 		<Program_Type>Freeware</Program_Type>
@@ -95,8 +106,7 @@ foreach ($xml->download as $download) {
 		<Program_System_Requirements></Program_System_Requirements>
 		<Limitations>None</Limitations>
 		<Awards></Awards>
-		<File_Info>
-<?php
+		<File_Info>';
 
 		$size = $download->size;
 		echo '			<File_Size_Bytes>' . round($size, 1) . '</File_Size_Bytes>
@@ -110,7 +120,7 @@ foreach ($xml->download as $download) {
 		echo '			<File_Size_MB>' . round($size, 1) . '</File_Size_MB>
 ';
 
-?>		</File_Info>
+		echo '		</File_Info>
 		<Expire_Info>
 			<Has_Expire_Info>N</Has_Expire_Info>
 			<Expire_Count></Expire_Count>
@@ -136,7 +146,7 @@ foreach ($xml->download as $download) {
 			<Application_XML_File_URL>http://midoribrowser.org/pad.php</Application_XML_File_URL>
 		</Application_URLs>
 		<Download_URLs>
-			<Primary_Download_URL><?php
+			<Primary_Download_URL>';
 		echo $download->location;
 	}
 } ?></Primary_Download_URL>
