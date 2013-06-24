@@ -127,11 +127,11 @@ p, ol, ul, dl, address {
 	text-align: left;
 }
 
-ul ul { padding: 1%; }
 ul, ol {
 	margin: 0;
-	padding: 1% 0;
+	padding: 2% 3% 3% 5%;
 }
+ul ul { padding: 1%; }
 li {
 	margin: 10px 0;
 	padding: 0;
