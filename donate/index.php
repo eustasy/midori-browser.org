@@ -22,7 +22,7 @@
 
 		<h4>USD $</h4>
 
-		<form class="donate" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+		<form class="donate" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="usd">
 
 			<input type="hidden" name="cmd" value="_xclick">
 			<input type="hidden" name="lc" value="US">
@@ -53,7 +53,7 @@
 
 		<h4>EUR &euro;</h4>
 
-		<form class="donate" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+		<form class="donate" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="eur">
 
 			<input type="hidden" name="cmd" value="_xclick">
 			<input type="hidden" name="lc" value="US">
@@ -84,7 +84,7 @@
 
 		<h4>GBP &pound;</h4>
 
-		<form class="donate" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+		<form class="donate" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="gbp">
 
 			<input type="hidden" name="cmd" value="_xclick">
 			<input type="hidden" name="lc" value="GB">
@@ -117,7 +117,7 @@
 
 		<h4>CAD $</h4>
 
-		<form class="donate" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+		<form class="donate" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="cad">
 
 			<input type="hidden" name="cmd" value="_xclick">
 			<input type="hidden" name="lc" value="CA">
@@ -148,7 +148,7 @@
 
 		<h4>AUD $</h4>
 
-		<form class="donate" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+		<form class="donate" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="aud">
 
 			<input type="hidden" name="cmd" value="_xclick">
 			<input type="hidden" name="lc" value="AU">
@@ -180,7 +180,7 @@
 
 		<h4>SEK kr</h4>
 
-		<form class="donate" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+		<form class="donate" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="sek">
 
 			<input type="hidden" name="cmd" value="_xclick">
 			<input type="hidden" name="lc" value="SE">
