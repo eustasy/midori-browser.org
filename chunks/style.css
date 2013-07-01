@@ -342,6 +342,10 @@ header {
 	text-align: center;
 	width: 80%;
 }
+header img {
+	margin: 0 10%;
+	max-width: 80%;
+}
 
 
 
