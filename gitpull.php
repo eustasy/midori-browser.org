@@ -1,19 +1,18 @@
 <?php
 
 // This is the GitPull file. The correct URL to active it is:
-// http://midoribrowser.org/gitpull.php?auth=glaflzbhlaczddmuxurmlujmdqtgvoqzzbpljshtfrohsqzfbtmazkgnkmudqaiq
+// http://midori-browser.org/gitpull.php?auth=glaflzbhlaczddmuxurmlujmdqtgvoqzzbpljshtfrohsqzfbtmazkgnkmudqaiq
 
 $auth = htmlentities($_GET['auth'], ENT_QUOTES | ENT_HTML5, "UTF-8"); // Encode auth before using it.
 
-// We can also check for payload to help stop attacks.
+// If the auth is correct and Git posted a payload.
+// We can check for the payload to help stop attacks.
 // isset($_POST['payload'])
-
-if ( $auth === 'glaflzbhlaczddmuxurmlujmdqtgvoqzzbpljshtfrohsqzfbtmazkgnkmudqaiq' ) { // If the auth is correct and Git posted a payload.
-
+if ( $auth === 'glaflzbhlaczddmuxurmlujmdqtgvoqzzbpljshtfrohsqzfbtmazkgnkmudqaiq' && isset($_REQUEST['payload']) ) {
 	// We're going to run a few commands now.
 	// git reset --hard HEAD	// Cleans out uncommitted changes.
-	// git clean -f -d			// Remove junk files. DO NOT EXECUTE. DELETES DOWNLOADS.
-	// git pull					// Get the latest version.
+	// git clean -f -d		// Remove junk files. DO NOT EXECUTE. DELETES DOWNLOADS.
+	// git pull			// Get the latest version.
 
 	// git reset --hard HEAD && git pull
 
