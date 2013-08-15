@@ -6,7 +6,7 @@
 
 <div class="section group">
 	<div class="col span_3_of_5">
-		<div class="bubble standard">
+		<div class="bubble standard equalize">
 			<h2>Download Midori Portable<h2>
 			<h3>for Windows</h3>
 			<div class="section group">
@@ -40,7 +40,7 @@ foreach ($xml->download as $download) {
 		</div>
 	</div>
 	<div class="col span_2_of_5">
-		<div class="bubble standard">
+		<div class="bubble standard equalize">
 			<h3>Usage</h3>
 			<p class="important">Midori Portable should work on all Windows systems, you simply need to extract the downloaded archive to a USB drive or folder on your computer, than run midori.exe</p>
 			<p>You can move the midori folder, copy it across computers, and run Midori from USB drives without having to install it.</p>
@@ -51,12 +51,12 @@ foreach ($xml->download as $download) {
 
 <div class="section group">
 	<div class="col span_3_of_5">
-		<div class="bubble system portable">
+		<div class="bubble system portable equalize">
 			<h2>Portable</h2>
 		</div>
 	</div>
 	<div class="col span_2_of_5">
-		<div class="bubble standard">
+		<div class="bubble standard equalize">
 			<h3 class="withimg64"><img src="<?php echo $home; ?>/images/feature-help.png" class="sixtyfour floatleft">Help</h3>
 			<p>If you need to find out how to do something, you can check our <a href="<?php echo $home; ?>/faqs/">Frequently Asked Questions</a>.</p>
 		</div>
