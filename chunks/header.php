@@ -64,23 +64,23 @@
 			<script>$(".squishy").squishy();</script>
 		</div>
 		<div class="col span_1_of_6 donate">
-			<?php if ($country  == 'EU' || $country  == 'AD' || $country  == 'AT' || $country  == 'BE' || $country  == 'CY' || $country  == 'EE' || $country  == 'FI' || $country  == 'FR' || $country  == 'DE' || $country  == 'GR' || $country  == 'IE' || $country  == 'IT' || $country  == 'XK' || $country  == 'LU' || $country  == 'MT' || $country  == 'MC' || $country  == 'ME' || $country  == 'NL' || $country  == 'PT' || $country  == 'SM' || $country  == 'SK' || $country  == 'SI' || $country  == 'ES' || $country  == 'VA') { // EUR
+			<?php if ($Geo  == 'EU' || $Geo  == 'AD' || $Geo  == 'AT' || $Geo  == 'BE' || $Geo  == 'CY' || $Geo  == 'EE' || $Geo  == 'FI' || $Geo  == 'FR' || $Geo  == 'DE' || $Geo  == 'GR' || $Geo  == 'IE' || $Geo  == 'IT' || $Geo  == 'XK' || $Geo  == 'LU' || $Geo  == 'MT' || $Geo  == 'MC' || $Geo  == 'ME' || $Geo  == 'NL' || $Geo  == 'PT' || $Geo  == 'SM' || $Geo  == 'SK' || $Geo  == 'SI' || $Geo  == 'ES' || $Geo  == 'VA') { // EUR
 			echo '<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="eur">
 				<input type="hidden" name="lc" value="US">
 				<input type="hidden" name="currency_code" value="EUR">';
-		} elseif ($country  == 'GG' || $country  == 'IM' || $country  == 'JE' || $country  == 'GS' || $country  == 'GB') { // GBP
+		} elseif ($Geo  == 'GG' || $Geo  == 'IM' || $Geo  == 'JE' || $Geo  == 'GS' || $Geo  == 'GB') { // GBP
 			echo '<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="gbp">
 				<input type="hidden" name="lc" value="GB">
 				<input type="hidden" name="currency_code" value="GBP">';
-		} elseif ($country  == 'AU' || $country  == 'CC' || $country  == 'KI' || $country  == 'NR' || $country  == 'TV') { // AUD
+		} elseif ($Geo  == 'AU' || $Geo  == 'CC' || $Geo  == 'KI' || $Geo  == 'NR' || $Geo  == 'TV') { // AUD
 			echo '<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="aud">
 				<input type="hidden" name="lc" value="AU">
 				<input type="hidden" name="currency_code" value="AUD">';
-		} elseif ($country  == 'CA') { // CAD
+		} elseif ($Geo  == 'CA') { // CAD
 			echo '<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="cad">
 				<input type="hidden" name="lc" value="CA">
 				<input type="hidden" name="currency_code" value="CAD">';
-		} elseif ($country  == 'SE') { // SEK
+		} elseif ($Geo  == 'SE') { // SEK
 			echo '<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="sek">
 				<input type="hidden" name="lc" value="SE">
 				<input type="hidden" name="currency_code" value="SEK">';

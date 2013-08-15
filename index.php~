@@ -120,7 +120,7 @@
 			<div class="col span_1_of_3"></div>
 			<div class="col span_1_of_3">
 				<div class="donate">
-					<?php donate('AU'); ?>
+					<?php donate(false); ?>
 					<p><a href="<?php echo $home; ?>/donate">Donate in another Currency</a></p>
 				</div>
 			</div>
