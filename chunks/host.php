@@ -11,4 +11,13 @@ if ( $host === '192.168.1.6' ) {
 	$location = htmlspecialchars($_SERVER['REQUEST_URI'], ENT_QUOTES | ENT_HTML5, "UTF-8");
 }
 
+
+if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
+	$VisitorIP = $_SERVER['HTTP_CLIENT_IP'];
+} elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+	$VisitorIP = $_SERVER['HTTP_X_FORWARDED_FOR'];
+} else {
+	$VisitorIP = $_SERVER['REMOTE_ADDR'];
+} $Geo = geoip_country_code_by_name($VisitorIP);
+
 ?>
