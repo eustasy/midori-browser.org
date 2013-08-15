@@ -64,7 +64,55 @@
 			<script>$(".squishy").squishy();</script>
 		</div>
 		<div class="col span_1_of_6 donate">
-			<?php donate($Geo); ?>
+			<?php if ($country  == 'EU' || $country  == 'AD' || $country  == 'AT' || $country  == 'BE' || $country  == 'CY' || $country  == 'EE' || $country  == 'FI' || $country  == 'FR' || $country  == 'DE' || $country  == 'GR' || $country  == 'IE' || $country  == 'IT' || $country  == 'XK' || $country  == 'LU' || $country  == 'MT' || $country  == 'MC' || $country  == 'ME' || $country  == 'NL' || $country  == 'PT' || $country  == 'SM' || $country  == 'SK' || $country  == 'SI' || $country  == 'ES' || $country  == 'VA') { // EUR
+			echo '<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="eur">
+				<input type="hidden" name="lc" value="US">
+				<input type="hidden" name="currency_code" value="EUR">';
+		} elseif ($country  == 'GG' || $country  == 'IM' || $country  == 'JE' || $country  == 'GS' || $country  == 'GB') { // GBP
+			echo '<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="gbp">
+				<input type="hidden" name="lc" value="GB">
+				<input type="hidden" name="currency_code" value="GBP">';
+		} elseif ($country  == 'AU' || $country  == 'CC' || $country  == 'KI' || $country  == 'NR' || $country  == 'TV') { // AUD
+			echo '<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="aud">
+				<input type="hidden" name="lc" value="AU">
+				<input type="hidden" name="currency_code" value="AUD">';
+		} elseif ($country  == 'CA') { // CAD
+			echo '<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="cad">
+				<input type="hidden" name="lc" value="CA">
+				<input type="hidden" name="currency_code" value="CAD">';
+		} elseif ($country  == 'SE') { // SEK
+			echo '<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="sek">
+				<input type="hidden" name="lc" value="SE">
+				<input type="hidden" name="currency_code" value="SEK">';
+		} else { // USD
+			echo '<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="usd">
+				<input type="hidden" name="lc" value="US">
+				<input type="hidden" name="currency_code" value="USD">';
+		}
+
+	echo '
+				<input type="hidden" name="cmd" value="_xclick">
+				<input type="hidden" name="button_subtype" value="services">
+				<input type="hidden" name="no_shipping" value="1">
+				<input type="hidden" name="rm" value="1">
+
+				<input type="hidden" name="no_note" value="0">
+				<input type="hidden" name="cn" value="Add a note.">
+
+				<input type="hidden" name="business" value="christian@twotoasts.de">
+				<input type="hidden" name="item_name" value="Midori Browser Donation">
+				<input type="hidden" name="return" value="<?php echo $home; ?>/thanks">
+				<input type="hidden" name="cancel_return" value="<?php echo $home; ?>/ohwell">
+
+				<input type="hidden" name="bn" value="PP-BuyNowBF:btn_paynowCC_LG.gif:NonHosted">
+				<img alt="PayPal Payment Tracking" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" style="width:1px;height:1;border:none;">
+
+				<label for="amount">Donation Amount</label>
+				<input class="amount" name="amount" type="text" id="amount" maxlength="5" value="5.00">
+
+				<input class="submit" name="submit" type="submit" value="Donate">
+
+			</form>'; ?>
 			<p><a href="<?php echo $home; ?>/donate/">Other Currencies</a></p>
 		</div>
 	</header>
