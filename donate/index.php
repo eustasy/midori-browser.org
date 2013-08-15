@@ -17,7 +17,7 @@
 
 <div class="section group"><div class="col span_1_of_6"></div><div class="col span_4_of_6"><h3>Choose a Currency to Donate in</h3><h4>While anyone with a PayPal account can donate, it may be easier for you if you donate in your native currency. Unfortunately, only some currencies are available, but you can use Google as a <a href="https://www.google.com/search?q=10+gbp+to+usd">exchange calculator</a> to convert to and donate in any of the currencies listed below.</h4></div><div class="col span_1_of_6"></div></div>
 
-<div class="section group">
+<div class="section group donate">
 	<div class="col span_1_of_3">
 		<h4>USD $</h4>
 		<?php donate('US'); ?>
@@ -31,7 +31,7 @@
 		<?php donate('GB'); ?>
 	</div>
 </div>
-<div class="section group">
+<div class="section group donate">
 	<div class="col span_1_of_3">
 		<h4>CAD $</h4>
 		<?php donate('CA'); ?>
