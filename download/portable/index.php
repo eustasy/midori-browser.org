@@ -15,20 +15,22 @@
 include '../../chunks/process.php';
 
 foreach ($xml->download as $download) {
-	if ($download->extension == '.7z') {
-		echo '<div class="col span_1_of_2">';
-		$package = ltrim($download->extension, '.');
-		echo '<h3><a href="' . $download->location . '">' . $package . '</a></h3>';
-		$size = $download->size/1048576;
-		echo '<h6>' . $download->version . ' &nbsp;&middot;&nbsp; ' . round($size, 1) . ' MB</h6>';
-		echo '</div>';
-	} elseif ($download->extension == '.zip') {
-		echo '<div class="col span_1_of_2">';
-		$package = ltrim($download->extension, '.');
-		echo '<h3><a href="' . $download->location . '">' . $package . '</a></h3>';
-		$size = $download->size/1048576;
-		echo '<h6>' . $download->version . ' &nbsp;&middot;&nbsp; ' . round($size, 1) . ' MB</h6>';
-		echo '</div>';
+	if ($download->check == 'midori')
+		if ($download->extension == '.7z') {
+			echo '<div class="col span_1_of_2">';
+			$package = ltrim($download->extension, '.');
+			echo '<h3><a href="' . $download->location . '">' . $package . '</a></h3>';
+			$size = $download->size/1048576;
+			echo '<h6>' . $download->version . ' &nbsp;&middot;&nbsp; ' . round($size, 1) . ' MB</h6>';
+			echo '</div>';
+		} elseif ($download->extension == '.zip') {
+			echo '<div class="col span_1_of_2">';
+			$package = ltrim($download->extension, '.');
+			echo '<h3><a href="' . $download->location . '">' . $package . '</a></h3>';
+			$size = $download->size/1048576;
+			echo '<h6>' . $download->version . ' &nbsp;&middot;&nbsp; ' . round($size, 1) . ' MB</h6>';
+			echo '</div>';
+		}
 	}
 }
 
