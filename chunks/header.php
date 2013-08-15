@@ -15,6 +15,8 @@
 
 	<script src="<?php echo $home; ?>/chunks/jquery.squishy.min.js"></script>
 
+	<script src="<?php echo $home; ?>/chunks/jquery.equalize.min.js"></script>
+
 	<script src="http://j.maxmind.com/js/country.js"></script>
 	<script src="<?php echo $home; ?>/chunks/currency.js"></script>
 
