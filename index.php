@@ -120,25 +120,7 @@
 			<div class="col span_1_of_3"></div>
 			<div class="col span_1_of_3">
 				<div class="donate">
-					<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-						<input type="hidden" name="cmd" value="_xclick">
-						<input type="hidden" name="lc" value="US">
-						<input type="hidden" name="currency_code" value="USD">
-						<input type="hidden" name="button_subtype" value="services">
-						<input type="hidden" name="no_shipping" value="1">
-						<input type="hidden" name="rm" value="1">
-						<input type="hidden" name="no_note" value="0">
-						<input type="hidden" name="cn" value="Add a note.">
-						<input type="hidden" name="business" value="christian@twotoasts.de">
-						<input type="hidden" name="item_name" value="Midori Browser Donation">
-						<input type="hidden" name="return" value="<?php echo $home; ?>/thanks">
-						<input type="hidden" name="cancel_return" value="<?php echo $home; ?>/ohwell">
-						<input type="hidden" name="bn" value="PP-BuyNowBF:btn_paynowCC_LG.gif:NonHosted">
-						<img alt="PayPal Payment Tracking" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" style="width:1px;height:1;border:none;">
-						<label for="amountbottom">Donation Amount</label>
-						<input class="amount" name="amount" type="text" id="amountbottom" maxlength="5" value="5.00">
-						<input class="submit" name="submit" type="submit" value="Donate">
-					</form>
+					<?php donate(false); ?>
 					<p><a href="<?php echo $home; ?>/donate">Donate in another Currency</a></p>
 				</div>
 			</div>
