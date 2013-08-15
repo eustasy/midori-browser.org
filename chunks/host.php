@@ -20,7 +20,7 @@ if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
 	$VisitorIP = $_SERVER['REMOTE_ADDR'];
 } $Geo = geoip_country_code_by_name($VisitorIP);
 
-function donate($Country = $Geo) {
+function donate($Country) {
 	if ($Country  == 'EU' || $Country  == 'AD' || $Country  == 'AT' || $Country  == 'BE' || $Country  == 'CY' || $Country  == 'EE' || $Country  == 'FI' || $Country  == 'FR' || $Country  == 'DE' || $Country  == 'GR' || $Country  == 'IE' || $Country  == 'IT' || $Country  == 'XK' || $Country  == 'LU' || $Country  == 'MT' || $Country  == 'MC' || $Country  == 'ME' || $Country  == 'NL' || $Country  == 'PT' || $Country  == 'SM' || $Country  == 'SK' || $Country  == 'SI' || $Country  == 'ES' || $Country  == 'VA') { // EUR
 		echo '<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="eur">
 		<input type="hidden" name="lc" value="US">
