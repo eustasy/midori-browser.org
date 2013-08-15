@@ -64,7 +64,7 @@
 			<script>$(".squishy").squishy();</script>
 		</div>
 		<div class="col span_1_of_6 donate">
-			<?php donate(false); ?>
+			<?php donate('auto'); ?>
 			<p><a href="<?php echo $home; ?>/donate/">Other Currencies</a></p>
 		</div>
 	</header>
