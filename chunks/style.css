@@ -804,7 +804,7 @@ img.thirtytwo {
 	padding: 1% 1% 3% 1%;
 }
 
-.standard {
+.bubble.standard {
 	-webkit-border-radius: 3px;
 	background: #eee;
 	border-radius: 3px;
@@ -812,19 +812,19 @@ img.thirtytwo {
 	text-align: center;
 	vertical-align: middle;
 }
-.warning {
+.bubble.warning {
 	-webkit-border-radius: 3px;
 	background: #DF382C;
 	border-radius: 3px;
 	color: #FEFEFE;
 }
-.information {
+.bubble.information {
 	-webkit-border-radius: 3px;
 	background: rgb(76, 165, 201);
 	border-radius: 3px;
 	color: #FEFEFE !important;
 }
-.source, .choose {
+.bubble.source, .bubble.choose {
 	-webkit-border-radius: 3px;
 	background: #eee;
 	border-radius: 3px;
