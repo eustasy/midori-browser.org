@@ -39,6 +39,7 @@ foreach($file as $file) {
 		<architecture>', $parts[2], '</architecture>
 		<extension>', $parts[3], '</extension>
 		<size>', filesize($file), '</size>
+		<sum>', sha1_file($file), '</sum>
 	</download>
 ';
 
