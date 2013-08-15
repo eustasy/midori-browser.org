@@ -888,6 +888,7 @@ img.thirtytwo {
 	color: #333;
 	margin: 2% 3% 3%;
 }
+.information h2, .information h3, .information h4, .information h5, .information h6, .information p { color: #fff; }
 
 .bubble a { color: rgb(62, 144, 12); }
 .bubble a:hover, .bubble a:active { color: rgb(79,168,14); }
