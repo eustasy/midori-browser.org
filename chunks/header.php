@@ -1,4 +1,6 @@
-	<?php include 'host.php'; ?>
+	<?php error_reporting(E_ALL);
+	ini_set('display_errors', '1');
+	require 'host.php'; ?>
 
 	<!--[if IE]><meta http-equiv="cleartype" content="on"><![endif]-->
 	<meta name="HandheldFriendly" content="True">
