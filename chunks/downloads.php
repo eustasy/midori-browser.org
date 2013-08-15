@@ -26,17 +26,19 @@ foreach($file as $file) {
 	// This is why they all need to be named correctly
 	// As 			'midori_version_architecture_.extension
 	// Example 		'midori_0.5.0-2_x86-64_.pkg.tar.xz'
+	$check = substr($parts[0], -6, 6);
 
 	// The location is the filename and directory after the domain.
 	$location = $home  . $directory . str_replace('../downloads/', '', $file);
 
 	// Now we can add a download to the list.
 	echo '	<download>
-		<location>' . $location . '</location>
-		<version>' . $parts[1] . '</version>
-		<architecture>' . $parts[2] . '</architecture>
-		<extension>' . $parts[3] . '</extension>
-		<size>' . filesize($file) . '</size>
+		<location>', $location, '</location>
+		<check>', $check, '</check>
+		<version>', $parts[1], '</version>
+		<architecture>', $parts[2], '</architecture>
+		<extension>', $parts[3], '</extension>
+		<size>', filesize($file), '</size>
 	</download>
 ';
 
