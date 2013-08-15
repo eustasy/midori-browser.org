@@ -15,7 +15,7 @@
 include '../../chunks/process.php';
 
 foreach ($xml->download as $download) {
-	if ($download->check == 'midori')
+	if ($download->check == 'midori') {
 		if ($download->extension == '.7z') {
 			echo '<div class="col span_1_of_2">';
 			$package = ltrim($download->extension, '.');
