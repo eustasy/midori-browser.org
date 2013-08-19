@@ -35,7 +35,7 @@
 			<div class="col span_1_of_6"></div>
 			<div class="col span_1_of_3">
 				<h2>Cutting Edge</h2>
-				<p>Midori is blazing fast, utilising the latest web technologies and a small but dexterous array of extensions provide all the essential features.</p>
+				<p>Midori is blazing fast, utilizing the latest web technologies and a small but dexterous array of extensions provide all the essential features.</p>
 				<p>The lightweight webkit rendering engine lend it the same supremacy in speed that has spurred the growth of Google Chrome.</p>
 			</div>
 		</div>
