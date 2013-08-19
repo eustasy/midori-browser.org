@@ -45,7 +45,7 @@
 		<div class="section group">
 			<div class="col span_1_of_3">
 				<h2>Simply Beautiful</h2>
-				<p>Midori is carefully crafter by skilled designers and coders, right down to the last pixel.</p>
+				<p>Midori is carefully crafted by skilled designers and coders, right down to the last pixel.</p>
 			</div>
 			<div class="col span_1_of_6"></div>
 			<div class="col span_1_of_2">
