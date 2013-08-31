@@ -16,14 +16,14 @@ html {
 }
 
 body {
-	background: rgb(12,48,83);
-	background: -moz-linear-gradient(left, rgba(12,48,83,1) 0%, rgba(22,70,117,1) 25%, rgba(12,48,83,1) 100%);
+	background: rgb(22,70,117);
+/*	background: -moz-linear-gradient(left, rgba(12,48,83,1) 0%, rgba(22,70,117,1) 25%, rgba(12,48,83,1) 100%);
 	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(12,48,83,1)), color-stop(25%, rgba(22,70,117,1)), color-stop(100%, rgba(12,48,83,1)));
 	background: -webkit-linear-gradient(left, rgba(12,48,83,1) 0%, rgba(22,70,117,1) 25%, rgba(12,48,83,1) 100%);
 	background: -o-linear-gradient(left, rgba(12,48,83,1) 0%, rgba(22,70,117,1) 25%, rgba(12,48,83,1) 100%);
 	background: -ms-linear-gradient(left, rgba(12,48,83,1) 0%, rgba(22,70,117,1) 25%, rgba(12,48,83,1) 100%);
 	background: linear-gradient(to right, rgba(12,48,83,1) 0%, rgba(22,70,117,1) 25%, rgba(12,48,83,1) 100%);
-	bottom: 0;
+*/	bottom: 0;
 	color: #ccc;
 	font: 400 1em/1.4 'Droid Sans', Sans;
 	left: 0;
