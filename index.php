@@ -61,7 +61,7 @@
 			</div>
 			<div class="col span_1_of_3">
 				<h2>All About Privacy</h2>
-				<p>Midori features built-in privacy tools, including script disabling, blocking thrid-party cookie blocking, stripping referrer details and automatic history clearing after a set amount of time.</p>
+				<p>Midori features built-in privacy tools, including script disabling, thrid-party cookie blocking, stripping referrer details and automatic history clearing after a set amount of time.</p>
 				<p>There's also an integrated adblocker and cookie manager installed (but not enabled) under the included extensions.</p>
 			</div>
 		</div>
