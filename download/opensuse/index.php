@@ -16,7 +16,7 @@ include '../../chunks/process.php';
 foreach ($xml->download as $download) {
 	if ($download->extension == '.rpm') {
 		echo '<div class="col span_1_of_3">';
-		echo '<h3><a href="' . $download->location . '">' . $download->architecture . '</a></h3>';
+		echo '<h3><a href="' . $download->location . '#!sha1!' . $download->sum . '">' . $download->architecture . '</a></h3>';
 		$size = $download->size/1048576;
 		$package = ltrim($download->extension, '.');
 		echo '<h6>' . $package . ' &nbsp;&middot;&nbsp; ' . $download->version . ' &nbsp;&middot;&nbsp; ' . round($size, 1) . ' MB</h6>';

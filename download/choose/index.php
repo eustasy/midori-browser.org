@@ -17,7 +17,7 @@ foreach ($xml->download as $download) {
 		$package = ltrim($download->extension, '.');
 		$size = $download->size/1048576;
 		echo '
-		<a href="' . $download->location . '" title="Download Midori for Windows.">
+		<a href="' . $download->location . '#!sha1!' . $download->sum . '" title="Download Midori for Windows.">
 			<div class="bubble system windows">
 				<h2>Windows</h2>';
 		echo '
