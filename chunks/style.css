@@ -827,7 +827,6 @@ img.thirtytwo {
 }
 .bubble.source, .bubble.choose {
 	-webkit-border-radius: 3px;
-	background: #eee;
 	border-radius: 3px;
 	color: #333;
 	text-align: center;
