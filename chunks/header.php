@@ -13,29 +13,6 @@
 	<link rel="stylesheet" media="all" href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Sans+Mono|Raleway:200,300,400">
 	<link rel="stylesheet" media="all" href="<?php echo $home; ?>/chunks/style.css">
 
-	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-
-	<script src="<?php echo $home; ?>/chunks/jquery.squishy.min.js"></script>
-
-	<script src="<?php echo $home; ?>/chunks/jquery.equalize.min.js"></script>
-
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.css" media="screen">
-	<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.pack.js"></script>
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-media.min.js"></script>
-	<script type="text/javascript">
-	$(document).ready(function() {
-		$(".fancybox").fancybox({
-			'padding'	: 0
-		});
-		$('.fancybox-media').fancybox({
-			'padding'	: 0,
-			helpers : {
-				media : {}
-			}
-		});
-	});
-	</script>
-
 	<script type="text/javascript">
 	var _gaq = _gaq || [];
 	_gaq.push(['_setAccount', 'UA-28932148-9']);
@@ -63,7 +40,6 @@
 		<div class="col span_1_of_3">
 			<a href="<?php echo $home; ?>/" title="Midori, a lightweight, fast, and free web browser."><h1 class="squishy">Midori</h1></a>
 			<a href="<?php echo $home; ?>/" title="Midori, a lightweight, fast, and free web browser."><p class="tag squishy">a lightweight, fast, and free web browser</p></a>
-			<script>$(".squishy").squishy();</script>
 		</div>
 		<div class="col span_1_of_6 donate">
 			<?php donate($Geo); ?>
