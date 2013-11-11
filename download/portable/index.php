@@ -45,6 +45,10 @@ foreach ($xml->download as $download) {
         <div class="col span_1_of_6"><br></div>
 </div>
 
+
+                        <p class="important">Midori Portable should work on all Windows systems, you simply need to extract the downloaded archive to a USB drive or folder on your computer, than run midori.exe</p>
+                        <p>You can move the midori folder, copy it across computers, and run Midori from USB drives without having to install it.</p>
+
 <div class="section group">
         <div class="col span_1_of_6"><br></div>
         <div class="col span_4_of_6">
