@@ -27,25 +27,36 @@
 </div>
 
 <div class="section group">
-	<div class="col span_1_of_2">
+	<div class="col span_1_of_6"><br></div>
+	<div class="col span_4_of_6">
 		<div class="bubble standard">
 			<h3>Alternative Downloads</h3>
+			<p>Description</p>
+			<div class="section group">
 <?php
 
 require '../../chunks/process.php';
 
 foreach ($xml->download as $download) {
 	if ($download->extension == '.pkg.tar.xz') {
-		echo '<h4><a href="' . $download->location . '#!sha1!' . $download->sum . '">' . $download->architecture . '</a></h4>';
+		echo '
+				<div class="col span_1_of_2">
+					<h4><a href="' . $download->location . '#!sha1!' . $download->sum . '">' . $download->architecture . '</a></h4>';
 		$size = $download->size/1048576;
 		$package = ltrim($download->extension, '.');
-		echo '<p class="center">' . $download->version . ' &nbsp;&middot;&nbsp; ' . round($size, 1) . ' MB &nbsp;&middot;&nbsp; <a href="' . $download->location . '.sig">sig</a></p>';
+		echo '
+					<p class="center">' . $download->version . ' &nbsp;&middot;&nbsp; ' . round($size, 1) . ' MB &nbsp;&middot;&nbsp; <a href="' . $download->location . '.sig">sig</a></p>
+				</div>';
 	}
 }
 
 ?>
+			</div>
 		</div>
 	</div>
+	<div class="col span_1_of_6"><br></div>
+</div>
+<div class="section group">
 	<div class="col span_1_of_2">
 		<div class="bubble standard">
 			<h3 class="withimg64"><img src="<?php echo $home; ?>/images/feature-help.png" class="sixtyfour floatleft"> Help</h3>
