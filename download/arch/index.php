@@ -29,7 +29,7 @@
 <div class="section group">
 	<div class="col span_1_of_2">
 		<div class="bubble standard">
-			<h3>Alternative Downloads<?h3>
+			<h3>Alternative Downloads</h3>
 <?php
 
 require '../../chunks/process.php';
