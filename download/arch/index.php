@@ -5,14 +5,20 @@
 <?php require '../../chunks/header.php'; ?>
 
 <div class="section group">
+	<div class="col span_1_of_1">
+		<div class="bubble system arch">
+			<h2>Download Midori for Arch</h2>
+		</div>
+	</div>
+</div>
+<div class="section group">
 	<div class="col span_3_of_4">
 		<div class="bubble standard prefered">
-			<h2>Download Midori for Arch</h2>
 			<div class="section group">
 
 <?php
 
-include '../../chunks/process.php';
+require '../../chunks/process.php';
 
 foreach ($xml->download as $download) {
 	if ($download->extension == '.pkg.tar.xz') {
@@ -40,11 +46,6 @@ foreach ($xml->download as $download) {
 </div>
 
 <div class="section group">
-	<div class="col span_1_of_2">
-		<div class="bubble system arch">
-			<h2>Arch</h2>
-		</div>
-	</div>
 	<div class="col span_1_of_2">
 		<div class="bubble standard">
 			<h3 class="withimg64"><img src="<?php echo $home; ?>/images/feature-help.png" class="sixtyfour floatleft"> Help</h3>
