@@ -905,8 +905,16 @@ img.sixtyfour.floatright {
 .warning h3,
 .warning h5,
 .warning h6,
-.warning a {
+.information p,
+.information h3,
+.information h3,
+.information h5,
+.information h6 {
 	color: #fefefe;
+}
+.warning a,
+.information a {
+	color: #bdf48f;
 }
 
 .review p {
