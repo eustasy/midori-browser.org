@@ -157,7 +157,7 @@ sub, sup {
 sup { top: -.5em; }
 sub { bottom: -.25em; }
 
-code, .code { font: 400 .8em/2 'Droid Sans Mono'; }
+code { font: 400 1em/1.5em 'Droid Sans Mono', monospace; }
 code {
 	display: block;
 	margin: 2% 3% 3%;
@@ -921,7 +921,7 @@ input, input:hover, input:focus, input:active {
 	border: none;
 	border-radius: 3px;
 	color: #FAFAFA;
-	font: 400 14px/1.5em 'Droid Sans Mono', monospace;
+	font: 400 1em/1.5em 'Droid Sans Mono', monospace;
 	margin: 2%;
 	outline: 0;
 	padding: 2% 3%;
