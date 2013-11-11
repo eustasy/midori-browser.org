@@ -53,6 +53,12 @@
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="<?php echo $home; ?>/chunks/jquery-1.10.2.min.js"><\/script>')</script>
 
+	<!-- jQuery Select-All Code -->
+	<script>$('input.code').one('click', function() { $(this).select(); });</script>
+	<script>$('input.code').dblclick(function() { $(this).select(); });</script>
+	<script>$('textarea.code').one('click', function() { $(this).select(); });</script>
+	<script>$('textarea.code').dblclick(function() { $(this).select(); });</script>
+	
 	<!-- jQuery.Squishy: Load and Execute -->
 	<script src="<?php echo $home; ?>/chunks/jquery.squishy.min.js"></script>
 	<script>$('.squishy').squishy();</script>
