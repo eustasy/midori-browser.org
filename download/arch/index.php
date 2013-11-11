@@ -5,29 +5,38 @@
 <?php require '../../chunks/header.php'; ?>
 
 <div class="section group">
-	<div class="col span_1_of_1">
+	<div class="col span_1_of_6"><br></div>
+	<div class="col span_4_of_6">
 		<div class="bubble system arch">
 			<h2>Download Midori for Arch</h2>
 		</div>
 	</div>
+	<div class="col span_1_of_6"><br></div>
 </div>
+
 <div class="section group">
-	<div class="col span_3_of_4">
+	<div class="col span_1_of_6"><br></div>
+	<div class="col span_4_of_6">
 		<div class="bubble standard">
 			<h3>Install Direct</h3>
 			<p class="important">You can also install directly from the Arch repositories with this command.</p>
 			<input type="text" id="dynamic" value="sudo pacman -S midori" />
 		</div>
 	</div>
-	<div class="col span_1_of_4">
-		<div class="bubble warning">
+	<div class="col span_1_of_6"><br></div>
+</div>
+
+<div class="section group">
+	<div class="col span_1_of_2">
+		<div class="bubble standard">
+			<h3>Alternative Downloads<?h3>
 <?php
 
 require '../../chunks/process.php';
 
 foreach ($xml->download as $download) {
 	if ($download->extension == '.pkg.tar.xz') {
-		echo '<h3><a href="' . $download->location . '#!sha1!' . $download->sum . '">' . $download->architecture . '</a></h3>';
+		echo '<h4><a href="' . $download->location . '#!sha1!' . $download->sum . '">' . $download->architecture . '</a></h4>';
 		$size = $download->size/1048576;
 		$package = ltrim($download->extension, '.');
 		echo '<p class="center">' . $download->version . ' &nbsp;&middot;&nbsp; ' . round($size, 1) . ' MB &nbsp;&middot;&nbsp; <a href="' . $download->location . '.sig">sig</a></p>';
@@ -37,9 +46,6 @@ foreach ($xml->download as $download) {
 ?>
 		</div>
 	</div>
-</div>
-
-<div class="section group">
 	<div class="col span_1_of_2">
 		<div class="bubble standard">
 			<h3 class="withimg64"><img src="<?php echo $home; ?>/images/feature-help.png" class="sixtyfour floatleft"> Help</h3>
