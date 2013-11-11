@@ -5,8 +5,18 @@
 <?php require '../../chunks/header.php'; ?>
 
 <div class="section group">
-	<div class="col span_1_of_5"></div>
-	<div class="col span_3_of_5">
+        <div class="col span_1_of_6"><br></div>
+        <div class="col span_4_of_6">
+                <div class="bubble system source">
+                        <h2>Download Midori Source</h2>
+                </div>
+        </div>
+        <div class="col span_1_of_6"><br></div>
+</div>
+
+<div class="section group">
+	<div class="col span_1_of_6"></div>
+	<div class="col span_4_of_6">
 		<div class="bubble standard">
 <?php
 
@@ -14,17 +24,17 @@ include '../../chunks/process.php';
 
 foreach ($xml->download as $download) {
 	if ($download->extension == '.tar.bz2') {
-		echo '<h2><a href="' . $download->location . '#!sha1!' . $download->sum . '">Download the Source of Midori</a></h2>';
+		echo '<h3><a href="' . $download->location . '#!sha1!' . $download->sum . '">Download the Source of Midori</a></h3>';
 		$size = $download->size/1048576;
 		$package = ltrim($download->extension, '.');
-		echo '<h6>' . $package . ' &nbsp;&middot;&nbsp; ' . $download->version . ' &nbsp;&middot;&nbsp; ' . round($size, 1) . ' MB</h6>';
+		echo '<p class="center">' . $package . ' &nbsp;&middot;&nbsp; ' . $download->version . ' &nbsp;&middot;&nbsp; ' . round($size, 1) . ' MB</p>';
 	}
 }
 
 ?>
 		</div>
 	</div>
-	<div class="col span_1_of_5"></div>
+	<div class="col span_1_of_6"></div>
 </div>
 
 <?php require '../../chunks/footer.php'; ?>
