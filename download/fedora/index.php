@@ -39,7 +39,7 @@ include '../../chunks/process.php';
 
 foreach ($xml->download as $download) {
 	if ($download->extension == '.rpm') {
-		 if ($download->architecture == 'i586' || $download->architecture == 'x86-64') {
+		 if ($download->architecture == 'i686' || $download->architecture == 'x86-64') {
                         echo '
                                 <div class="col span_1_of_2">
                                         <h3><a href="' . $download->location . '#!sha1!' . $download->sum . '">' . $download->architecture . '</a></h3>';
