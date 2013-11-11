@@ -30,7 +30,7 @@ foreach ($xml->download as $download) {
 		echo '<h3><a href="' . $download->location . '#!sha1!' . $download->sum . '">' . $download->architecture . '</a></h3>';
 		$size = $download->size/1048576;
 		$package = ltrim($download->extension, '.');
-		echo '<p>' . $download->version . ' &nbsp;&middot;&nbsp; ' . round($size, 1) . ' MB &nbsp;&middot;&nbsp; <a href="' . $download->location . '.sig">sig</a></p>';
+		echo '<p class="center">' . $download->version . ' &nbsp;&middot;&nbsp; ' . round($size, 1) . ' MB &nbsp;&middot;&nbsp; <a href="' . $download->location . '.sig">sig</a></p>';
 	}
 }
 
