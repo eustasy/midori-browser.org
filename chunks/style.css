@@ -897,6 +897,15 @@ img.thirtytwo {
 .bubble .news .post:first-child h4 { margin: 1em 0 .5em; }
 .bubble .news h4 { margin: 2em 0 .5em; }
 
+.warning p,
+.warning h3,
+.warning h3,
+.warning h5,
+.warning h6,
+.warning a {
+	color: #fefefe;
+}
+
 .review p {
 	color: #bdf48f;
 	text-align: center;
