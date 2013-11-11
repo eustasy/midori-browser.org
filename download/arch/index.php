@@ -13,9 +13,14 @@
 </div>
 <div class="section group">
 	<div class="col span_3_of_4">
-		<div class="bubble standard prefered">
-			<div class="section group">
-
+		<div class="bubble standard">
+			<h3>Install Direct</h3>
+			<p class="important">You can also install directly from the Arch repositories with this command.</p>
+			<input type="text" id="dynamic" value="sudo pacman -S midori" />
+		</div>
+	</div>
+	<div class="col span_1_of_4">
+		<div class="bubble warning">
 <?php
 
 require '../../chunks/process.php';
@@ -32,15 +37,6 @@ foreach ($xml->download as $download) {
 }
 
 ?>
-			</div>
-		</div>
-	</div>
-	<div class="col span_1_of_4">
-		<div class="bubble warning">
-			<h3>Install Direct</h3>
-			<p class="important">You can also install directly from the Arch repositories with this command.</p>
-			<p>Note that the official Arch repositories may be out of date.</p>
-			<input type="text" id="dynamic" value="sudo pacman -S midori" />
 		</div>
 	</div>
 </div>
