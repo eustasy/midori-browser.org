@@ -157,13 +157,6 @@ sub, sup {
 sup { top: -.5em; }
 sub { bottom: -.25em; }
 
-code { font: 400 1em/1.5em 'Droid Sans Mono', monospace; }
-code {
-	display: block;
-	margin: 2% 3% 3%;
-	text-align: left;
-}
-
 a {
 	-moz-transition: all 500ms ease-in-out;
 	-o-transition: all 500ms ease-in-out;
@@ -921,12 +914,18 @@ input, input:hover, input:focus, input:active {
 	border: none;
 	border-radius: 3px;
 	color: #FAFAFA;
-	font: 400 1em/1.5em 'Droid Sans Mono', monospace;
+	font: 400 .9em/1.5 'Droid Sans Mono', monospace;
 	margin: 2%;
 	outline: 0;
 	padding: 2% 3%;
 	text-align: center;
 	width: 90%;
+}
+code { font: 400 .9em/1.5 'Droid Sans Mono', monospace; }
+code {
+	display: block;
+	margin: 2% 3% 3%;
+	text-align: left;
 }
 button, input[type=button], input[type=reset], input[type=submit] { -webkit-appearance: button; }
 input[type=checkbox], input[type=radio] { box-sizing: border-box; }
