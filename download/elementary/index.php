@@ -8,7 +8,7 @@
 	<div class="col span_1_of_6"><br></div>
 	<div class="col span_4_of_6">
 		<div class="bubble system elementary">
-			<h2 class="withimg64"><img src="<?php echo $home; ?>/images/action-love.png" class="sixtyfour floatleft"> Already installed!</h2>
+			<h2>elementary</h2>
 		</div>
 	</div>
 	<div class="col span_1_of_6"><br></div>
@@ -18,7 +18,7 @@
 	<div class="col span_1_of_6"><br></div>
 	<div class="col span_4_of_6">
 		<div class="bubble information">
-			<h3>Already installed!</h3>
+			<h3 class="withimg64"><img src="<?php echo $home; ?>/images/action-love.png" class="sixtyfour floatleft"> Already installed!</h3>
 			<h5>Midori comes pre-installed as the default browser in elementary os, you just need to click the icon down the bottom, or search for it in applications.</h5>
 		</div>
 	</div>
