@@ -40,12 +40,14 @@ include '../../chunks/process.php';
 
 foreach ($xml->download as $download) {
 	if ($download->extension == '.deb') {
-		echo '<div class="col span_1_of_2">';
-		echo '<h5><a href="' . $download->location . '#!sha1!' . $download->sum . '">' . $download->architecture . '</a></h5>';
+		echo '
+				<div class="col span_1_of_2">
+					<h4><a href="' . $download->location . '#!sha1!' . $download->sum . '">' . $download->architecture . '</a></h5>';
 		$size = $download->size/1048576;
 		$package = ltrim($download->extension, '.');
-		echo '<h6>' . $package . ' &nbsp;&middot;&nbsp; ' . $download->version . ' &nbsp;&middot;&nbsp; ' . round($size, 1) . ' MB</h6>';
-		echo '</div>';
+		echo '
+					<p class="center">' . $package . ' &nbsp;&middot;&nbsp; ' . $download->version . ' &nbsp;&middot;&nbsp; ' . round($size, 1) . ' MB</p>
+				</div>';
 	}
 }
 
