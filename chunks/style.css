@@ -894,7 +894,7 @@ img.sixtyfour.floatright {
 .bubble a { color: rgb(62, 144, 12); }
 .bubble a:hover, .bubble a:active { color: rgb(79,168,14); }
 
-.bubble.system h2, .bubble.system h3, .bubble.system h4 { margin: 3% 0 3% 32px; }
+.bubble.system h2, .bubble.system h3, .bubble.system h4 { margin: 3% 0; }
 .bubble.system p { margin: 2% 100px; }
 
 .bubble .news .post:first-child h4 { margin: 1em 0 .5em; }
