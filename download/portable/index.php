@@ -9,7 +9,7 @@
         <div class="col span_4_of_6">
                 <div class="bubble system portable">
                         <h2>Download Midori Portable</h2>
-                        <h3> or Windows</h3>
+                        <h3>for Windows</h3>
                 </div>
         </div>
         <div class="col span_1_of_6"><br></div>
