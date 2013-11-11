@@ -784,10 +784,20 @@ img.thirtytwo {
 	max-height: 32px;
 	max-width: 32px;
 }
+img.thirtytwo.floatleft,
+img.fortyeight.floatleft,
+img.sixtyfour.floatleft {
+	margin: 0 12px 0 0;
+}
+img.thirtytwo.floatright,
+img.fortyeight.floatright,
+img.sixtyfour.floatright {
+	margin: 0 0 0 12px;
+}
 
-.withimg64 { padding: 0 64px 0 0; }
-.withimg48 { padding: 0 48px 0 0; }
-.withimg32 { padding: 0 32px 0 0; }
+.withimg64 { padding: 0 76px 0 0; }
+.withimg48 { padding: 0 60px 0 0; }
+.withimg32 { padding: 0 44px 0 0; }
 
 
 
