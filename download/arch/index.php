@@ -60,7 +60,7 @@ foreach ($xml->download as $download) {
 	<div class="col span_1_of_6"><br></div>
 	<div class="col span_4_of_6">
 		<div class="bubble standard">
-			<h3 class="withimg64"><img src="<?php echo $home; ?>/images/feature-help.png" class="sixtyfour floatleft"> Help</h3>
+			<h3><img src="<?php echo $home; ?>/images/feature-help.png" class="sixtyfour floatleft"> Help</h3>
 			<p>If you need to find out how to do something, you can check our <a href="<?php echo $home; ?>/faqs/">Frequently Asked Questions</a>.</p>
 		</div>
 	</div>
