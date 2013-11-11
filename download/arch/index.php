@@ -20,7 +20,7 @@
 		<div class="bubble standard">
 			<h3>Install Direct</h3>
 			<p class="important center">You can also install directly from the Arch repositories with this command.</p>
-			<input type="text" id="dynamic" value="sudo pacman -S midori" />
+			<input class="code" type="text" id="dynamic" value="sudo pacman -S midori" />
 		</div>
 	</div>
 	<div class="col span_1_of_6"><br></div>
