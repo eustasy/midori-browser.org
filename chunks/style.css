@@ -839,9 +839,9 @@ img.sixtyfour.floatright {
 .system {
 	-webkit-border-radius: 3px;
 	background-color: #eee;
-	background-position: 10px center;
+	background-position: 5% center;
 	background-repeat: no-repeat;
-	background-size: auto 75%;
+	background-size: auto 50%;
 	border-radius: 3px;
 	color: #333;
 	padding: 1%;
