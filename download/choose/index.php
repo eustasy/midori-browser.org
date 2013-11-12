@@ -4,10 +4,9 @@
 
 	<?php require '../../chunks/header.php'; ?>
 
-
-<h2>Download Midori</h2>
-<div class="section group" id="downloads">
-	<div class="col span_1_of_2">
+	<h2>Download Midori</h2>
+	<div class="section group" id="downloads">
+		<div class="col span_1_of_2">
 <?php
 
 include '../../chunks/process.php';
@@ -17,14 +16,12 @@ foreach ($xml->download as $download) {
 		$package = ltrim($download->extension, '.');
 		$size = $download->size/1048576;
 		echo '
-		<a href="' . $download->location . '#!sha1!' . $download->sum . '" title="Download Midori for Windows.">
-			<div class="bubble system windows">
-				<h2>Windows</h2>';
-		echo '
-				<h6 class="right">' . $package . ' &nbsp;&middot;&nbsp; ' . $download->version . ' &nbsp;&middot;&nbsp; ' . round($size, 1) . ' MB</h6>';
-		echo '
-			</div>
-		</a>';
+			<a href="' . $download->location . '#!sha1!' . $download->sum . '" title="Download Midori for Windows.">
+				<div class="bubble system windows">
+					<h3>Windows</h3>
+					<p class="right">' . $package . ' &nbsp;&middot;&nbsp; ' . $download->version . ' &nbsp;&middot;&nbsp; ' . round($size, 1) . ' MB</p>
+				</div>
+			</a>';
 	}
 }
 
