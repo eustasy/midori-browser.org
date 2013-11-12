@@ -96,7 +96,7 @@ echo ' MB</h6>';
 		</a>
 	</div>
 </div>
-<p class="center"><a href="<?php echo $home; ?>/download/choose/" title="Other ways to get Midori / Get Midori for Other Systems.">Other ways to get Midori and Midori for Other Systems.</a></p>
+<p class="center"><a href="<?php echo $home; ?>/download/choose/" title="Other ways to get Midori / Midori for Other Systems">Other ways to get Midori / Midori for Other Systems</a></p>
 
 
 
@@ -174,7 +174,7 @@ echo ' MB</h6>';
 		</a>
 	</div>
 </div>
-<p class="center"><a href="<?php echo $home; ?>/download/choose/" title="Other ways to get Midori / Get Midori for Other Systems.">Other ways to get Midori and Midori for Other Systems.</a></p>
+<p class="center"><a href="<?php echo $home; ?>/download/choose/" title="Other ways to get Midori / Midori for Other Systems">Other ways to get Midori / Midori for Other Systems</a></p>
 
 
 
