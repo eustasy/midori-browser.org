@@ -1,7 +1,6 @@
 /* Global */
 
 html {
-	-ms-text-size-adjust: 100%;
 	-webkit-overflow-scrolling: touch;
 	-webkit-tap-highlight-color: rgb(52,158,219);
 	-webkit-text-size-adjust: 100%;
@@ -496,7 +495,7 @@ footer li:before {
 
 /* Donations */
 
-.col.donate { float: right !important; }
+header .col.donate { float: right !important; }
 
 .donate form{
 	margin: 0;
