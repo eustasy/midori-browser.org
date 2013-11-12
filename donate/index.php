@@ -7,21 +7,23 @@
 
 
 <div class="section group">
-	<div class="col span_1_of_1">
+	<div class="col span_1_of_6"><br></div>
+	<div class="col span_4_of_6">
 		<div class="bubble information">
 			<h3 class="withimg64"><img src="<?php echo $home; ?>/images/action-love.png" class="sixtyfour floatleft"> Donate</h3>
 			<h5>We'd love it if you would consider donating. Midori is an open-source, non-profit project, but the developers still get hungry.</h5>
 		</div>
 	</div>
+	<div class="col span_1_of_6"><br></div>
 </div>
 
 <div class="section group">
-	<div class="col span_1_of_3"><br></div>
-	<div class="col span_1_of_3">
+	<div class="col span_1_of_6"><br></div>
+	<div class="col span_4_of_6">
 		<h3>Choose a Currency</h3>
 		<p>While anyone with a PayPal account can donate, it may be easier for you if you donate in your native currency. Unfortunately, only some currencies are available, but you can use Google as a <a href="https://www.google.com/search?q=10+gbp+to+usd">exchange calculator</a> to convert to and donate in any of the currencies listed below.</p>
 	</div>
-	<div class="col span_1_of_36"><br></div>
+	<div class="col span_1_of_6"><br></div>
 </div>
 
 <div class="section group">
@@ -54,32 +56,12 @@
 </div>
 
 <div class="section group">
-	<div class="col span_1_of_3"><br></div>
-	<div class="col span_1_of_3">
+	<div class="col span_1_of_6"><br></div>
+	<div class="col span_4_of_6">
 		<p>Unfortunately, while both Brazilian Real (BRL, R$) and Indian Rupees (INR, &#8377;) have been requested, they are not available with our current PayPal solution.</p>
 	</div>
-	<div class="col span_1_of_3"><br></div>
+	<div class="col span_1_of_6"><br></div>
 </div>
-
-<h3>Want something else?</h3>
-
-<div class="section group">
-	<div class="col span_1_of_2">
-		<a href="<?php echo $home; ?>/download/">
-			<div class="bubble system download">
-				<h3>Download</h3>
-			</div>
-		</a>
-	</div>
-	<div class="col span_1_of_2">
-		<a href="<?php echo $home; ?>/faqs/">
-			<div class="bubble system help">
-				<h3>Help</h3>
-			</div>
-		</a>
-	</div>
-</div>
-
 
 
 <?php require '../chunks/footer.php'; ?>
