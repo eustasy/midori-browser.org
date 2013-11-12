@@ -17,30 +17,30 @@
 
 <div class="section group"><div class="col span_1_of_6"></div><div class="col span_4_of_6"><h3>Choose a Currency to Donate in</h3><h4>While anyone with a PayPal account can donate, it may be easier for you if you donate in your native currency. Unfortunately, only some currencies are available, but you can use Google as a <a href="https://www.google.com/search?q=10+gbp+to+usd">exchange calculator</a> to convert to and donate in any of the currencies listed below.</h4></div><div class="col span_1_of_6"></div></div>
 
-<div class="section group donate">
-	<div class="col span_1_of_3">
+<div class="section group">
+	<div class="col span_1_of_3 donate">
 		<h4>USD $</h4>
 		<?php donate('US'); ?>
 	</div>
-	<div class="col span_1_of_3">
+	<div class="col span_1_of_3 donate">
 		<h4>EUR &euro;</h4>
 		<?php donate('EU'); ?>
 	</div>
-	<div class="col span_1_of_3">
+	<div class="col span_1_of_3 donate">
 		<h4>GBP &pound;</h4>
 		<?php donate('GB'); ?>
 	</div>
 </div>
-<div class="section group donate">
-	<div class="col span_1_of_3">
+<div class="section group">
+	<div class="col span_1_of_3 donate">
 		<h4>CAD $</h4>
 		<?php donate('CA'); ?>
 	</div>
-	<div class="col span_1_of_3">
+	<div class="col span_1_of_3 donate">
 		<h4>AUD $</h4>
 		<?php donate('AU'); ?>
 	</div>
-	<div class="col span_1_of_3">
+	<div class="col span_1_of_3 donate">
 		<h4>SEK kr</h4>
 		<?php donate('SE'); ?>
 	</div>
@@ -59,14 +59,14 @@
 	<div class="col span_1_of_2">
 		<a href="<?php echo $home; ?>/download/">
 			<div class="bubble system download">
-				<h3>download</h3>
+				<h3>Download</h3>
 			</div>
 		</a>
 	</div>
 	<div class="col span_1_of_2">
 		<a href="<?php echo $home; ?>/faqs/">
 			<div class="bubble system help">
-				<h3>help</h3>
+				<h3>Help</h3>
 			</div>
 		</a>
 	</div>
