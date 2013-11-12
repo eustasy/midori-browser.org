@@ -15,7 +15,14 @@
 	</div>
 </div>
 
-<div class="section group"><div class="col span_1_of_6"></div><div class="col span_4_of_6"><h3>Choose a Currency to Donate in</h3><h4>While anyone with a PayPal account can donate, it may be easier for you if you donate in your native currency. Unfortunately, only some currencies are available, but you can use Google as a <a href="https://www.google.com/search?q=10+gbp+to+usd">exchange calculator</a> to convert to and donate in any of the currencies listed below.</h4></div><div class="col span_1_of_6"></div></div>
+<div class="section group">
+	<div class="col span_1_of_3"><br></div>
+	<div class="col span_1_of_3">
+		<h3>Choose a Currency to Donate in</h3>
+		<p>While anyone with a PayPal account can donate, it may be easier for you if you donate in your native currency. Unfortunately, only some currencies are available, but you can use Google as a <a href="https://www.google.com/search?q=10+gbp+to+usd">exchange calculator</a> to convert to and donate in any of the currencies listed below.</p>
+	</div>
+	<div class="col span_1_of_36"><br></div>
+</div>
 
 <div class="section group">
 	<div class="col span_1_of_3 donate">
@@ -45,13 +52,14 @@
 		<?php donate('SE'); ?>
 	</div>
 </div>
-<div class="section group"></div>
 
-<h5>Unfortunately, while both Brazilian Real (BRL, R$) and Indian Rupees (INR, &#8377;) have been requested, they are not available with our current PayPal solution.</h5>
-
-<div class="section group"></div>
-<div class="section group"></div>
-<div class="section group"></div>
+<div class="section group">
+	<div class="col span_1_of_3"><br></div>
+	<div class="col span_1_of_3">
+		<p>Unfortunately, while both Brazilian Real (BRL, R$) and Indian Rupees (INR, &#8377;) have been requested, they are not available with our current PayPal solution.</p>
+	</div>
+	<div class="col span_1_of_3"><br></div>
+</div>
 
 <h3>Want something else?</h3>
 
