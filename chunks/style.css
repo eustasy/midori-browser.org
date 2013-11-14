@@ -16,14 +16,14 @@ html {
 
 body {
 	background: rgb(22,70,117);
-/*	background: -moz-linear-gradient(left, rgba(12,48,83,1) 0%, rgba(22,70,117,1) 25%, rgba(12,48,83,1) 100%);
+	background: -moz-linear-gradient(left, rgba(12,48,83,1) 0%, rgba(22,70,117,1) 25%, rgba(12,48,83,1) 100%);
 	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(12,48,83,1)), color-stop(25%, rgba(22,70,117,1)), color-stop(100%, rgba(12,48,83,1)));
 	background: -webkit-linear-gradient(left, rgba(12,48,83,1) 0%, rgba(22,70,117,1) 25%, rgba(12,48,83,1) 100%);
 	background: -o-linear-gradient(left, rgba(12,48,83,1) 0%, rgba(22,70,117,1) 25%, rgba(12,48,83,1) 100%);
 	background: -ms-linear-gradient(left, rgba(12,48,83,1) 0%, rgba(22,70,117,1) 25%, rgba(12,48,83,1) 100%);
 	background: linear-gradient(to right, rgba(12,48,83,1) 0%, rgba(22,70,117,1) 25%, rgba(12,48,83,1) 100%);
-*/	bottom: 0;
-	color: #ccc;
+	bottom: 0;
+	color: #222;
 	font: 400 1em/1.4 'Droid Sans', Sans;
 	left: 0;
 	margin: 0;
@@ -68,20 +68,21 @@ body {
 
 h1 {
 	color: #FEFEFE;
-	font-family: Raleway, Sans;
-	font-weight: 200;
-	line-height: 1em;
 	margin: 0;
 	padding: 0;
-	text-align: left;
+	text-align: center;
 	text-decoration: none !important;
+	font: 200 6em/1 Raleway, Sans;
+	margin-bottom: .5em;
 }
 
 .tag {
-	color: #b1df3f;
-	margin: -1% 0 0 1%;
-	text-align: left;
+	color: #ccc;
+	margin: 0;
+	text-align: center;
 	text-decoration: none !important;
+	font-size: 2em;
+	font: 300 2em/2 Raleway;
 }
 @media only screen and (max-width: 799px) { .tag { margin: -1% 0 0 0 } }
 
@@ -91,19 +92,19 @@ h2, h3, h4, h5, h6 {
 }
 
 h2 {
-	color: #eee;
+	color: #68AA24;
 	font: 400 2em/1.2 Raleway, Sans;
 	margin: 1em 0 .5em;
 }
 
 h3 {
-	color: #ddd;
+	color: #85C543;
 	font: 400 1.5em/1.3 Raleway, Sans;
 	margin: 1.4em 0 .7em;
 }
 
 h4 {
-	color: #ccc;
+	color: #444;
 	font: 400 1.3em/1.25 Raleway, Sans;
 	margin: .7em 0 .35em;
 }
@@ -160,7 +161,7 @@ a {
 	-moz-transition: all 500ms ease-in-out;
 	-o-transition: all 500ms ease-in-out;
 	-webkit-transition: all 500ms ease-in-out;
-	color: #bdf48f;
+	color: #68AA24;
 	text-decoration: none;
 	transition: all 500ms ease-in-out;
 }
@@ -327,7 +328,7 @@ a:hover, a:active, a:focus {
 header {
 	clear: both;
 	color: #000;
-	margin: 1% auto !important;
+    margin: 2% auto !important;
 	max-width: 92.3em;
 	padding: 0;
 	position: relative;
@@ -335,8 +336,30 @@ header {
 	width: 80%;
 }
 header img {
-	margin: 0 10%;
-	max-width: 80%;
+	max-height: .8em;
+	margin: .1em;
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+.home-down {
+    background: #85D641;
+    color: #fff;
+    background: #85C543;
+    display: inline-block;
+    padding: 1em 1.5em;
+    margin: -3em auto;
+    border-radius: 3px;
+    font: 200 1.5em/1.4 'Open Sans', sans-serif;
+}
+.home-down a {
+    color: #fff;
+}
+.home-down + section {
+    margin-top: -1.5em;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);                  box-shadow:  0px 0px 10px 0px rgba(0, 0, 0, 1);
+    padding-top: 3.5em;
 }
 
 
@@ -344,7 +367,6 @@ header img {
 /* Navigation */
 
 .navwrap {
-	background: rgba(0,0,0,0.1);
 	color: #fafafa;
 	text-align: center;
 	width: 100%;
@@ -362,20 +384,21 @@ nav .col {
 
 nav a {
 	background: rgba(0,0,0,0);
-	color: #fafafa;
+	color: rgba(255,255,255,0.6);
 	display: inline-block;
 	font-size: 1em;
-	padding: 1.4% 0;
+	padding: 2% 0;
 }
 nav a:hover,
 nav a.current,
 nav:hover a:hover.current {
-	background: rgba(0,0,0,0.1);
-	color: #fafafa;
+	color: rgba(255,255,255,0.9);
 }
 nav:hover a.current { background: rgba(0,0,0,0); }
-nav a.down { background: rgba(177,223,63,0.5); }
-nav a:hover.down { background: rgba(177,223,63,0.7); }
+nav a.down {
+    color: rgba(255,255,255,0.9);
+ }
+nav a:hover.down { color: rgba(255,255,255,1); }
 
 @media only screen and (min-width: 1440px) { nav { width: 70%; } }
 @media only screen and (max-width: 1024px) { nav { width: 93.75%; } }
@@ -386,7 +409,6 @@ nav a:hover.down { background: rgba(177,223,63,0.7); }
 
 #maincontentcontainer,
 .maincontentcontainer {
-	background: rgba(0,0,0,0.2);
 	padding: 3% 0 5%;
 	width: 100%;
 }
@@ -674,13 +696,15 @@ section {
 	padding: 1% 10%;
 	width: 80%;
 }
-section.jaded { background: rgba(0,0,0,0.1); }
+section.jaded { background: #eee; }
 
 @media only screen and (min-width: 1440px) {
 	section {
 		padding: 1% 15%;
 		width: 70%;
-	}
+
+		background: #f9f9f9;
+}
 }
 @media only screen and (max-width: 1024px) {
 	section {
