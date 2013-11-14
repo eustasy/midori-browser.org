@@ -28,49 +28,23 @@
 
 <div id="skiptomain"><a href="#maincontent">skip to main content</a></div>
 
-<?php
-	function nav() {
-		echo '
 <div class="navwrap">
 	<nav class="section group">
-		<a href="' . $home . '/about/" title="About Midori" class="col span_1_of_6';
-		if ( $location == '/about/' ) { echo ' current'; }
-		echo '">About</a>
-		<a href="' . $home . '/features/" title="Features of Midori" class="col span_1_of_6';
-		if ( $location == '/features/' ) { echo ' current'; }
-		echo '">Features</a>
-		<a href="' . $home . '/faqs/" title="Questions Frequently Asked about DeVeDe." class="col span_1_of_6';
-		if ( $location == '/faqs/' ) { echo ' current'; }
-		echo '">FAQs</a>
-		<a href="' . $home . '/news/" title="News about Midori"  class="col span_1_of_6';
-		if ( $location == '/news/' ) { echo ' current'; }
-		echo '">News</a>
-		<a href="' . $home . '/contribute/" title="Contribute to Midori"  class="col span_1_of_6';
-		if ( $location == '/contribute/' ) { echo ' current'; }
-		echo '">Contribute</a>
-		<a href="' . $home . '/download/" title="Download Midori"  class="col span_1_of_6';
-		if ( $location == '/download/' ) { echo ' current'; }
-		echo ' down">Download</a>
+		<a href="' . $home . '/about/" title="About Midori" class="col span_1_of_6<?php if ( $location == '/about/' ) { echo ' current'; } ?>">About</a>
+		<a href="' . $home . '/features/" title="Features of Midori" class="col span_1_of_6<?php if ( $location == '/features/' ) { echo ' current'; } ?>">Features</a>
+		<a href="' . $home . '/faqs/" title="Questions Frequently Asked about DeVeDe." class="col span_1_of_6<?php if ( $location == '/faqs/' ) { echo ' current'; } ?>">FAQs</a>
+		<a href="' . $home . '/news/" title="News about Midori"  class="col span_1_of_6<?php if ( $location == '/news/' ) { echo ' current'; } ?>">News</a>
+		<a href="' . $home . '/contribute/" title="Contribute to Midori"  class="col span_1_of_6<?php if ( $location == '/contribute/' ) { echo ' current'; } ?>">Contribute</a>
+		<a href="' . $home . '/download/" title="Download Midori"  class="col span_1_of_6<?php if ( $location == '/download/' ) { echo ' current'; } ?> down">Download</a>
 	</nav>
-</div>';
-	}
-	function head() {
-		echo '
+</div>
+
 <div id="headcontainer">
 	<header>
-		<h1><a href="' . $home .  '/" title="Midori, a lightweight, fast, and free web browser."><img src="' . $home .  '/images/midori-white.png" alt="Midori Logo">Midori</a></h1>
-		<a href="' . $home .  '/" title="Midori, a lightweight, fast, and free web browser."><p class="tag">A lightweight, fast, and free web browser.</p></a>
+		<h1><a href="<?php echo $home; ?>/" title="Midori, a lightweight, fast, and free web browser."><img src="<?php echo $home; ?>/images/midori-white.png" alt="Midori Logo">Midori</a></h1>
+		<a href="<?php echo $home; ?>/" title="Midori, a lightweight, fast, and free web browser."><p class="tag">A lightweight, fast, and free web browser.</p></a>
 	</header>
-</div>';
-	}
-	if ( $location == '/' ) {
-		nav();
-		head();
-	} else {
-		head();
-		nav();
-	}
-?>
+</div>
 
 
 <div id="maincontentcontainer">
