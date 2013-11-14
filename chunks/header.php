@@ -54,7 +54,7 @@
 		<div class="full right"></div>
 	</div>
 </section>
-<h3 class="home-down"><a href="<?php echo $home; ?>/download/">Download</a></h3>
+<h3 class="home-down"><a href="<?php echo $home; ?>/download/"><img src="<?php echo $home; ?>/images/three/downloadicon.svg">Download</a></h3>
 <div id="maincontentcontainer">
 	<div id="maincontent"></div>
 <?php } else { ?>
