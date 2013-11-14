@@ -74,10 +74,13 @@ h1 {
 	text-decoration: none !important;
 	font: 200 6em/1 Raleway, Sans;
 }
-h1 a { color: #fff; }
+h1 a
+h1 a:hover
+{ color: #fff; }
 
 .tag {
 	color: #ddd;
+	color: rgba(255,255,255,0.5);
 	margin: 0;
 	text-align: center;
 	text-decoration: none !important;
