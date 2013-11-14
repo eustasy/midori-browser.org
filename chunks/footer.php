@@ -59,9 +59,9 @@
 	<script>$('textarea.code').one('click', function() { $(this).select(); });</script>
 	<script>$('textarea.code').dblclick(function() { $(this).select(); });</script>
 	
-	<!-- jQuery.Squishy: Load and Execute -->
+	<!-- jQuery.Squishy: Commented Out
 	<script src="<?php echo $home; ?>/chunks/jquery.squishy.min.js"></script>
-	<script>$('.squishy').squishy();</script>
+	<script>$('.squishy').squishy();</script>-->
 
 	<!-- jQuery.equalize -->
 	<script src="<?php echo $home; ?>/chunks/jquery.equalize.min.js"></script>
