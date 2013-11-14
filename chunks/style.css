@@ -353,6 +353,8 @@ header img {
     -webkit-border-radius: 3px;
     border-radius: 3px;
     font: 200 1.5em/1.4 'Open Sans', sans-serif;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+    box-shadow:  0px 0px 10px 0px rgba(0, 0, 0, 1);
 }
 .home-down a {
     color: #fff;
