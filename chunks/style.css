@@ -16,12 +16,12 @@ html {
 
 body {
 	background: rgb(22,70,117);
-	background: -moz-linear-gradient(left, rgba(12,48,83,1) 0%, rgba(22,70,117,1) 50%, rgba(12,48,83,1) 100%);
-	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(12,48,83,1)), color-stop(50%, rgba(22,70,117,1)), color-stop(100%, rgba(12,48,83,1)));
-	background: -webkit-linear-gradient(left, rgba(12,48,83,1) 0%, rgba(22,70,117,1) 50%, rgba(12,48,83,1) 100%);
-	background: -o-linear-gradient(left, rgba(12,48,83,1) 0%, rgba(22,70,117,1) 50%, rgba(12,48,83,1) 100%);
-	background: -ms-linear-gradient(left, rgba(12,48,83,1) 0%, rgba(22,70,117,1) 50%, rgba(12,48,83,1) 100%);
-	background: linear-gradient(to right, rgba(12,48,83,1) 0%, rgba(22,70,117,1) 50%, rgba(12,48,83,1) 100%);
+	background: -moz-linear-gradient(left, rgb(12,48,83) 0%, rgb(22,70,117) 50%, rgb(12,48,83) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgb(12,48,83)), color-stop(50%, rgb(22,70,117)), color-stop(100%, rgb(12,48,83)));
+	background: -webkit-linear-gradient(left, rgb(12,48,83) 0%, rgb(22,70,117) 50%, rgb(12,48,83) 100%);
+	background: -o-linear-gradient(left, rgb(12,48,83) 0%, rgb(22,70,117) 50%, rgb(12,48,83) 100%);
+	background: -ms-linear-gradient(left, rgb(12,48,83) 0%, rgb(22,70,117) 50%, rgb(12,48,83) 100%);
+	background: linear-gradient(to right, rgb(12,48,83) 0%, rgb(22,70,117) 50%, rgb(12,48,83) 100%);
 	bottom: 0;
 	color: #222;
 	font: 400 1em/1.4 'Droid Sans', Sans;
@@ -369,16 +369,16 @@ header img {
     margin: -3em auto;
     -webkit-border-radius: 3px;
     border-radius: 3px;
-    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
-    box-shadow:  0px 0px 10px 0px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: 0px 0px 10px 0px #000;
+    box-shadow:  0px 0px 10px 0px #000;
 }
 .home-down a {
     color: #fff;
 }
 .home-down + section {
     margin-top: -1.5em;
-    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
-    box-shadow:  0px 0px 10px 0px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: 0px 0px 10px 0px #000;
+    box-shadow:  0px 0px 10px 0px #000;
     padding-top: 3.5em;
 }
 .home-full { background: transparent; }
