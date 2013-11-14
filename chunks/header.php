@@ -52,11 +52,11 @@
 </div>';
 	}
 	if ( $location == '/' ) {
-		nav;
-		head;
+		nav();
+		head();
 	} else {
-		nav;
-		head;
+		head();
+		nav();
 	}
 ?>
 
