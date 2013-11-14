@@ -11,7 +11,7 @@
 	<link rel="stylesheet" media="all" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600|Raleway:200,300,400">
 	<link rel="stylesheet" media="all" href="<?php echo $home; ?>/chunks/style.css">
 
-	<script src="<?php echo $home; ?>/chunks/modernizr.min.js"></script>
+	<script async src="<?php echo $home; ?>/chunks/modernizr.min.js"></script>
 
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
