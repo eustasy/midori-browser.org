@@ -74,8 +74,9 @@ h1 {
 	text-decoration: none !important;
 	font: 200 6em/1 Raleway, Sans;
 	margin-bottom: .5em;
+	opacity: 0.9;
 }
-h1 a { color: #eee; }
+h1 a { color: #fff; }
 
 .tag {
 	color: #ccc;
