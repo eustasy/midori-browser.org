@@ -81,8 +81,7 @@ h1 a { color: #fff; }
 	margin: 0;
 	text-align: center;
 	text-decoration: none !important;
-	font-size: 2em;
-	font: 300 2em/2 Raleway;
+	font: 300 2em/2.5 Raleway;
 }
 @media only screen and (max-width: 799px) { .tag { margin: -1% 0 0 0 } }
 
@@ -334,7 +333,7 @@ a:hover, a:active, a:focus {
 header {
 	clear: both;
 	color: #000;
-    	margin: 0 auto;
+    	margin: 2% auto 0;
 	max-width: 92.3em;
 	padding: 0;
 	position: relative;
@@ -366,7 +365,7 @@ header img {
 	/* W3C Markup, IE10 Release Preview */ 
 	background-image: linear-gradient(to bottom, #85C543 0%, #68AA24 100%);
     display: inline-block;
-    padding: 1em 1.5em;
+    padding: .5em 1.5em;
     margin: -3em auto;
     -webkit-border-radius: 3px;
     border-radius: 3px;
@@ -384,7 +383,10 @@ header img {
     padding-top: 3.5em;
 }
 .home-full { background: transparent; }
-
+header h1 { float: left; }
+header .tag { float: right; }
+.home header h1 { float: none; }
+.home header .tag { float: none; }
 
 
 /* Navigation */
