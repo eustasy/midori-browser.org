@@ -4,18 +4,6 @@
 
 	<?php include 'chunks/header.php'; ?>
 
-</div>
-
-	<section class="home-full nobottom">
-		<div class="full">
-			<div class="full left"></div>
-			<div class="full center"></div>
-			<div class="full right"></div>
-		</div>
-	</section>
-	
-	<h3 class="home-down"><a href="<?php echo $home; ?>/download/">Download</a></h3>
-
 	<section class="jaded">
 		<div class="section group">
 			<div class="col span_1_of_3">
