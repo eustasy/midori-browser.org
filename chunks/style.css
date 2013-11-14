@@ -81,9 +81,8 @@ h1 a { color: #fff; }
 	margin: 0;
 	text-align: center;
 	text-decoration: none !important;
-	font: 300 2em/2.5 'Open Sans', Sans;
+	font: 300 1.5em/3.3 'Open Sans', Sans;
 }
-@media only screen and (max-width: 799px) { .tag { margin: -1% 0 0 0 } }
 
 h2, h3, h4, h5, h6 {
 	margin: 0;
