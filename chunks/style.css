@@ -780,9 +780,6 @@ section.jaded { background: #eee; }
 
 /* Wiki Imports */
 #dw__toc {
-	-webkit-border-radius: 3px;
-	background: #ddd;
-	border-radius: 3px;
 	float: right;
 	margin: 0 0 0 3%;
 	padding: 1% 0 0;
