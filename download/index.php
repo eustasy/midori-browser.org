@@ -12,7 +12,7 @@ if ($ua) { if ($windows) { // Windows ?>
 
 <!-- Windows -->
 <h2>Download for Windows</h2>
-<h3 style="color:#999999;">Select your Version</h3>
+<h3>Select your Version</h3>
 <div class="section group" id="downloads">
 	<div class="col span_1_of_2">
 <?php
