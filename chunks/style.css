@@ -377,7 +377,7 @@ header img {
 .home-down a {
     color: #fff;
 }
-.home-down + section {
+..home .first {
     margin-top: -1.5em;
     -webkit-box-shadow: 0px 0px 10px 0px #000;
     box-shadow:  0px 0px 10px 0px #000;
