@@ -350,6 +350,7 @@ header img {
     display: inline-block;
     padding: 1em 1.5em;
     margin: -3em auto;
+    -webkit-border-radius: 3px;
     border-radius: 3px;
     font: 200 1.5em/1.4 'Open Sans', sans-serif;
 }
@@ -358,9 +359,11 @@ header img {
 }
 .home-down + section {
     margin-top: -1.5em;
-    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);                  box-shadow:  0px 0px 10px 0px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+    box-shadow:  0px 0px 10px 0px rgba(0, 0, 0, 1);
     padding-top: 3.5em;
 }
+.home-full { background: transparent; }
 
 
 
