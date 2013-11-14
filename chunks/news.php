@@ -29,7 +29,7 @@ if ($xml) {
 } else {
 	echo '<div class="post">';
 	echo '<h4>Sorry, News could not be loaded.</h4>';
-	echo '<h5>Please try again later, or perhaps <a href="http://www.twotoasts.de/index.php/category/2-midori/feed/">load it directly</a>.</h5>';
+	echo '<h5>Please try again later, or perhaps <a href="http://www.twotoasts.de/index.php/category/2-midori/">load it directly</a>.</h5>';
 	echo '</div>';
 }
 
