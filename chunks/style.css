@@ -15,13 +15,25 @@ html {
 }
 
 body {
-	background: rgb(22,70,117);
-	background: -moz-linear-gradient(left, rgb(12,48,83) 0%, rgb(22,70,117) 50%, rgb(12,48,83) 100%);
-	background: -webkit-gradient(left top, right top, color-stop(0%, rgb(12,48,83)), color-stop(50%, rgb(22,70,117)), color-stop(100%, rgb(12,48,83)));
-	background: -webkit-linear-gradient(left, rgb(12,48,83) 0%, rgb(22,70,117) 50%, rgb(12,48,83) 100%);
-	background: -o-linear-gradient(left, rgb(12,48,83) 0%, rgb(22,70,117) 50%, rgb(12,48,83) 100%);
-	background: -ms-linear-gradient(left, rgb(12,48,83) 0%, rgb(22,70,117) 50%, rgb(12,48,83) 100%);
-	background: linear-gradient(to right, rgb(12,48,83) 0%, rgb(22,70,117) 50%, rgb(12,48,83) 100%);
+	background-color: rgb(22,70,117);
+	background-image: -moz-linear-gradient(left, rgb(12,48,83) 0%, rgb(22,70,117) 50%, rgb(12,48,83) 100%);
+	background-image: -webkit-gradient(left top, right top, color-stop(0%, rgb(12,48,83)), color-stop(50%, rgb(22,70,117)), color-stop(100%, rgb(12,48,83)));
+	background-image: -webkit-linear-gradient(left, rgb(12,48,83) 0%, rgb(22,70,117) 50%, rgb(12,48,83) 100%);
+	background-image: -o-linear-gradient(left, rgb(12,48,83) 0%, rgb(22,70,117) 50%, rgb(12,48,83) 100%);
+	background-image: -ms-linear-gradient(left, rgb(12,48,83) 0%, rgb(22,70,117) 50%, rgb(12,48,83) 100%);
+	background-image: linear-gradient(to right, rgb(12,48,83) 0%, rgb(22,70,117) 50%, rgb(12,48,83) 100%);
+	   /* Safari 4+, Chrome 1-9 */
+	   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#155e55), to(#002345));
+	   /* Safari 5.1+, Mobile Safari, Chrome 10+ */
+	   background-image: -webkit-linear-gradient(top, #155e55, #002345); 
+	   /* Firefox 3.6+ */
+	   background-image: -moz-linear-gradient(top, #155e55, #002345);
+	   /* IE 10+ */
+	   background-image: -ms-linear-gradient(top, #155e55, #002345);
+	   /* Opera 11.10+ */
+	   background-image: -o-linear-gradient(top, #155e55, #002345);
+	   /* Later */
+	   background-image: linear-gradient(top, #155e55, #002345);
 	bottom: 0;
 	color: #222;
 	font: 400 1em/1.4 'Open Sans', Sans;
