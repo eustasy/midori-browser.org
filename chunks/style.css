@@ -682,19 +682,19 @@ form.donate {
 .full .left {
 	background: transparent url('../images/full/left.png') 0 0 no-repeat;
 	display: table-cell;
-	height: 150px;
+	height: 200px;
 	width: 684px;
 }
 .full .center {
 	background: transparent url('../images/full/center.png') 0 0 repeat-x;
 	display: block;
-	height: 150px;
+	height: 200px;
 	width: auto;
 }
 .full .right {
 	background: transparent url('../images/full/right.png') 0 0 no-repeat;
 	display: table-cell;
-	height: 150px;
+	height: 200px;
 	width: 69px;
 }
 .nobottom {
