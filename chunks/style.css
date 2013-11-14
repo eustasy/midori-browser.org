@@ -24,7 +24,7 @@ body {
 	background: linear-gradient(to right, rgb(12,48,83) 0%, rgb(22,70,117) 50%, rgb(12,48,83) 100%);
 	bottom: 0;
 	color: #222;
-	font: 400 1em/1.4 'Droid Sans', Sans;
+	font: 400 1em/1.4 'Open Sans', Sans;
 	left: 0;
 	margin: 0;
 	padding: 0;
@@ -459,7 +459,7 @@ nav a:hover.down { color: rgba(255,255,255,1); }
 footer {
 	clear: both;
 	color: #cccccc;
-	font: 400 .9em/1.4 'Droid Sans', Sans;
+	font: 400 .9em/1.4 'Open Sans', Sans;
 	margin: 0 auto;
 	max-width: 92.3em;
 	padding: 1% 0;
@@ -594,7 +594,7 @@ form.donate {
 	border-radius: 3px 3px 0 0;
 	color: #333333;
 	display: block;
-	font: 16px/30px 'Open Sans', 'Droid Sans', Sans;
+	font: 16px/30px 'Open Sans', Sans;
 	height: 32px;
 	margin: 0 auto;
 	outline: none;
@@ -658,7 +658,7 @@ form.donate {
 	border-radius: 0px 0px 4px 4px;
 	color: #efefef;
 	display: block;
-	font: 16px/30px 'Open Sans', 'Droid Sans', Sans;
+	font: 16px/30px 'Open Sans', Sans;
 	height: 32px;
 	margin: 0 auto;
 	outline: none;
@@ -798,7 +798,7 @@ section.jaded { background: #eee; }
 	border-radius: 3px;
 	color: #333;
 	display: inline-block;
-	font: 400 .8em/2 'Droid Sans Mono';
+	font: 400 .8em/2 monospace;
 	margin: 1% 0;
 	padding: 1%;
 }
@@ -983,14 +983,14 @@ input, input:hover, input:focus, input:active {
 	border: none;
 	border-radius: 3px;
 	color: #FAFAFA;
-	font: 400 .9em/1.5 'Droid Sans Mono', monospace;
+	font: 400 .9em/1.5 monospace;
 	margin: 2%;
 	outline: 0;
 	padding: 2% 3%;
 	text-align: center;
 	width: 90%;
 }
-code { font: 400 .9em/1.5 'Droid Sans Mono', monospace; }
+code { font: 400 .9em/1.5 monospace; }
 code {
 	display: block;
 	margin: 2% 3% 3%;
