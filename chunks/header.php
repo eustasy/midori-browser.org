@@ -57,7 +57,7 @@
 	function head() {
 		echo '
 <div id="headcontainer">
-	<header class="section group">
+	<header>
 		<h1><a href="' . $home .  '/" title="Midori, a lightweight, fast, and free web browser."><img src="' . $home .  '/images/midori-white.png" alt="Midori Logo">Midori</a></h1>
 		<a href="' . $home .  '/" title="Midori, a lightweight, fast, and free web browser."><p class="tag">A lightweight, fast, and free web browser.</p></a>
 	</header>
