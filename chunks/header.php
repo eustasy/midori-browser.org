@@ -55,8 +55,9 @@
 	</div>
 </section>
 <h3 class="home-down"><a href="<?php echo $home; ?>/download/">Download</a></h3>
-<?php } ?>
-
-
 <div id="maincontentcontainer">
-	<div id="maincontent">
+	<div id="maincontent"></div>
+<?php } else { ?>
+<div id="maincontentcontainer">
+	<div id="maincontent"></div>
+<?php } ?>
