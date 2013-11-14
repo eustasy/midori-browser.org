@@ -4,7 +4,7 @@
 
 	<?php include 'chunks/header.php'; ?>
 
-	<section class="jaded">
+	<section class="first jaded">
 		<div class="section group">
 			<div class="col span_1_of_3">
 				<h2>Small But Mighty</h2>
