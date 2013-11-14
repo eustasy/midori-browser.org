@@ -43,7 +43,7 @@
 
 <div id="headcontainer">
 	<header class="section group">
-		<h1><a href="<?php echo $home; ?>/" title="Midori, a lightweight, fast, and free web browser."><img src="<?php echo $home; ?>/images/midori.png" alt="Midori Logo">Midori</a></h1>
+		<h1><a href="<?php echo $home; ?>/" title="Midori, a lightweight, fast, and free web browser."><img src="<?php echo $home; ?>/images/midori-white.png" alt="Midori Logo">Midori</a></h1>
 		<a href="<?php echo $home; ?>/" title="Midori, a lightweight, fast, and free web browser."><p class="tag">A lightweight, fast, and free web browser.</p></a>
 	</header>
 </div>
