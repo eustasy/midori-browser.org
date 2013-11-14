@@ -46,7 +46,7 @@
 	</header>
 </div>
 
-<?php if ( $location == '/download/' ) { ?>
+<?php if ( $location == '/' ) { ?>
 <section class="home-full nobottom">
 	<div class="full">
 		<div class="full left"></div>
