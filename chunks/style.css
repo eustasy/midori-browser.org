@@ -334,13 +334,14 @@ a:hover, a:active, a:focus {
 header {
 	clear: both;
 	color: #000;
-    	margin: 5% auto !important;
+    	margin: 0 auto;
 	max-width: 92.3em;
 	padding: 0;
 	position: relative;
 	text-align: center;
 	width: 80%;
 }
+.home header { margin: 5% auto 3%; }
 header img {
 	max-height: .8em;
 	margin: .1em;
