@@ -456,12 +456,12 @@ nav a:hover.down { color: rgba(255,255,255,1); }
 	padding: 3% 0 5%;
 	width: 100%;
 	background: #f9f9f9;
+	color: #333;
 	clear: both;
 }
 #maincontent,
 .maincontent {
 	clear: both;
-	color: #eeeeee;
 	margin: 0 auto;
 	max-width: 92.3em;
 	padding: 0;
