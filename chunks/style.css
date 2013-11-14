@@ -68,18 +68,16 @@ body {
 
 h1 {
 	color: #FEFEFE;
-	margin: 0;
+	margin: 0 0 .5em 0;
 	padding: 0;
 	text-align: center;
 	text-decoration: none !important;
 	font: 200 6em/1 Raleway, Sans;
-	margin-bottom: .5em;
-	opacity: 0.9;
 }
 h1 a { color: #fff; }
 
 .tag {
-	color: #ccc;
+	color: #ddd;
 	margin: 0;
 	text-align: center;
 	text-decoration: none !important;
@@ -330,7 +328,7 @@ a:hover, a:active, a:focus {
 header {
 	clear: both;
 	color: #000;
-    margin: 2% auto !important;
+    	margin: 5% auto !important;
 	max-width: 92.3em;
 	padding: 0;
 	position: relative;
