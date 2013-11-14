@@ -29,7 +29,7 @@
 <div id="skiptomain"><a href="#maincontent">skip to main content</a></div>
 
 <?php 
-	function nav {
+	function nav() {
 		echo '
 <div class="navwrap">
 	<nav class="section group">
@@ -42,7 +42,7 @@
 	</nav>
 </div>';
 	}
-	function head {
+	function head() {
 		echo '
 <div id="headcontainer">
 	<header class="section group">
