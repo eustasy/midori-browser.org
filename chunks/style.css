@@ -98,7 +98,7 @@ h2 {
 }
 
 h3 {
-	color: #85C543;
+	color: #68AA24;
 	font: 400 1.5em/1.3 Raleway, Sans;
 	margin: 1.4em 0 .7em;
 }
@@ -166,7 +166,7 @@ a {
 	transition: all 500ms ease-in-out;
 }
 a:hover, a:active, a:focus {
-	color: #9eda60;
+	color: #68AA24;
 	outline: none;
 }
 
