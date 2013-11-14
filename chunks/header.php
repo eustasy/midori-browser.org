@@ -46,6 +46,17 @@
 	</header>
 </div>
 
+<?php if ( $location == '/download/' ) { ?>
+<section class="home-full nobottom">
+	<div class="full">
+		<div class="full left"></div>
+		<div class="full center"></div>
+		<div class="full right"></div>
+	</div>
+</section>
+<h3 class="home-down"><a href="<?php echo $home; ?>/download/">Download</a></h3>
+<?php } ?>
+
 
 <div id="maincontentcontainer">
 	<div id="maincontent">
