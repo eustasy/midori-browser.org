@@ -75,6 +75,7 @@ h1 {
 	font: 200 6em/1 Raleway, Sans;
 	margin-bottom: .5em;
 }
+h1 a { color: #eee; }
 
 .tag {
 	color: #ccc;
