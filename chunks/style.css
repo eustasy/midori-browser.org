@@ -334,7 +334,7 @@ a:hover, a:active, a:focus {
 header {
 	clear: both;
 	color: #000;
-    	margin: 0 auto;
+    	margin: 2% auto 0;
 	max-width: 92.3em;
 	padding: 0;
 	position: relative;
@@ -384,7 +384,10 @@ header img {
     padding-top: 3.5em;
 }
 .home-full { background: transparent; }
-
+header h1 { float: left; }
+header .tag { float: right; }
+.home header h1 { float: none; }
+.home header .tag { float: none; }
 
 
 /* Navigation */
