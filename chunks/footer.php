@@ -1,4 +1,4 @@
-</div>
+cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.pack.js</div>
 </div>
 
 
@@ -50,26 +50,28 @@
 	<!-- Scripts -->
 
 	<!-- jQuery: Load from CDN, or fallback to local -->
-	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="<?php echo $home; ?>/chunks/jquery-1.10.2.min.js"><\/script>')</script>
+	<!--[if lt IE 9]>
+			<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+			<script type="text/javascript">window.jQuery || document.write('<script src="<?php echo $home; ?>/chunks/jquery-1.10.2.min.js"><\/script>');</script>
+		<![endif]-->
+		<!--[if IE 9]><!-->
+			<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+			<script>window.jQuery || document.write('<script src="<?php echo $home; ?>/chunks/jquery-2.0.3.min.js"><\/script>');</script>
+		<!--<![endif]-->
 
 	<!-- jQuery Select-All Code -->
 	<script>$('input.code').one('click', function() { $(this).select(); });</script>
 	<script>$('input.code').dblclick(function() { $(this).select(); });</script>
 	<script>$('textarea.code').one('click', function() { $(this).select(); });</script>
 	<script>$('textarea.code').dblclick(function() { $(this).select(); });</script>
-	
-	<!-- jQuery.Squishy: Commented Out
-	<script src="<?php echo $home; ?>/chunks/jquery.squishy.min.js"></script>
-	<script>$('.squishy').squishy();</script>-->
 
 	<!-- jQuery.equalize -->
 	<script src="<?php echo $home; ?>/chunks/jquery.equalize.min.js"></script>
 
 	<!-- Fancybox -->
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.css" media="screen">
-	<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.pack.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-media.min.js"></script>
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+	<script src="//"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/helpers/jquery.fancybox-media.min.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function() {
 		$('.fancybox').fancybox({ 'padding' : 0 });
