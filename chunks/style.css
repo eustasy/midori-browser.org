@@ -169,10 +169,10 @@ a:hover, a:active, a:focus {
 	color: #68AA24;
 	outline: none;
 }
-section h2,
-.bubble h2,
-section h3,
-.bubble h3 {
+.home section h2,
+.home .bubble h2,
+.home section h3,
+.home .bubble h3 {
 	color: #68AA24;
 }
 
@@ -918,6 +918,12 @@ img.sixtyfour.floatright {
 
 /* Bubbles Typography */
 
+.bubble h2 {
+	color: #222;
+}
+.bubble h3 {
+	color: #333;
+}
 .bubble h4 {
 	color: #444;
 	margin: 10px;
