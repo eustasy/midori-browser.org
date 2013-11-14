@@ -456,6 +456,7 @@ nav a:hover.down { color: rgba(255,255,255,1); }
 	padding: 3% 0 5%;
 	width: 100%;
 	background: #f9f9f9;
+	clear: both;
 }
 #maincontent,
 .maincontent {
