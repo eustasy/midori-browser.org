@@ -92,13 +92,13 @@ h2, h3, h4, h5, h6 {
 }
 
 h2 {
-	color: #68AA24;
+	color: #eee;
 	font: 400 2em/1.2 Raleway, Sans;
 	margin: 1em 0 .5em;
 }
 
 h3 {
-	color: #68AA24;
+	color: #ddd;
 	font: 400 1.5em/1.3 Raleway, Sans;
 	margin: 1.4em 0 .7em;
 }
@@ -168,6 +168,12 @@ a {
 a:hover, a:active, a:focus {
 	color: #68AA24;
 	outline: none;
+}
+section h2,
+.bubble h2,
+section h3,
+.bubble h3 {
+	color: #68AA24;
 }
 
 
