@@ -19,7 +19,7 @@ if ( $auth === 'glaflzbhlaczddmuxurmlujmdqtgvoqzzbpljshtfrohsqzfbtmazkgnkmudqaiq
 	$output = nl2br( shell_exec('git reset --hard HEAD && git pull') ); // Capture the output.
 
 } else { // Or not.
-	$output = nl2br( shell_exec('git reset --hard HEAD') ); // Just tell us where we are
+	$output = nl2br( shell_exec('git reset --hard HEAD && git pull') ); // Just tell us where we are
 }
 
 // That is all.
