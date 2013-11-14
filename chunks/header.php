@@ -59,5 +59,5 @@
 	<div id="maincontent"></div>
 <?php } else { ?>
 <div id="maincontentcontainer">
-	<div id="maincontent"></div>
+	<div id="maincontent">
 <?php } ?>
