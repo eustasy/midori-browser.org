@@ -1,3 +1,84 @@
+        <div class="col span_1_of_2">
+<?php
+
+include '../chunks/process.php';
+
+foreach ($xml->download as $download) {
+        if ($download->extension == '.exe') {
+                $package = ltrim($download->extension, '.');
+                $size = $download->size/1048576;
+                echo '
+                <a href="' . $download->location . '#!sha1!' . $download->sum . '" title="Download Midori for Windows.">
+                        <div class="bubble system windows">
+                                <h3>Windows</h3>
+                                <h6 class="right">' . $package . ' &nbsp;&middot;&nbsp; ' . $download->version . ' &nbsp;&middot;&nbsp; ' . round($size, 1) . ' MB</h6>
+                        </div>
+                </a>';
+        }
+}
+
+?>
+        </div>
+        <div class="col span_1_of_2">
+                <a href="<?php echo $home; ?>/download/portable/" title="Download Portable Midori.">
+                        <div class="bubble system portable">
+                                <h3>Portable</h3>
+<?php
+
+echo '<h6 class="right">';
+
+foreach ($xml->download as $download) {
+        if ($download->extension == '.7z') {
+                $package = ltrim($download->extension, '.');
+                echo $package;
+        }
+}
+
+echo ' or ';
+
+foreach ($xml->download as $download) {
+        if ($download->extension == '.zip') {
+                $package = ltrim($download->extension, '.');
+                echo $package;
+        }
+}
+
+echo ' &nbsp;&middot;&nbsp; ';
+
+foreach ($xml->download as $download) {
+
+        if ($download->extension == '.7z') {
+                echo $download->version;
+        }
+
+}
+
+echo ' &nbsp;&middot;&nbsp; ';
+
+foreach ($xml->download as $download) {
+        if ($download->extension == '.7z') {
+                $size = $download->size/1048576;
+                echo round($size, 1);
+        }
+}
+
+echo ' or ';
+
+foreach ($xml->download as $download) {
+        if ($download->extension == '.zip') {
+                $size = $download->size/1048576;
+                echo round($size, 1);
+        }
+}
+
+echo ' MB</h6>';
+
+?>
+                        </div>
+                </a>
+        </div>
+</div>
+<div class="section group">
 	<div class="col span_1_of_2">
 		<a href="<?php echo $home; ?>/download/elementary/" title="Download Midori for elementary.">
 			<div class="bubble system elementary">
@@ -66,4 +147,3 @@
 		</a>
 	</div>
 </div>
-<p class="center"><a href="<?php echo $home; ?>/download/choose/" title="Other ways to get Midori / Midori for Other Systems">Other ways to get Midori / Midori for Other Systems</a></p>
