@@ -26,10 +26,8 @@ foreach ($xml->download as $download) {
 		echo '
 		<a href="' . $download->location . '#!sha1!' . $download->sum . '" title="Download Midori for Windows.">
 			<div class="bubble system windows">
-				<h3>Windows</h3>';
-		echo '
-				<h6 class="right">' . $package . ' &nbsp;&middot;&nbsp; ' . $download->version . ' &nbsp;&middot;&nbsp; ' . round($size, 1) . ' MB</h6>';
-		echo '
+				<h3>Windows</h3>
+				<h6 class="right">' . $package . ' &nbsp;&middot;&nbsp; ' . $download->version . ' &nbsp;&middot;&nbsp; ' . round($size, 1) . ' MB</h6>
 			</div>
 		</a>';
 	}
