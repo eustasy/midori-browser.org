@@ -42,7 +42,7 @@ foreach ($xml->download as $download) {
                 if ($download->architecture == 'i586' || $download->architecture == 'x86-64') {
                         echo '
                                 <div class="col span_1_of_2">
-                                        <h3><a href="' . $download->location . '#!sha1!' . $download->sum . '">' . $download->architecture . '</a></h3>';
+                                        <h4><a href="' . $download->location . '#!sha1!' . $download->sum . '">' . $download->architecture . '</a></h4>';
                         $size = $download->size/1048576;
                         $package = ltrim($download->extension, '.');
                         echo '
