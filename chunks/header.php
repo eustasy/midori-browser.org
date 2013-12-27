@@ -53,8 +53,8 @@
 		<div class="full center"></div>
 		<div class="full right"></div>
 	</div>
+	<h3 class="home-down"><a href="<?php echo $home; ?>/download/"><img src="<?php echo $home; ?>/images/three/downloadicon.svg">Download</a></h3>
 </section>
-<h3 class="home-down"><a href="<?php echo $home; ?>/download/"><img src="<?php echo $home; ?>/images/three/downloadicon.svg">Download</a></h3>
 <div id="maincontentcontainer">
 	<div id="maincontent"></div>
 <?php } else { ?>
