@@ -42,7 +42,7 @@
 <div id="headcontainer">
 	<header>
 		<h1><a href="<?php echo $home; ?>/" title="Midori, a lightweight, fast, and free web browser."><img src="<?php echo $home; ?>/images/midori-white.png" alt="Midori Logo">Midori</a></h1>
-		<a href="<?php echo $home; ?>/" title="Midori, a lightweight, fast, and free web browser."><p class="tag">A lightweight, fast, and free web browser.</p></a>
+		<a href="<?php echo $home; ?>/" title="Midori, a lightweight, fast, and free web browser."><p class="tag">a lightweight, fast, and free web browser</p></a>
 	</header>
 </div>
 
@@ -55,6 +55,7 @@
 	</div>
 	<h3 class="home-down"><a href="<?php echo $home; ?>/download/"><img src="<?php echo $home; ?>/images/three/downloadicon.svg">Download</a></h3>
 </section>
+
 <div id="maincontentcontainer">
 	<div id="maincontent"></div>
 <?php } else { ?>
