@@ -631,10 +631,11 @@ form.donate {
 	height: 32px;
 	margin: 0 auto;
 	outline: none;
-	padding: 0;
+	padding: 0 5%;
 	text-align: center;
 	transition: all .25s;
-	width: 100%;
+	width: 90%;
+	box-sizing: content-box;
 }
 .donate:hover .amount,
 .donate:focus .amount,
