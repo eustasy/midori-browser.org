@@ -1,10 +1,34 @@
 <?php require 'chunks/doctype.php'; ?>
 
-	<title>Midori &nbsp;&middot;&nbsp; A lightweight, fast, and free web browser.</title>
+	<title>Midori &nbsp;&middot;&nbsp; A lightweight, fast, and free web browser</title>
 
 	<?php include 'chunks/header.php'; ?>
 
-	<section class="first jaded">
+	<section class="first jaded cuttingedge">
+		<div class="header">
+			<h2>On The Cutting Edge</h2>
+			<p>Midori is blazing fast, utilizing the latest web technologies and a small<br>but dexterous array of extensions provide all the essential features.</p>
+		</div>
+		<div class="section group">
+			<div class="col span_1_of_3">
+				<img src="<?php echo $home; ?>/images/logos/html5.png" alt="HTML5">
+				<h3>HTML 5 + CSS 3</h3>
+				<p>Midori handles all the latest web technologies like HTML 5 and CSS3. Listen to music on Rdio, play a game of Angry Birds, and more.</p>
+			</div>
+			<div class="col span_1_of_3">
+				<img src="<?php echo $home; ?>/images/logos/webkit.png" alt="Webkit">
+				<h3>Webkit</h3>
+				<p>The lightweight webkit rendering engine lends it the same supremacy in speed that has spurred the growth of Google Chrome.</p>
+			</div>
+			<div class="col span_1_of_3">
+				<img src="<?php echo $home; ?>/images/logos/opensource.png" alt="Open Source">
+				<h3>Open Source</h3>
+				<p>Midori's source code is freely available for anyone to download and modiy, leading to active development and a diverse feature set.</p>
+			</div>
+		</div>
+	</section>
+
+	<section>
 		<div class="section group">
 			<div class="col span_1_of_3">
 				<h2>Small But Mighty</h2>
@@ -13,20 +37,6 @@
 			</div>
 			<div class="col span_2_of_3">
 				<a class="fancybox" rel="gallery" href="<?php echo $home; ?>/images/screenshots/rdio_uncompressed.png"><img src="<?php echo $home; ?>/images/screenshots/rdio.png" alt="Screenshot of Midori playing Queen from Rdio"></a>
-			</div>
-		</div>
-	</section>
-
-	<section>
-		<div class="section group">
-			<div class="col span_1_of_2">
-				<a class="fancybox" rel="gallery" href="<?php echo $home; ?>/images/logos/bundle_uncompressed.png"><img src="<?php echo $home; ?>/images/logos/bundle.png" alt="Technologies Logos"></a>
-			</div>
-			<div class="col span_1_of_6"></div>
-			<div class="col span_1_of_3">
-				<h2>Cutting Edge</h2>
-				<p>Midori is blazing fast, utilizing the latest web technologies and a small but dexterous array of extensions provide all the essential features.</p>
-				<p>The lightweight webkit rendering engine lend it the same supremacy in speed that has spurred the growth of Google Chrome.</p>
 			</div>
 		</div>
 	</section>
