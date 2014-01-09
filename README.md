@@ -7,3 +7,6 @@
 ######@DanielFore
 ##Christian Dywan
 ######Implementation Advice
+
+##Additional Thanks to
+[Tristan Davies](https://github.com/devTristan)
