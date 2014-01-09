@@ -1,10 +1,4 @@
-This site is licensed under Creative Commons license which requires suitable Attribution upon the reproduction of any work, for Non-Commercial uses only. It also requires you Share-Alike derivative works under the same or more liberal license.
+This site and its content is licensed under the LGPL 2.1 license. This license allows you to modify, redistribute and sublicense the work, even allowing for some commercial use, on the condition that it is accepted without warranty or liability and that there are instructions for obtaining or viewing the original.
 
-read more
-http://www.eustasy.org/licenses/
-
-license
-http://creativecommons.org/licenses/by-nc-sa/3.0/
-
-legal code
-http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode
+[human readable](http://www.tldrlegal.com/license/gnu-lesser-general-public-license-v2.1-(lgpl-2.1))
+[legal code](http://www.gnu.org/licenses/lgpl-2.1-standalone.html)
