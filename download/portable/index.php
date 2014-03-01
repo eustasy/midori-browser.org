@@ -32,7 +32,7 @@ foreach ($xml->download as $download) {
 			echo '
 				<div class="col span_1_of_2">
 					<h3><a href="' . $download->location . '#!sha1!' . $download->sum . '">' . $package . '</a></h3>
-					<p class="center">' . $download->version . ' &nbsp;&middot;&nbsp; ' . round($size, 1) . ' MB</p>
+					<p class="center"><a href="'.$home.'/changelog/" title="Midori Changelog">' . $download->version . '</a> &nbsp;&middot;&nbsp; ' . round($size, 1) . ' MB</p>
 				</div>';
 		}
 	}

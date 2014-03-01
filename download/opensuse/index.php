@@ -46,7 +46,7 @@ foreach ($xml->download as $download) {
                         $size = $download->size/1048576;
                         $package = ltrim($download->extension, '.');
                         echo '
-                                        <p class="center">' . $package . ' &nbsp;&middot;&nbsp; ' . $download->version . ' &nbsp;&middot;&nbsp; ' . round($size, 1) . ' MB</p>
+                                        <p class="center">' . $package . ' &nbsp;&middot;&nbsp; <a href="'.$home.'/changelog/" title="Midori Changelog">' . $download->version . '</a> &nbsp;&middot;&nbsp; ' . round($size, 1) . ' MB</p>
                                 </div>';
                 }
         }

@@ -20,7 +20,7 @@
                 <div class="bubble standard">
                         <h3 class="withimg64"><img src="<?php echo $home; ?>/images/sites-launchpad.png" class="sixtyfour floatleft"> Install from PPA</h3>
                         <p class="important">By adding the repository <a href="https://launchpad.net/~midori/+archive/ppa">ppa:midori/ppa</a>, you will be kept up to date with the latest and greatest versions of Midori.</p>
-                        <input class="code" type="text" id="dynamic" value="sudo apt-add-repository ppa:midori/ppa && sudo apt-get update -qq && sudo apt-get install midori" />
+                        <input class="code" type="text" id="dynamic" value="sudo apt-add-repository 'deb http://ppa.launchpad.net/midori/ppa/ubuntu trusty main' && sudo apt-get update -qq && sudo apt-get install midori" />
                 </div>
         </div>
         <div class="col span_1_of_6"><br></div>
@@ -33,7 +33,7 @@
                         <h3>Alternative Downloads</h3>
                         <p>These packages are available for download, and can be copied to machines without a connection to be installed. Note that they do not include any dependencies, and may not be updated with the rest of your system by the package manager.</p>
                         <div class="section group">
-               
+
 <?php
 
 include '../../chunks/process.php';
@@ -46,7 +46,7 @@ foreach ($xml->download as $download) {
 		$size = $download->size/1048576;
 		$package = ltrim($download->extension, '.');
 		echo '
-					<p class="center">' . $package . ' &nbsp;&middot;&nbsp; ' . $download->version . ' &nbsp;&middot;&nbsp; ' . round($size, 1) . ' MB</p>
+					<p class="center">' . $package . ' &nbsp;&middot;&nbsp; <a href="'.$home.'/changelog/" title="Midori Changelog">' . $download->version . '</a> &nbsp;&middot;&nbsp; ' . round($size, 1) . ' MB</p>
 				</div>';
 	}
 }

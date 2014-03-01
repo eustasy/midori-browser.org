@@ -19,7 +19,7 @@ foreach ($xml->download as $download) {
 			<a href="' . $download->location . '#!sha1!' . $download->sum . '" title="Download Midori for Windows.">
 				<div class="bubble system windows">
 					<h3>Windows</h3>
-					<h6 class="right">' . $package . ' &nbsp;&middot;&nbsp; ' . $download->version . ' &nbsp;&middot;&nbsp; ' . round($size, 1) . ' MB</h6>
+					<h6 class="right">' . $package . ' &nbsp;&middot;&nbsp; <a href="'.$home.'/changelog/" title="Midori Changelog">' . $download->version . '</a> &nbsp;&middot;&nbsp; ' . round($size, 1) . ' MB</h6>
 				</div>
 			</a>';
 	}
@@ -57,7 +57,7 @@ echo ' &nbsp;&middot;&nbsp; ';
 foreach ($xml->download as $download) {
 
 	if ($download->extension == '.7z') {
-		echo $download->version;
+		echo '<a href="'.$home.'/changelog/" title="Midori Changelog">' . $download->version . '</a>';
 	}
 
 }
