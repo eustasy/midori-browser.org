@@ -7,6 +7,8 @@
 
 	<link rel="icon" href="<?php echo $home; ?>/favicon.ico">
 	<link rel="shortcut icon" href="<?php echo $home; ?>/favicon.ico">
+	
+	<?php if ( $location === '/' || $location === '/news/' ) echo '<link rel="alternate" type="application/rss+xml" title="News Feed" href="http://www.twotoasts.de/index.php/feed/" />'; ?>
 
 	<link rel="stylesheet" media="all" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600|Raleway:200,300,400">
 	<link rel="stylesheet" media="all" href="<?php echo $home; ?>/chunks/style.css">
@@ -24,7 +26,7 @@
 
 </head>
 
-<body<?php if ( $location == '/' ) { echo ' class="home"'; } ?>>
+<body<?php if ( $location === '/' ) echo ' class="home"'; ?>>
 
 <div id="skiptomain"><a href="#maincontent">skip to main content</a></div>
 
