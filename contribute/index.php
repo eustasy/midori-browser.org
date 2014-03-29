@@ -24,7 +24,7 @@
 		</a>
 	</div>
 	<div class="col span_1_of_3">
-		<a href="http://i18n.geany.org/midori/">
+		<a href="https://translations.launchpad.net/midori">
 			<div class="bubble">
 				<h4 class="withimg64"><img src="<?php echo $home; ?>/images/feature-dictionary.png" class="fortyeight floatleft">Translation</h4>
 				<p>Can you assist in completeing the translation of Midori into your language? Here you can download, modify, and contribute to the many languages available.</p>
