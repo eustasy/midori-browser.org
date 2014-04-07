@@ -2,104 +2,104 @@
 
 	<title>Download Midori &nbsp;&middot;&nbsp; A lightweight, fast, and free web browser.</title>
 
-	<?php require '../chunks/header.php'; ?>
-
 <?php
+
+require '../chunks/header.php';
 
 require '../chunks/detect-two.php';
 
-if ($ua) { if ($windows) { // Windows ?>
-
+if ($Browser_Detection['Operating System'] && $Browser_Detection['Operating System'] === 'Windows') {
+	?>
 <!-- Windows -->
 <h2>Download for Windows</h2>
 <h3>Select your Version</h3>
 <div class="section group" id="downloads">
 	<div class="col span_1_of_2">
-<?php
+	<?php
 
-include '../chunks/process.php';
+	include '../chunks/process.php';
 
-foreach ($xml->download as $download) {
-	if ($download->extension == '.exe') {
-		$package = ltrim($download->extension, '.');
-		$size = $download->size/1048576;
-		echo '
-		<a href="' . $download->location . '#!sha1!' . $download->sum . '" title="Download Midori for Windows.">
-			<div class="bubble system windows">
-				<h3>Windows</h3>
-				<h6 class="right">' . $package . ' &nbsp;&middot;&nbsp; <a href="'.$home.'/changelog/" title="Midori Changelog">' . $download->version . '</a> &nbsp;&middot;&nbsp; ' . round($size, 1) . ' MB</h6>
-			</div>
-		</a>';
+	foreach ($xml->download as $download) {
+		if ($download->extension == '.exe') {
+			$package = ltrim($download->extension, '.');
+			$size = $download->size/1048576;
+			echo '
+			<a href="' . $download->location . '#!sha1!' . $download->sum . '" title="Download Midori for Windows.">
+				<div class="bubble system windows">
+					<h3>Windows</h3>
+					<h6 class="right">' . $package . ' &nbsp;&middot;&nbsp; <a href="'.$home.'/changelog/" title="Midori Changelog">' . $download->version . '</a> &nbsp;&middot;&nbsp; ' . round($size, 1) . ' MB</h6>
+				</div>
+			</a>';
+		}
 	}
-}
 
-?>
+	?>
 	</div>
 	<div class="col span_1_of_2">
 		<a href="<?php echo $home; ?>/download/portable/" title="Download Portable Midori.">
 			<div class="bubble system portable">
 				<h3>Portable</h3>
-<?php
+	<?php
 
-echo '<h6 class="right">';
+	echo '<h6 class="right">';
 
-foreach ($xml->download as $download) {
-	if ($download->extension == '.7z') {
-		$package = ltrim($download->extension, '.');
-		echo $package;
-	}
-}
-
-echo ' or ';
-
-foreach ($xml->download as $download) {
-	if ($download->extension == '.zip') {
-		$package = ltrim($download->extension, '.');
-		echo $package;
-	}
-}
-
-echo ' &nbsp;&middot;&nbsp; ';
-
-foreach ($xml->download as $download) {
-
-	if ($download->extension == '.7z') {
-		echo '<a href="'.$home.'/changelog/" title="Midori Changelog">' . $download->version . '</a>';
+	foreach ($xml->download as $download) {
+		if ($download->extension == '.7z') {
+			$package = ltrim($download->extension, '.');
+			echo $package;
+		}
 	}
 
-}
+	echo ' or ';
 
-echo ' &nbsp;&middot;&nbsp; ';
-
-foreach ($xml->download as $download) {
-	if ($download->extension == '.7z') {
-		$size = $download->size/1048576;
-		echo round($size, 1);
+	foreach ($xml->download as $download) {
+		if ($download->extension == '.zip') {
+			$package = ltrim($download->extension, '.');
+			echo $package;
+		}
 	}
-}
 
-echo ' or ';
+	echo ' &nbsp;&middot;&nbsp; ';
 
-foreach ($xml->download as $download) {
-	if ($download->extension == '.zip') {
-		$size = $download->size/1048576;
-		echo round($size, 1);
+	foreach ($xml->download as $download) {
+
+		if ($download->extension == '.7z') {
+			echo '<a href="'.$home.'/changelog/" title="Midori Changelog">' . $download->version . '</a>';
+		}
+
 	}
-}
 
-echo ' MB</h6>';
+	echo ' &nbsp;&middot;&nbsp; ';
 
-?>
+	foreach ($xml->download as $download) {
+		if ($download->extension == '.7z') {
+			$size = $download->size/1048576;
+			echo round($size, 1);
+		}
+	}
+
+	echo ' or ';
+
+	foreach ($xml->download as $download) {
+		if ($download->extension == '.zip') {
+			$size = $download->size/1048576;
+			echo round($size, 1);
+		}
+	}
+
+	echo ' MB</h6>';
+
+	?>
 			</div>
 		</a>
 	</div>
 </div>
 <p class="center"><a href="<?php echo $home; ?>/download/choose/" title="Other ways to get Midori / Midori for Other Systems">Other ways to get Midori / Midori for Other Systems</a></p>
+	<?php
 
+} else if ($Browser_Detection['Operating System'] && $Browser_Detection['Operating System'] === 'Linux') {
 
-
-<?php } elseif ($linux) { // Linux ?>
-
+	?>
 <!-- Linux -->
 <h2>Download for Linux</h2>
 <h3 style="color:#999999;">Select your Distribution</h3>
@@ -174,10 +174,11 @@ echo ' MB</h6>';
 </div>
 <p class="center"><a href="<?php echo $home; ?>/download/choose/" title="Other ways to get Midori / Midori for Other Systems">Other ways to get Midori / Midori for Other Systems</a></p>
 
+	<?php
 
+} else if ($Browser_Detection['Operating System'] && $Browser_Detection['Operating System'] === 'Macintosh') {
 
-
-<?php } elseif ($osx) { // OS X ?>
+	?>
 
 <div class="section group">
 	<div class="col span_2_of_4">
@@ -187,12 +188,28 @@ echo ' MB</h6>';
 			<p class="right">Continue at your peril.</p>
 		</div>
 	</div>
-<?php require '../chunks/fallback.php' ?>
+	<?php
 
+	require '../chunks/fallback.php'
 
+} else if ($Browser_Detection['Operating System'] && $Browser_Detection['Operating System'] === 'FreeBSD') {
 
-<? } else { ?>
+	?>
 
+<div class="section group">
+	<div class="col span_2_of_4">
+		<div class="bubble notice">
+			<h3>Notice</h3>
+			<p>You appear to be using FreeBSD, and this website does not feature downloads for that system. Please look to your relevent repositories.</p>
+		</div>
+	</div>
+	<?php
+
+	require '../chunks/fallback.php'
+
+} else {
+
+	?>
 <!-- Unable to Detect Operating System -->
 <div class="section group">
 	<div class="col span_2_of_4">
@@ -202,10 +219,10 @@ echo ' MB</h6>';
 			<p class="right">Continue at your peril.</p>
 		</div>
 	</div>
-<?php require '../chunks/fallback.php';
+	<?php
 
-} } ?>
+	require '../chunks/fallback.php';
 
+}
 
-
-<?php require '../chunks/footer.php'; ?>
+require '../chunks/footer.php';
