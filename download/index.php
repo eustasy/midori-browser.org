@@ -190,7 +190,7 @@ if ($Browser_Detection['Operating System'] && $Browser_Detection['Operating Syst
 	</div>
 	<?php
 
-	require '../chunks/fallback.php'
+	require '../chunks/fallback.php';
 
 } else if ($Browser_Detection['Operating System'] && $Browser_Detection['Operating System'] === 'FreeBSD') {
 
@@ -205,7 +205,7 @@ if ($Browser_Detection['Operating System'] && $Browser_Detection['Operating Syst
 	</div>
 	<?php
 
-	require '../chunks/fallback.php'
+	require '../chunks/fallback.php';
 
 } else {
 
