@@ -200,7 +200,7 @@ if ($Browser_Detection['Operating System'] && $Browser_Detection['Operating Syst
 	<div class="col span_2_of_4">
 		<div class="bubble information">
 			<h3>Notice</h3>
-			<p>You appear to be using FreeBSD, and this website does not feature downloads for that system. Please look to your relevent repositories.</p>
+			<p>You appear to be using FreeBSD, and this website does not feature downloads for that system. Please look to your relevant repositories.</p>
 		</div>
 	</div>
 	<?php
