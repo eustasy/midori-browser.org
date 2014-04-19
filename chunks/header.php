@@ -9,7 +9,6 @@
 	require 'function.dokuimport.php';
 
 ?>
-
 	<!-- Cleartype Setting -->
 	<!--[if IE]><meta http-equiv="cleartype" content="on"><![endif]-->
 
@@ -28,12 +27,13 @@
 
 	<!-- Canonical -->
 	<link rel="canonical" href="<?php echo $home.$location; ?>">
-
-	<?php
+<?php
 		// If Home OR News then link the RSS Feed
-		if ( $location === '/' || $location === '/news/' ) echo '<!-- RSS Feed -->
-	<link rel="alternate" type="application/rss+xml" title="News Feed" href="http://www.twotoasts.de/index.php/feed/" />';
-	?>
+		if ( $location === '/' || $location === '/news/' ) echo '
+	<!-- RSS Feed -->
+	<link rel="alternate" type="application/rss+xml" title="News Feed" href="http://www.twotoasts.de/index.php/feed/">
+';
+?>
 
 	<!-- Google Analytics -->
 	<script>
