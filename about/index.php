@@ -29,7 +29,7 @@
 			</div>
 			</div>
 		<h4>The License</h4>
-		<p>Midori is <a title="Midori PPA" href="https://launchpad.net/~midori/+archive/ppa">release</a> under the <a rel="license" href="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html">GNU Lesser General Public License, version 2.1</a>, which makes it suitable for inclusion in both proprietary and free, open-source programs.</p>
+		<p>Midori is <a title="Midori PPA" href="https://launchpad.net/~midori/+archive/ppa">released</a> under the <a rel="license" href="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html">GNU Lesser General Public License, version 2.1</a>, which makes it suitable for inclusion in both proprietary and free, open-source programs.</p>
 	</div>
 	<div class="col span_1_of_11"></div>
 	<div class="col span_5_of_11">
