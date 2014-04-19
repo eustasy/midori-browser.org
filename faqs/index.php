@@ -1,6 +1,6 @@
 <?php require '../chunks/doctype.php'; ?>
 
-<title>FAQs &nbsp;&middot;&nbsp; Midori &nbsp;&middot;&nbsp; A lightweight, fast, and free web browser.</title>
+	<title>FAQs &nbsp;&middot;&nbsp; Midori &nbsp;&middot;&nbsp; A lightweight, fast, and free web browser.</title>
 
 <?php require '../chunks/header.php';
 

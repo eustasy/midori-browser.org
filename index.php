@@ -2,7 +2,7 @@
 
 	<title>Midori &nbsp;&middot;&nbsp; A lightweight, fast, and free web browser</title>
 
-	<?php include 'chunks/header.php'; ?>
+<?php include 'chunks/header.php'; ?>
 
 	<section class="first jaded cuttingedge">
 		<div class="header">
