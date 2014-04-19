@@ -3,11 +3,11 @@
 	require 'host.php';
 	require 'visitor.php';
 	require 'geo.php';
-	
+
 	require 'function.donate.php';
 	require 'function.news.php';
 	require 'function.dokuimport.php';
-	
+
 ?>
 
 	<!-- Cleartype Setting -->
@@ -22,16 +22,18 @@
 	<link rel="icon" href="<?php echo $home; ?>/favicon.ico">
 	<link rel="shortcut icon" href="<?php echo $home; ?>/favicon.ico">
 
+	<!-- Stylesheets -->
+	<link rel="stylesheet" media="all" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600|Raleway:200,400">
+	<link rel="stylesheet" media="all" href="<?php echo $home; ?>/chunks/style.css">
+
+	<!-- Canonical -->
+	<link rel="canonical" href="<?php echo $home.$location; ?>">
+
 	<?php
 		// If Home OR News then link the RSS Feed
 		if ( $location === '/' || $location === '/news/' ) echo '<!-- RSS Feed -->
 	<link rel="alternate" type="application/rss+xml" title="News Feed" href="http://www.twotoasts.de/index.php/feed/" />';
 	?>
-
-	<!-- Stylesheets -->
-	<link rel="stylesheet" media="all" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600|Raleway:200,400">
-	<link rel="stylesheet" media="all" href="<?php echo $home; ?>/chunks/style.css">
-
 
 	<!-- Google Analytics -->
 	<script>
