@@ -34,11 +34,8 @@
 </div>
 
 <?php
-// What we're gonna get
-$url = 'http://wiki.xfce.org/_export/xhtml/midori/contribute';
-$edit = 'http://wiki.xfce.org/midori/contribute';
 
-include '../chunks/dokuimport.php';
+// Import this page
+dokuImport('http://wiki.xfce.org/_export/xhtml/midori/contribute', 'http://wiki.xfce.org/midori/contribute');
 
-
-require '../chunks/footer.php'; ?>
+require '../chunks/footer.php';

@@ -10,7 +10,7 @@
 <div class="section group">
 	<div class="col span_1_of_6"></div>
 	<div class="col span_4_of_6">
-			<?php include '../chunks/news.php'; ?>
+		<?php news(5); ?>
 	</div>
 	<div class="col span_1_of_6"></div>
 </div>

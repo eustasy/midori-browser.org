@@ -115,7 +115,7 @@
 		<div class="section group">
 			<div class="col span_1_of_3">
 				<h3>News</h3>
-				<?php include 'chunks/news.php'; ?>
+				<?php news(3); ?>
 			</div>
 			<div class="col span_1_of_3"></div>
 			<div class="col span_1_of_3">
