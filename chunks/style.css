@@ -387,7 +387,7 @@ header img {
     position: absolute;
     left: 50%;
     z-index: 1;
-    border: 1px solid #7D9E55
+    border: 1px solid #7D9E55;
     border-radius: 5px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
     font-family: 'Open Sans', Sans;
