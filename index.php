@@ -23,7 +23,7 @@
 			<div class="col span_1_of_3">
 				<img src="<?php echo $home; ?>/images/logos/opensource.png" alt="Open Source">
 				<h3>Open Source</h3>
-				<p>Midori's source code is freely available for anyone to download and modiy, leading to active development and a diverse feature set.</p>
+				<p>Midori's source code is freely available for anyone to download and modify, leading to active development and a diverse feature set.</p>
 			</div>
 		</div>
 	</section>
