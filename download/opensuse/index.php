@@ -20,7 +20,7 @@
                 <div class="bubble standard">
                         <h3>Install Direct</h3>
                         <p class="important">You can also install directly from the Suse repositories with this command, or from the <a href="http://software.opensuse.org/ymp/openSUSE:Factory/standard/midori.ymp?base=openSUSE%3AFactory&query=midori">factory repository</a> for the latest version. You can also download the packages below.</p>
-                        <input class="code" type="text" id="dynamic" value="sudo yum install midori" />
+                        <input class="code" type="text" id="dynamic" value="sudo zypper install midori" />
                 </div>
         </div>
         <div class="col span_1_of_6"><br></div>
