@@ -4,7 +4,10 @@
 
 <?php require '../chunks/header.php';
 
+// Enable Debuggin
+error_reporting(~0);
+ini_set('display_errors', 1);
 // Import this page
-dokuImport('https://wiki.xfce.org/_export/xhtml/midori/faq', 'https://wiki.xfce.org/midori/faq');
+dokuImport('http://wiki.xfce.org/_export/xhtml/midori/faq', 'https://wiki.xfce.org/midori/faq');
 
 require '../chunks/footer.php';
