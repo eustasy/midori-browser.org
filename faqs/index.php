@@ -5,6 +5,6 @@
 <?php require '../chunks/header.php';
 
 // Import this page
-dokuImport('http://wiki.xfce.org/_export/xhtml/midori/faq', 'https://wiki.xfce.org/midori/faq');
+dokuImport('https://wiki.xfce.org/_export/xhtml/midori/faq', 'https://wiki.xfce.org/midori/faq');
 
 require '../chunks/footer.php';
