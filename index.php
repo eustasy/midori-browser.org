@@ -36,7 +36,7 @@
 			<div class="col span_1_of_3">
 				<h2>Small But Mighty</h2>
 				<p>Midori may only be a little program, but it supports many of the most popular parts of the web, including Google, Facebook, Twitter, YouTube, Spotify and Rdio.</p>
-				<p><small>Certain sites, including YouTube and Spotify, will require <a href="http://get.adobe.com/flashplayer/">Adobe Flash Player</a>.</small></p>
+				<p><small>Certain sites, including Spotify, will require <a href="http://get.adobe.com/flashplayer/">Adobe Flash Player</a>.</small></p>
 			</div>
 		</div>
 	</section>
