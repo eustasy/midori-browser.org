@@ -6,8 +6,16 @@ html {
 	-webkit-text-size-adjust: 100%;
 }
 
-::-webkit-selection,
-::-moz-selection,
+::-webkit-selection {
+	background: #BDF48F;
+	color: #111111;
+	text-shadow: none;
+}
+::-moz-selection {
+	background: #BDF48F;
+	color: #111111;
+	text-shadow: none;
+}
 ::selection {
 	background: #BDF48F;
 	color: #111111;
@@ -387,22 +395,19 @@ header img {
     position: absolute;
     left: 50%;
     z-index: 1;
-    border: 1px solid #7D9E55;
     border-radius: 5px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
     font-family: 'Open Sans', Sans;
 }
 .home-down a {
     color: #fff;
-	display: block;
+    display: block;
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0px;
     right: 0;
-    border: 1px solid;
     padding: 0;
-    border-color: #c2dba5 #9cc46e #8fbb5b #8eba59;
     -webkit-border-radius: 5px;
     border-radius: 5px;
 }
