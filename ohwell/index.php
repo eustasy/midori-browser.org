@@ -13,7 +13,7 @@
 	<div class="section group"></div>
 	<div class="section group"></div>
 
-	<h3 style="color:#999999;">Want something else?</h3>
+	<h3 style="color: #999999;">Want something else?</h3>
 
 	<div class="section group">
 		<div class="col span_1_of_2">
