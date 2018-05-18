@@ -117,7 +117,23 @@
 				<h3>News</h3>
 				<?php news(3); ?>
 			</div>
-			<div class="col span_1_of_3"></div>
+			<div class="col span_1_of_3">
+				<h3>Downloads</h3>
+
+<?php
+include '../../chunks/process.php';
+for ( $i = 0; $i < 2; $i++ ) {
+	$download = $xml->download[i];
+	$size = $download->size/1048576;
+	$package = ltrim($download->extension, '.');
+	echo '<h4><a href="'.$download->location.'#!sha1!'.$download->sum.'">'.$download->architecture.' '. $package.'</a></h4>';
+	echo '<p class="center">' . $package . ' &nbsp;&middot;&nbsp; ';
+	echo '<a href="'.$home.'/changelog/" title="Midori Changelog">' . $download->version . '</a>';
+	echo '&nbsp;&middot;&nbsp; ' . round($size, 1) . ' MB</p>';
+}
+?>
+
+			</div>
 			<div class="col span_1_of_3">
 				<div class="donate">
 					<?php donate($Geo); ?>
