@@ -19,11 +19,23 @@
 	<div class="col span_4_of_6">
 		<div class="bubble standard">
 			<h3>Install Directly</h3>
-                        <p class="important">You can also install directly from the Debian repositories with this command. Note that these repositories are known to be outdated, and to get the latest version of Midori you should download the appropriate package from the alternative downloads section below, but be prepared to deal with a whole load of dependency issues.</p>
-                        <input class="code" type="text" id="dynamic" value="sudo apt-get install midori" />
-                </div>
-        </div>
-        <div class="col span_1_of_6"><br></div>
+				<p class="important">You can install directly from the Debian repositories with this command. Note that these repositories are known to be outdated, and to get the latest version of Midori you should download the appropriate package from the alternative downloads section below, but be prepared to deal with a whole load of dependency issues.</p>
+				<input class="code" type="text" id="dynamic" value="sudo apt-get install midori" />
+		</div>
+	</div>
+	<div class="col span_1_of_6"><br></div>
+</div>
+
+<div class="section group">
+	<div class="col span_1_of_6"><br></div>
+	<div class="col span_4_of_6">
+		<div class="bubble standard">
+			<h3>Install from Backports (for Jessie)</h3>
+				<p class="important">If you are still using Debian Jessie, you can't install Midori without enabling the backports repository first. Same warnings as above apply.</p>
+				<input class="code" type="text" id="dynamic" value="echo 'deb http://ftp.debian.org/debian jessie-backports main' | sudo tee -a /etc/apt/sources.list.d/jessie-backports.list && sudo apt-get -t jessie-backports install &quot;midori&quot" />
+		</div>
+	</div>
+	<div class="col span_1_of_6"><br></div>
 </div>
 
 <div class="section group">
